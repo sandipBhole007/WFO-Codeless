@@ -1,0 +1,7 @@
+***Variables***
+${LinkSignIn}		id=com.linkedin.android:id/growth_prereg_fragment_sign_in_button
+${InputUserName}	id=com.linkedin.android:id/growth_login_join_fragment_email_address
+${InputPassword}	id=com.linkedin.android:id/growth_login_join_fragment_password
+${ButtonSignIN}		id=com.linkedin.android:id/growth_login_fragment_sign_in
+${InputSearchBar}	id=com.linkedin.android:id/search_bar_text
+${ImgNICELtd}		id=com.linkedin.android:id/history_icon

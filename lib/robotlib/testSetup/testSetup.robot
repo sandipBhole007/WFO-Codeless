@@ -5,6 +5,7 @@ Library           	Selenium2Library
 Library           	Screenshot
 Library             DatabaseLibrary
 Resource            resources/automationProperties.robot
+Resource			MobileApp/LinkedinFlow_Resource.robot
 **** Variables***
 
 
@@ -19,7 +20,9 @@ Feed Test Setup
 	
 	Log 	nothing is implemented yet
 
-UI Test Setup   
+UI Test Setup 
+	Screenshot.Set Screenshot Directory		${ScreenshotOutputDirectory}
+	Selenium2Library.Set Selenium Speed     ${DELAY}  
 	Log 	UI Test Setup nothing is implemented yet
 	
 SSH Test Setup
@@ -30,3 +33,6 @@ DB Test Setup
 	
 ReST Test Setup
 	Log 	UI Test Setup nothing is implemented yet
+	
+Mobile Test Setup
+	LinkedinFlow_Resource.Open Mobile Application

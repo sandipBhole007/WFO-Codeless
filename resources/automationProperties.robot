@@ -27,3 +27,14 @@ ${ERROR URL}      http://${SERVER}/error.html
 ${ScreenshotOutputDirectory}		C:/NPMGit/WFO-Codeless/output/Screenshot
 ${ScreenshotName}		${ScreenshotOutputDirectory}${/}selenium-manual-screenshot-{index}.png
 ${DELAY}		.1
+
+########Mobile Variables ################
+
+${mserverURL}	http://127.0.0.1:4723/wd/hub
+${platformName}	Android
+${platformVersion}	4.4.4
+${deviceName}	emulator-5554
+${appPackage}	com.linkedin.android
+${appActivity}	com.linkedin.android.growth.login.LoginActivity
+${muserName}	ravivani10@gmail.com
+${mpassword}	linkedindemo

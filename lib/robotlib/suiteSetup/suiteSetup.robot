@@ -28,5 +28,4 @@ Set Automation Global Variables
 	Set Global Variable		${LocalLogFolderPath} 
 	Set Global Variable		${NCATLogFolderPath}
 	Set Global Variable		${linux_server3}
-	Screenshot.Set Screenshot Directory		${ScreenshotOutputDirectory}
-	Selenium2Library.Set Selenium Speed     ${DELAY}
+	
