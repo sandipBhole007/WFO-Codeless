@@ -1,0 +1,10 @@
+*** Variables ***
+${NCAT_Lable}		css=h1
+${Username_Lable}	css=td.loginTd
+${Password_Lable}	xpath=//tr[2]/td
+${Username_TextBox}	id=userName
+${Password_TextBox}	id=password
+${LogIn_Button} 	xpath=//input[@value='Login']
+${LogIn_HelpLink} 	id=loginHelpLink
+${NCAT_Lable1}		css=div[class='loginHeader']
+${Login_Error}		id=errorDiv

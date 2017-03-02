@@ -1,0 +1,7 @@
+*** Variables ***
+${Btn_NCAT_FileMenu}		id=topForm:dynaButton
+${ShowJobs_Lable}		id=j_idt318:j_idt319:jobScope
+${selectJobScope_DropDown}		id=j_idt318:j_idt319:selectJobScope
+${ClearSuccesses_Link}			id=j_idt318:j_idt319:j_idt324
+${ClearFailures_Link}			id=j_idt318:j_idt319:j_idt325
+${ClearAllInactive_Link}		id=j_idt318:j_idt319:j_idt326

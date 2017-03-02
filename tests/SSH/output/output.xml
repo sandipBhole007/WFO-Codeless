@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170302 13:17:39.856" generator="Robot 3.0.2 (Python 2.7.11 on win32)">
+<suite source="C:\NPMGit\WFO-Codeless\tests\SSH\linux_intaraction.robot" id="s1" name="Linux Intaraction">
+<kw type="setup" name="Suite Setup" library="suiteSetup">
+<kw name="Set Automation Global Variables" library="suiteSetup">
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${ScreenshotOutputDirectory}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:41.816" level="INFO">${ScreenshotOutputDirectory} = C:/NPMGit/WFO-Codeless/output/Screenshot</msg>
+<status status="PASS" endtime="20170302 13:17:41.816" starttime="20170302 13:17:41.816"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:41.816" level="INFO">${DELAY} = .1 seconds</msg>
+<status status="PASS" endtime="20170302 13:17:41.816" starttime="20170302 13:17:41.816"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${ScreenshotName}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:41.816" level="INFO">${ScreenshotName} = C:/NPMGit/WFO-Codeless/output/Screenshot\selenium-manual-screenshot-{index}.png</msg>
+<status status="PASS" endtime="20170302 13:17:41.816" starttime="20170302 13:17:41.816"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${LocalLogFolderPath}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:41.816" level="INFO">${LocalLogFolderPath} = C:\NPMGit\WFO-Codeless\output\logs</msg>
+<status status="PASS" endtime="20170302 13:17:41.816" starttime="20170302 13:17:41.816"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${NCATLogFolderPath}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:41.816" level="INFO">${NCATLogFolderPath} = /NCAT/NCAT/server/apache-tomcat-7.0.57/logs</msg>
+<status status="PASS" endtime="20170302 13:17:41.816" starttime="20170302 13:17:41.816"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${linux_server3}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:41.816" level="INFO">${linux_server3} = 172.30.17.15</msg>
+<status status="PASS" endtime="20170302 13:17:41.816" starttime="20170302 13:17:41.816"></status>
+</kw>
+<kw name="Set Screenshot Directory" library="Screenshot">
+<doc>Sets the directory where screenshots are saved.</doc>
+<arguments>
+<arg>${ScreenshotOutputDirectory}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 13:17:41.816" starttime="20170302 13:17:41.816"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 13:17:41.816" starttime="20170302 13:17:41.816"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:41.816" starttime="20170302 13:17:41.816"></status>
+</kw>
+<kw name="Set Default Configuration" library="SSHLibrary">
+<doc>Update the default `configuration`.</doc>
+<arguments>
+<arg>timeout=20 minute</arg>
+</arguments>
+<status status="PASS" endtime="20170302 13:17:41.816" starttime="20170302 13:17:41.816"></status>
+</kw>
+<kw name="Open Server connecions" library="serverConnection">
+<kw name="Open Connection to LinuxServer1 And Log In" library="serverConnection">
+<doc>This Keyword open a connection to a LinuxServer1</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${linux_server1}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:41.816" level="INFO">172.30.16.131</msg>
+<status status="PASS" endtime="20170302 13:17:41.816" starttime="20170302 13:17:41.816"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:41.831" level="INFO">root</msg>
+<status status="PASS" endtime="20170302 13:17:41.831" starttime="20170302 13:17:41.816"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:41.831" level="INFO">Password1!</msg>
+<status status="PASS" endtime="20170302 13:17:41.831" starttime="20170302 13:17:41.831"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${linux_server1}</arg>
+<arg>alias=LinuxServer1</arg>
+</arguments>
+<status status="PASS" endtime="20170302 13:17:41.831" starttime="20170302 13:17:41.831"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:41.831" level="INFO">Logging into '172.30.16.131:22' as 'root'.</msg>
+<msg timestamp="20170302 13:17:43.350" level="INFO">Read output: Last login: Thu Mar  2 09:46:35 2017 from 172.23.149.19
+[root@ENT-CL-001409 ~]#</msg>
+<status status="PASS" endtime="20170302 13:17:43.350" starttime="20170302 13:17:41.831"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:43.350" starttime="20170302 13:17:41.816"></status>
+</kw>
+<kw name="Open Connection to LinuxServer2 And Log In" library="serverConnection">
+<doc>This Keyword open a connection to a LinuxServer2 system</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${linux_server2}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:43.350" level="INFO">172.30.16.96</msg>
+<status status="PASS" endtime="20170302 13:17:43.350" starttime="20170302 13:17:43.350"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${linux_server2}</arg>
+<arg>alias=LinuxServer2</arg>
+</arguments>
+<status status="PASS" endtime="20170302 13:17:43.350" starttime="20170302 13:17:43.350"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:43.350" level="INFO">Logging into '172.30.16.96:22' as 'root'.</msg>
+<msg timestamp="20170302 13:17:44.535" level="INFO">Read output: Last login: Thu Mar  2 09:46:36 2017 from 172.23.149.19
+[root@ENT-CL-001371 ~]#</msg>
+<status status="PASS" endtime="20170302 13:17:44.535" starttime="20170302 13:17:43.350"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:44.535" starttime="20170302 13:17:43.350"></status>
+</kw>
+<kw name="Open Connection to LinuxServer3 And Log In" library="serverConnection">
+<doc>This Keyword open a connection to a LinuxServer2 system</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${linux_server3}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:44.535" level="INFO">172.30.17.15</msg>
+<status status="PASS" endtime="20170302 13:17:44.535" starttime="20170302 13:17:44.535"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${linux_server3}</arg>
+<arg>alias=LinuxServer3</arg>
+</arguments>
+<status status="PASS" endtime="20170302 13:17:44.535" starttime="20170302 13:17:44.535"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:44.535" level="INFO">Logging into '172.30.17.15:22' as 'root'.</msg>
+<msg timestamp="20170302 13:17:45.695" level="INFO">Read output: Last login: Thu Mar  2 09:46:35 2017 from 172.23.149.19
+[root@ENT-CL-000408 ~]#</msg>
+<status status="PASS" endtime="20170302 13:17:45.695" starttime="20170302 13:17:44.535"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:45.695" starttime="20170302 13:17:44.535"></status>
+</kw>
+<kw name="Switch and Verify Connection to LinuxServer1" library="serverConnection">
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
+<arguments>
+<arg>LinuxServer1</arg>
+</arguments>
+<status status="PASS" endtime="20170302 13:17:45.695" starttime="20170302 13:17:45.695"></status>
+</kw>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<assign>
+<var>${LinuxServer1}</var>
+</assign>
+<msg timestamp="20170302 13:17:45.695" level="INFO">index=1
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer1
+host=172.30.16.131
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<msg timestamp="20170302 13:17:45.695" level="INFO">${LinuxServer1} = index=1
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer1
+host=172.30.16.131
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20170302 13:17:45.695" starttime="20170302 13:17:45.695"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${LinuxServer1.alias}</arg>
+<arg>LinuxServer1</arg>
+<arg>.</arg>
+</arguments>
+<msg timestamp="20170302 13:17:45.695" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170302 13:17:45.695" starttime="20170302 13:17:45.695"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer1_hostname}</var>
+</assign>
+<msg timestamp="20170302 13:17:45.695" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 13:17:45.758" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 13:17:45.758" level="INFO">${LinuxServer1_hostname} = ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 13:17:45.758" starttime="20170302 13:17:45.695"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${LinuxServer1_hostname}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:45.758" level="INFO">ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 13:17:45.758" starttime="20170302 13:17:45.758"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:45.758" starttime="20170302 13:17:45.695"></status>
+</kw>
+<kw name="Switch and Verify Connection to LinuxServer2" library="serverConnection">
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
+<arguments>
+<arg>LinuxServer2</arg>
+</arguments>
+<status status="PASS" endtime="20170302 13:17:45.758" starttime="20170302 13:17:45.758"></status>
+</kw>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<assign>
+<var>${LinuxServer2}</var>
+</assign>
+<msg timestamp="20170302 13:17:45.758" level="INFO">index=2
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer2
+host=172.30.16.96
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<msg timestamp="20170302 13:17:45.758" level="INFO">${LinuxServer2} = index=2
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer2
+host=172.30.16.96
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20170302 13:17:45.758" starttime="20170302 13:17:45.758"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${LinuxServer2.alias}</arg>
+<arg>LinuxServer2</arg>
+<arg>.</arg>
+</arguments>
+<msg timestamp="20170302 13:17:45.758" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170302 13:17:45.758" starttime="20170302 13:17:45.758"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer2_hostname}</var>
+</assign>
+<msg timestamp="20170302 13:17:45.758" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 13:17:45.789" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 13:17:45.789" level="INFO">${LinuxServer2_hostname} = ENT-CL-001371</msg>
+<status status="PASS" endtime="20170302 13:17:45.789" starttime="20170302 13:17:45.758"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${LinuxServer2_hostname}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:45.789" level="INFO">ENT-CL-001371</msg>
+<status status="PASS" endtime="20170302 13:17:45.789" starttime="20170302 13:17:45.789"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:45.789" starttime="20170302 13:17:45.758"></status>
+</kw>
+<kw name="Switch and Verify Connection to LinuxServer3" library="serverConnection">
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
+<arguments>
+<arg>LinuxServer3</arg>
+</arguments>
+<status status="PASS" endtime="20170302 13:17:45.789" starttime="20170302 13:17:45.789"></status>
+</kw>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<assign>
+<var>${LinuxServer3}</var>
+</assign>
+<msg timestamp="20170302 13:17:45.789" level="INFO">index=3
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer3
+host=172.30.17.15
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<msg timestamp="20170302 13:17:45.789" level="INFO">${LinuxServer3} = index=3
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer3
+host=172.30.17.15
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20170302 13:17:45.789" starttime="20170302 13:17:45.789"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${LinuxServer3.alias}</arg>
+<arg>LinuxServer3</arg>
+<arg>.</arg>
+</arguments>
+<msg timestamp="20170302 13:17:45.789" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170302 13:17:45.789" starttime="20170302 13:17:45.789"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer3_hostname}</var>
+</assign>
+<msg timestamp="20170302 13:17:45.789" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 13:17:45.806" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 13:17:45.806" level="INFO">${LinuxServer3_hostname} = ENT-CL-000408</msg>
+<status status="PASS" endtime="20170302 13:17:45.806" starttime="20170302 13:17:45.789"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${LinuxServer3_hostname}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:45.806" level="INFO">ENT-CL-000408</msg>
+<status status="PASS" endtime="20170302 13:17:45.806" starttime="20170302 13:17:45.806"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:45.806" starttime="20170302 13:17:45.789"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:45.806" starttime="20170302 13:17:41.816"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:45.806" starttime="20170302 13:17:41.816"></status>
+</kw>
+<test id="s1-t1" name="Connect To Servers and Get A Hostname">
+<kw type="setup" name="SSH Test Setup" library="testSetup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>UI Test Setup nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 13:17:45.806" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 13:17:45.806" starttime="20170302 13:17:45.806"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:45.806" starttime="20170302 13:17:45.806"></status>
+</kw>
+<kw name="Switch and Verify Connection to LinuxServer1" library="serverConnection">
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
+<arguments>
+<arg>LinuxServer1</arg>
+</arguments>
+<status status="PASS" endtime="20170302 13:17:45.806" starttime="20170302 13:17:45.806"></status>
+</kw>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<assign>
+<var>${LinuxServer1}</var>
+</assign>
+<msg timestamp="20170302 13:17:45.806" level="INFO">index=1
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer1
+host=172.30.16.131
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<msg timestamp="20170302 13:17:45.806" level="INFO">${LinuxServer1} = index=1
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer1
+host=172.30.16.131
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20170302 13:17:45.806" starttime="20170302 13:17:45.806"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${LinuxServer1.alias}</arg>
+<arg>LinuxServer1</arg>
+<arg>.</arg>
+</arguments>
+<msg timestamp="20170302 13:17:45.806" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170302 13:17:45.806" starttime="20170302 13:17:45.806"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer1_hostname}</var>
+</assign>
+<msg timestamp="20170302 13:17:45.806" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 13:17:45.853" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 13:17:45.853" level="INFO">${LinuxServer1_hostname} = ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 13:17:45.853" starttime="20170302 13:17:45.806"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${LinuxServer1_hostname}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:45.853" level="INFO">ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 13:17:45.853" starttime="20170302 13:17:45.853"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:45.853" starttime="20170302 13:17:45.806"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer1_hostname}</var>
+</assign>
+<msg timestamp="20170302 13:17:45.853" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 13:17:45.921" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 13:17:45.921" level="INFO">${LinuxServer1_hostname} = ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 13:17:45.921" starttime="20170302 13:17:45.853"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${LinuxServer1_hostname}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:45.921" level="INFO">ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 13:17:45.921" starttime="20170302 13:17:45.921"></status>
+</kw>
+<kw name="Switch and Verify Connection to LinuxServer2" library="serverConnection">
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
+<arguments>
+<arg>LinuxServer2</arg>
+</arguments>
+<status status="PASS" endtime="20170302 13:17:45.921" starttime="20170302 13:17:45.921"></status>
+</kw>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<assign>
+<var>${LinuxServer2}</var>
+</assign>
+<msg timestamp="20170302 13:17:45.921" level="INFO">index=2
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer2
+host=172.30.16.96
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<msg timestamp="20170302 13:17:45.921" level="INFO">${LinuxServer2} = index=2
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer2
+host=172.30.16.96
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20170302 13:17:45.921" starttime="20170302 13:17:45.921"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${LinuxServer2.alias}</arg>
+<arg>LinuxServer2</arg>
+<arg>.</arg>
+</arguments>
+<msg timestamp="20170302 13:17:45.921" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170302 13:17:45.921" starttime="20170302 13:17:45.921"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer2_hostname}</var>
+</assign>
+<msg timestamp="20170302 13:17:45.921" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 13:17:45.952" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 13:17:45.952" level="INFO">${LinuxServer2_hostname} = ENT-CL-001371</msg>
+<status status="PASS" endtime="20170302 13:17:45.952" starttime="20170302 13:17:45.921"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${LinuxServer2_hostname}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:45.952" level="INFO">ENT-CL-001371</msg>
+<status status="PASS" endtime="20170302 13:17:45.952" starttime="20170302 13:17:45.952"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:45.952" starttime="20170302 13:17:45.921"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer2_hostname}</var>
+</assign>
+<msg timestamp="20170302 13:17:45.952" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 13:17:46.014" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 13:17:46.014" level="INFO">${LinuxServer2_hostname} = ENT-CL-001371</msg>
+<status status="PASS" endtime="20170302 13:17:46.014" starttime="20170302 13:17:45.952"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${LinuxServer2_hostname}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.014" level="INFO">ENT-CL-001371</msg>
+<status status="PASS" endtime="20170302 13:17:46.014" starttime="20170302 13:17:46.014"></status>
+</kw>
+<kw type="teardown" name="SSH Test Teardown" library="testTearDown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.014" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 13:17:46.014" starttime="20170302 13:17:46.014"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:46.014" starttime="20170302 13:17:46.014"></status>
+</kw>
+<tags>
+<tag>SSH</tag>
+</tags>
+<status status="PASS" endtime="20170302 13:17:46.014" critical="yes" starttime="20170302 13:17:45.806"></status>
+</test>
+<test id="s1-t2" name="Connect To NCAT Servers and Get Log Files to Local systems and Search for failures">
+<kw type="setup" name="SSH Test Setup" library="testSetup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>UI Test Setup nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.014" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 13:17:46.014" starttime="20170302 13:17:46.014"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:46.014" starttime="20170302 13:17:46.014"></status>
+</kw>
+<kw name="Get NCAT Server Log Folder From Server to Local" library="serverConnection">
+<doc>This Keyword will get NCAT Install log from remote system to local system</doc>
+<arguments>
+<arg>LinuxServer3</arg>
+<arg>${NCATLogFolderPath}</arg>
+<arg>${LocalLogFolderPath}</arg>
+</arguments>
+<kw name="Switch and Verify Connection to Alias" library="serverConnection">
+<arguments>
+<arg>${ServerAlias}</arg>
+</arguments>
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
+<arguments>
+<arg>${ServerAlias}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 13:17:46.014" starttime="20170302 13:17:46.014"></status>
+</kw>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<assign>
+<var>${LinuxServer}</var>
+</assign>
+<msg timestamp="20170302 13:17:46.014" level="INFO">index=3
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer3
+host=172.30.17.15
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<msg timestamp="20170302 13:17:46.030" level="INFO">${LinuxServer} = index=3
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer3
+host=172.30.17.15
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20170302 13:17:46.030" starttime="20170302 13:17:46.014"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${LinuxServer.alias}</arg>
+<arg>${ServerAlias}</arg>
+<arg>.</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.030" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170302 13:17:46.030" starttime="20170302 13:17:46.030"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer_hostname}</var>
+</assign>
+<msg timestamp="20170302 13:17:46.030" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 13:17:46.061" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 13:17:46.061" level="INFO">${LinuxServer_hostname} = ENT-CL-000408</msg>
+<status status="PASS" endtime="20170302 13:17:46.061" starttime="20170302 13:17:46.030"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${LinuxServer_hostname}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.061" level="INFO">ENT-CL-000408</msg>
+<status status="PASS" endtime="20170302 13:17:46.061" starttime="20170302 13:17:46.061"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:46.061" starttime="20170302 13:17:46.014"></status>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>SSHLibrary.Get Directory</arg>
+<arg>${RemoteLogFolderPath}/</arg>
+<arg>${LocalLogFolderPath}/.</arg>
+</arguments>
+<kw name="Get Directory" library="SSHLibrary">
+<doc>Downloads a directory, including its content, from the remote machine to the local machine.</doc>
+<arguments>
+<arg>${RemoteLogFolderPath}/</arg>
+<arg>${LocalLogFolderPath}/.</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.125" level="INFO">[chan 3] Opened sftp connection (server version 3)</msg>
+<msg timestamp="20170302 13:17:46.857" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/host-manager.2017-03-01.log' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\host-manager.2017-03-01.log'</msg>
+<msg timestamp="20170302 13:17:46.857" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/localhost.2017-03-01.log' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\localhost.2017-03-01.log'</msg>
+<msg timestamp="20170302 13:17:46.857" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/localhost_access_log.2017-03-01.txt' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\localhost_access_log.2017-03-01.txt'</msg>
+<msg timestamp="20170302 13:17:46.857" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/ncat-ui.log' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\ncat-ui.log'</msg>
+<msg timestamp="20170302 13:17:46.857" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/catalina.2017-03-01.log' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\catalina.2017-03-01.log'</msg>
+<msg timestamp="20170302 13:17:46.857" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/manager.2017-03-01.log' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\manager.2017-03-01.log'</msg>
+<msg timestamp="20170302 13:17:46.857" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/catalina.out' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\catalina.out'</msg>
+<status status="PASS" endtime="20170302 13:17:46.857" starttime="20170302 13:17:46.061"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:46.857" starttime="20170302 13:17:46.061"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:46.857" starttime="20170302 13:17:46.014"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>catalina.out</arg>
+</arguments>
+<assign>
+<var>${LogFileName}</var>
+</assign>
+<msg timestamp="20170302 13:17:46.857" level="INFO">${LogFileName} = catalina.out</msg>
+<status status="PASS" endtime="20170302 13:17:46.857" starttime="20170302 13:17:46.857"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>${LocalLogFolderPath}//${LogFileName}</arg>
+</arguments>
+<assign>
+<var>${NATLocalLogFilePath}</var>
+</assign>
+<msg timestamp="20170302 13:17:46.857" level="INFO">${NATLocalLogFilePath} = C:\NPMGit\WFO-Codeless\output\logs//catalina.out</msg>
+<status status="PASS" endtime="20170302 13:17:46.857" starttime="20170302 13:17:46.857"></status>
+</kw>
+<kw name="Get NCAT Server Log Health" library="serverConnection">
+<arguments>
+<arg>${NATLocalLogFilePath}</arg>
+</arguments>
+<kw name="File Should Exist" library="OperatingSystem">
+<doc>Fails unless the given ``path`` points to an existing file.</doc>
+<arguments>
+<arg>${LocalLogFilePath}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.857" html="yes" level="INFO">File '&lt;a href="file://C:\NPMGit\WFO-Codeless\output\logs\catalina.out"&gt;C:\NPMGit\WFO-Codeless\output\logs\catalina.out&lt;/a&gt;' exists.</msg>
+<status status="PASS" endtime="20170302 13:17:46.857" starttime="20170302 13:17:46.857"></status>
+</kw>
+<kw name="Grep File" library="OperatingSystem">
+<doc>Returns the lines of the specified file that match the ``pattern``.</doc>
+<arguments>
+<arg>${LocalLogFilePath}</arg>
+<arg>ERROR</arg>
+</arguments>
+<assign>
+<var>${All_errors}</var>
+</assign>
+<msg timestamp="20170302 13:17:46.873" html="yes" level="INFO">Reading file '&lt;a href="file://C:\NPMGit\WFO-Codeless\output\logs\catalina.out"&gt;C:\NPMGit\WFO-Codeless\output\logs\catalina.out&lt;/a&gt;'.</msg>
+<msg timestamp="20170302 13:17:46.873" level="INFO">0 out of 86 lines matched</msg>
+<msg timestamp="20170302 13:17:46.873" level="INFO">${All_errors} = </msg>
+<status status="PASS" endtime="20170302 13:17:46.873" starttime="20170302 13:17:46.857"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${All_errors}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.873" level="INFO"></msg>
+<status status="PASS" endtime="20170302 13:17:46.873" starttime="20170302 13:17:46.873"></status>
+</kw>
+<kw name="Grep File" library="OperatingSystem">
+<doc>Returns the lines of the specified file that match the ``pattern``.</doc>
+<arguments>
+<arg>${LocalLogFilePath}</arg>
+<arg>INFO</arg>
+</arguments>
+<assign>
+<var>${All_info}</var>
+</assign>
+<msg timestamp="20170302 13:17:46.873" html="yes" level="INFO">Reading file '&lt;a href="file://C:\NPMGit\WFO-Codeless\output\logs\catalina.out"&gt;C:\NPMGit\WFO-Codeless\output\logs\catalina.out&lt;/a&gt;'.</msg>
+<msg timestamp="20170302 13:17:46.873" level="INFO">43 out of 86 lines matched</msg>
+<msg timestamp="20170302 13:17:46.873" level="INFO">${All_info} = INFO: Server version:        Apache Tomcat/7.0.57
+INFO: Server built:          Nov 3 2014 08:39:16 UTC
+INFO: Server number:         7.0.57.0
+INFO: OS Name:               Linux
+INFO: OS Version:       ...</msg>
+<status status="PASS" endtime="20170302 13:17:46.873" starttime="20170302 13:17:46.873"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${All_info}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.873" level="INFO">INFO: Server version:        Apache Tomcat/7.0.57
+INFO: Server built:          Nov 3 2014 08:39:16 UTC
+INFO: Server number:         7.0.57.0
+INFO: OS Name:               Linux
+INFO: OS Version:            2.6.32-358.el6.x86_64
+INFO: Architecture:          amd64
+INFO: JAVA_HOME:             /usr/java/jdk1.8.0_71/jre
+INFO: JVM Version:           1.8.0_71-b15
+INFO: JVM Vendor:            Oracle Corporation
+INFO: CATALINA_BASE:         /NCAT/NCAT/server/apache-tomcat-7.0.57
+INFO: CATALINA_HOME:         /NCAT/NCAT/server/apache-tomcat-7.0.57
+INFO: Command line argument: -Djava.util.logging.config.file=/NCAT/NCAT/server/apache-tomcat-7.0.57/conf/logging.properties
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+INFO: Command line argument: -Djava.endorsed.dirs=/NCAT/NCAT/server/apache-tomcat-7.0.57/endorsed
+INFO: Command line argument: -Dcatalina.base=/NCAT/NCAT/server/apache-tomcat-7.0.57
+INFO: Command line argument: -Dcatalina.home=/NCAT/NCAT/server/apache-tomcat-7.0.57
+INFO: Command line argument: -Djava.io.tmpdir=/NCAT/NCAT/server/apache-tomcat-7.0.57/temp
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+INFO: Initializing ProtocolHandler ["http-bio-8280"]
+INFO: Initialization processed in 895 ms
+INFO: Starting service Catalina
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.57
+INFO: Deploying web application archive /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/ncat-ui.war
+INFO: validateJarFile(/NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/ncat-ui/WEB-INF/lib/el-api-2.2.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/el/Expression.class
+INFO: validateJarFile(/NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/ncat-ui/WEB-INF/lib/javax.servlet-api-3.0.1.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+INFO: validateJarFile(/NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/ncat-ui/WEB-INF/lib/jsp-api-2.1.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/el/Expression.class
+INFO: Initializing Mojarra 2.2.10 ( 20150205-0906 https://svn.java.net/svn/mojarra~svn/tags/2.2.10@14334) for context '/ncat-ui'
+INFO: JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+INFO: Running on PrimeFaces 5.1
+INFO: Deployment of web application archive /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/ncat-ui.war has finished in 5,785 ms
+INFO: Deploying web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/examples
+INFO: Deployment of web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/examples has finished in 184 ms
+INFO: Deploying web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/ROOT
+INFO: Deployment of web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/ROOT has finished in 32 ms
+INFO: Deploying web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/host-manager
+INFO: Deployment of web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/host-manager has finished in 44 ms
+INFO: Deploying web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/manager
+INFO: Deployment of web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/manager has finished in 37 ms
+INFO: Deploying web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/docs
+INFO: Deployment of web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/docs has finished in 26 ms
+INFO: Starting ProtocolHandler ["http-bio-8280"]
+INFO: Server startup in 6219 ms
+INFO: CDI @ViewScoped bean functionality unavailable</msg>
+<status status="PASS" endtime="20170302 13:17:46.873" starttime="20170302 13:17:46.873"></status>
+</kw>
+<kw name="Grep File" library="OperatingSystem">
+<doc>Returns the lines of the specified file that match the ``pattern``.</doc>
+<arguments>
+<arg>${LocalLogFilePath}</arg>
+<arg>Exception</arg>
+</arguments>
+<assign>
+<var>${All_Exceptions}</var>
+</assign>
+<msg timestamp="20170302 13:17:46.873" html="yes" level="INFO">Reading file '&lt;a href="file://C:\NPMGit\WFO-Codeless\output\logs\catalina.out"&gt;C:\NPMGit\WFO-Codeless\output\logs\catalina.out&lt;/a&gt;'.</msg>
+<msg timestamp="20170302 13:17:46.873" level="INFO">0 out of 86 lines matched</msg>
+<msg timestamp="20170302 13:17:46.873" level="INFO">${All_Exceptions} = </msg>
+<status status="PASS" endtime="20170302 13:17:46.873" starttime="20170302 13:17:46.873"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${All_Exceptions}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.873" level="INFO"></msg>
+<status status="PASS" endtime="20170302 13:17:46.873" starttime="20170302 13:17:46.873"></status>
+</kw>
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>${LocalLogFilePath}</arg>
+</arguments>
+<assign>
+<var>${all_Contents}</var>
+</assign>
+<msg timestamp="20170302 13:17:46.873" html="yes" level="INFO">Getting file '&lt;a href="file://C:\NPMGit\WFO-Codeless\output\logs\catalina.out"&gt;C:\NPMGit\WFO-Codeless\output\logs\catalina.out&lt;/a&gt;'.</msg>
+<msg timestamp="20170302 13:17:46.873" level="INFO">${all_Contents} = Mar 01, 2017 9:50:54 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.57
+Mar 01, 2017 9:50:54 AM org.apache.catalina.startup.VersionLoggerListene...</msg>
+<status status="PASS" endtime="20170302 13:17:46.873" starttime="20170302 13:17:46.873"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:46.873" starttime="20170302 13:17:46.857"></status>
+</kw>
+<kw type="teardown" name="SSH Test Teardown" library="testTearDown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.889" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 13:17:46.889" starttime="20170302 13:17:46.873"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:46.889" starttime="20170302 13:17:46.873"></status>
+</kw>
+<tags>
+<tag>SSH</tag>
+</tags>
+<status status="PASS" endtime="20170302 13:17:46.889" critical="yes" starttime="20170302 13:17:46.014"></status>
+</test>
+<test id="s1-t3" name="Connect To NCAT Servers and delete the file from server">
+<kw type="setup" name="SSH Test Setup" library="testSetup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>UI Test Setup nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.889" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 13:17:46.889" starttime="20170302 13:17:46.889"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:46.889" starttime="20170302 13:17:46.889"></status>
+</kw>
+<kw name="Switch and Verify Connection to Alias" library="serverConnection">
+<arguments>
+<arg>LinuxServer1</arg>
+</arguments>
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
+<arguments>
+<arg>${ServerAlias}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 13:17:46.889" starttime="20170302 13:17:46.889"></status>
+</kw>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<assign>
+<var>${LinuxServer}</var>
+</assign>
+<msg timestamp="20170302 13:17:46.889" level="INFO">index=1
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer1
+host=172.30.16.131
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<msg timestamp="20170302 13:17:46.889" level="INFO">${LinuxServer} = index=1
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer1
+host=172.30.16.131
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20170302 13:17:46.889" starttime="20170302 13:17:46.889"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${LinuxServer.alias}</arg>
+<arg>${ServerAlias}</arg>
+<arg>.</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.889" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170302 13:17:46.889" starttime="20170302 13:17:46.889"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer_hostname}</var>
+</assign>
+<msg timestamp="20170302 13:17:46.889" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 13:17:46.905" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 13:17:46.921" level="INFO">${LinuxServer_hostname} = ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 13:17:46.921" starttime="20170302 13:17:46.889"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${LinuxServer_hostname}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.921" level="INFO">ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 13:17:46.921" starttime="20170302 13:17:46.921"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:46.921" starttime="20170302 13:17:46.889"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>//automationtemp//globalSetting.txt</arg>
+</arguments>
+<assign>
+<var>${RemoteFIleFilePath}</var>
+</assign>
+<msg timestamp="20170302 13:17:46.921" level="INFO">${RemoteFIleFilePath} = //automationtemp//globalSetting.txt</msg>
+<status status="PASS" endtime="20170302 13:17:46.921" starttime="20170302 13:17:46.921"></status>
+</kw>
+<kw name="List Directory" library="SSHLibrary">
+<doc>Returns and logs items in the remote `path`, optionally filtered with `pattern`.</doc>
+<arguments>
+<arg>//automationtemp</arg>
+</arguments>
+<msg timestamp="20170302 13:17:46.985" level="INFO">[chan 5] Opened sftp connection (server version 3)</msg>
+<msg timestamp="20170302 13:17:47.001" level="INFO">12 items:
+FeedMetaData.txt
+TransactionFeedDataType.txt
+TransactionFeedFile_Template.txt
+TransactionMobiles.txt
+TransactionPhones.txt
+VoCRootMetadata.txt
+dashboardSetting.txt
+language.txt
+nice_events2_rwprz_tvalid_feed_1.csv
+nice_events2_rwprz_tvalid_feed_1233.csv
+nice_events2_rwprz_tvalid_feed_1233sa.csv
+timeZones.txt</msg>
+<status status="PASS" endtime="20170302 13:17:47.001" starttime="20170302 13:17:46.921"></status>
+</kw>
+<kw name="File Should Exist" library="SSHLibrary">
+<doc>Fails if the given `path` does NOT point to an existing file.</doc>
+<arguments>
+<arg>${RemoteFIleFilePath}</arg>
+</arguments>
+<msg timestamp="20170302 13:17:47.001" level="FAIL">File '//automationtemp//globalSetting.txt' does not exist.</msg>
+<status status="FAIL" endtime="20170302 13:17:47.001" starttime="20170302 13:17:47.001"></status>
+</kw>
+<kw type="teardown" name="SSH Test Teardown" library="testTearDown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 13:17:47.001" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 13:17:47.001" starttime="20170302 13:17:47.001"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:47.001" starttime="20170302 13:17:47.001"></status>
+</kw>
+<tags>
+<tag>SSH</tag>
+</tags>
+<status status="FAIL" endtime="20170302 13:17:47.001" critical="yes" starttime="20170302 13:17:46.889">File '//automationtemp//globalSetting.txt' does not exist.</status>
+</test>
+<kw type="teardown" name="Suite Teardown" library="suiteTeardown">
+<kw name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20170302 13:17:47.126" starttime="20170302 13:17:47.016"></status>
+</kw>
+<status status="PASS" endtime="20170302 13:17:47.126" starttime="20170302 13:17:47.016"></status>
+</kw>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" endtime="20170302 13:17:47.126" starttime="20170302 13:17:39.856"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="2">SSH</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Linux Intaraction" pass="2">Linux Intaraction</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

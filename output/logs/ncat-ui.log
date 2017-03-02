@@ -1,0 +1,21 @@
+01-Mar-17 09:50:57 | INFO  | org.springframework.web.context.ContextLoader | Root WebApplicationContext: initialization started
+01-Mar-17 09:50:57 | INFO  | org.springframework.web.context.support.XmlWebApplicationContext | Refreshing Root WebApplicationContext: startup date [Wed Mar 01 09:50:57 IST 2017]; root of context hierarchy
+01-Mar-17 09:50:57 | INFO  | org.springframework.beans.factory.xml.XmlBeanDefinitionReader | Loading XML bean definitions from class path resource [jsf-context.xml]
+01-Mar-17 09:50:58 | INFO  | org.springframework.beans.factory.xml.XmlBeanDefinitionReader | Loading XML bean definitions from class path resource [spring-context.xml]
+01-Mar-17 09:50:58 | INFO  | org.springframework.context.support.PropertySourcesPlaceholderConfigurer | Loading properties file from class path resource [ncat-ui.properties]
+01-Mar-17 09:50:58 | INFO  | org.springframework.context.support.PropertySourcesPlaceholderConfigurer | Loading properties file from URL [file:/NCAT/NCAT/server/apache-tomcat-7.0.57/conf/ncat-ui.properties]
+01-Mar-17 09:50:58 | WARN  | org.springframework.context.support.PropertySourcesPlaceholderConfigurer | Could not load properties from URL [file:/NCAT/NCAT/server/apache-tomcat-7.0.57/conf/ncat-ui.properties]: /NCAT/NCAT/server/apache-tomcat-7.0.57/conf/ncat-ui.properties (No such file or directory)
+01-Mar-17 09:50:58 | INFO  | org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+01-Mar-17 09:50:59 | INFO  | org.springframework.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 1499 ms
+01-Mar-17 11:01:08 | INFO  | com.nice.spring.BaseRestClient | ncatadmin1 | http://localhost:8181/rest//customer/save | http method POST | Entity  Customer [id=0, name=SandipB]
+01-Mar-17 11:01:08 | INFO  | com.nice.spring.BaseRestClient | response Customer [id=1, name=SandipB]
+01-Mar-17 11:01:17 | INFO  | com.nice.spring.BaseRestClient | ncatadmin1 | http://localhost:8181/rest//customer/addEnvironment/{custId} | http method POST | pathParams  1 | Entity Environment [id=0, name=e1]
+01-Mar-17 11:01:17 | INFO  | com.nice.spring.BaseRestClient | response Environment [id=1, name=e1] Customer id= 1
+01-Mar-17 11:01:34 | INFO  | com.nice.spring.BaseRestClient | ncatadmin1 | http://localhost:8181/rest//environment/addNode/{envId} | http method POST | pathParams  1 | Entity Node{host='172.30.17.15', httpPort=8182, sshPort=8103, id=0, srtFlag=0}
+01-Mar-17 11:01:34 | INFO  | com.nice.spring.BaseRestClient | response true
+01-Mar-17 11:01:39 | INFO  | com.nice.spring.BaseRestClient | ncatadmin1 | http://localhost:8181/rest//customer/addEnvironment/{custId} | http method POST | pathParams  1 | Entity Environment [id=0, name=e2]
+01-Mar-17 11:01:39 | INFO  | com.nice.spring.BaseRestClient | response Environment [id=2, name=e2] Customer id= 1
+01-Mar-17 11:02:01 | INFO  | com.nice.spring.BaseRestClient | ncatadmin1 | http://localhost:8181/rest//customer/save | http method POST | Entity  Customer [id=0, name=s2]
+01-Mar-17 11:02:01 | INFO  | com.nice.spring.BaseRestClient | response Customer [id=2, name=s2]
+01-Mar-17 11:02:14 | INFO  | com.nice.spring.BaseRestClient | ncatadmin1 | http://localhost:8181/rest//node/save | http method POST | Entity  Node{host='172.30.17.15', httpPort=8183, sshPort=8103, id=1, srtFlag=-1}
+01-Mar-17 11:02:14 | INFO  | com.nice.spring.BaseRestClient | response Node{host='172.30.17.15', httpPort=8183, sshPort=8103, id=1, srtFlag=-1}
