@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170302 18:35:10.486" generator="Robot 3.0.2 (Python 2.7.11 on win32)">
+<suite source="C:\WFO-Codeless\tests\ReSTService\ReST_Automation.robot" id="s1" name="ReST Automation">
+<kw type="setup" name="Suite Setup" library="suiteSetup">
+<kw name="Set Automation Global Variables" library="suiteSetup">
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${ScreenshotOutputDirectory}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:13.710" level="INFO">${ScreenshotOutputDirectory} = C:/NPMGit/WFO-Codeless/output/Screenshot</msg>
+<status status="PASS" endtime="20170302 18:35:13.710" starttime="20170302 18:35:13.709"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:13.711" level="INFO">${DELAY} = .1 seconds</msg>
+<status status="PASS" endtime="20170302 18:35:13.711" starttime="20170302 18:35:13.710"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${ScreenshotName}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:13.712" level="INFO">${ScreenshotName} = C:/NPMGit/WFO-Codeless/output/Screenshot\selenium-manual-screenshot-{index}.png</msg>
+<status status="PASS" endtime="20170302 18:35:13.712" starttime="20170302 18:35:13.711"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${LocalLogFolderPath}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:13.713" level="INFO">${LocalLogFolderPath} = C:\NPMGit\WFO-Codeless\output\logs</msg>
+<status status="PASS" endtime="20170302 18:35:13.713" starttime="20170302 18:35:13.712"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${NCATLogFolderPath}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:13.714" level="INFO">${NCATLogFolderPath} = /NCAT/NCAT/server/apache-tomcat-7.0.57/logs</msg>
+<status status="PASS" endtime="20170302 18:35:13.714" starttime="20170302 18:35:13.714"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${linux_server3}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:13.715" level="INFO">${linux_server3} = 172.30.17.15</msg>
+<status status="PASS" endtime="20170302 18:35:13.715" starttime="20170302 18:35:13.715"></status>
+</kw>
+<kw name="Set Screenshot Directory" library="Screenshot">
+<doc>Sets the directory where screenshots are saved.</doc>
+<arguments>
+<arg>${ScreenshotOutputDirectory}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:13.718" starttime="20170302 18:35:13.716"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:13.718" starttime="20170302 18:35:13.718"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:35:13.718" starttime="20170302 18:35:13.708"></status>
+</kw>
+<kw name="Set Default Configuration" library="SSHLibrary">
+<doc>Update the default `configuration`.</doc>
+<arguments>
+<arg>timeout=20 minute</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:13.719" starttime="20170302 18:35:13.719"></status>
+</kw>
+<kw name="Open Server connecions" library="serverConnection">
+<kw name="Open Connection to LinuxServer1 And Log In" library="serverConnection">
+<doc>This Keyword open a connection to a LinuxServer1</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${linux_server1}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:13.720" level="INFO">172.30.16.131</msg>
+<status status="PASS" endtime="20170302 18:35:13.720" starttime="20170302 18:35:13.720"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:13.721" level="INFO">root</msg>
+<status status="PASS" endtime="20170302 18:35:13.721" starttime="20170302 18:35:13.720"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:13.721" level="INFO">Password1!</msg>
+<status status="PASS" endtime="20170302 18:35:13.721" starttime="20170302 18:35:13.721"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${linux_server1}</arg>
+<arg>alias=LinuxServer1</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:13.722" starttime="20170302 18:35:13.722"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:13.723" level="INFO">Logging into '172.30.16.131:22' as 'root'.</msg>
+<msg timestamp="20170302 18:35:15.112" level="INFO">Read output: Last login: Thu Mar  2 15:00:43 2017 from 172.23.149.19
+[root@ENT-CL-001409 ~]#</msg>
+<status status="PASS" endtime="20170302 18:35:15.112" starttime="20170302 18:35:13.722"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:35:15.112" starttime="20170302 18:35:13.720"></status>
+</kw>
+<kw name="Open Connection to LinuxServer2 And Log In" library="serverConnection">
+<doc>This Keyword open a connection to a LinuxServer2 system</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${linux_server2}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:15.114" level="INFO">172.30.16.96</msg>
+<status status="PASS" endtime="20170302 18:35:15.114" starttime="20170302 18:35:15.113"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${linux_server2}</arg>
+<arg>alias=LinuxServer2</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:15.115" starttime="20170302 18:35:15.114"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:15.116" level="INFO">Logging into '172.30.16.96:22' as 'root'.</msg>
+<msg timestamp="20170302 18:35:16.308" level="INFO">Read output: Last login: Thu Mar  2 15:00:45 2017 from 172.23.149.19
+[root@ENT-CL-001371 ~]#</msg>
+<status status="PASS" endtime="20170302 18:35:16.308" starttime="20170302 18:35:15.115"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:35:16.308" starttime="20170302 18:35:15.113"></status>
+</kw>
+<kw name="Open Connection to LinuxServer3 And Log In" library="serverConnection">
+<doc>This Keyword open a connection to a LinuxServer2 system</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${linux_server3}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:16.310" level="INFO">172.30.17.15</msg>
+<status status="PASS" endtime="20170302 18:35:16.310" starttime="20170302 18:35:16.310"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${linux_server3}</arg>
+<arg>alias=LinuxServer3</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:16.311" starttime="20170302 18:35:16.311"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:16.318" level="INFO">Logging into '172.30.17.15:22' as 'root'.</msg>
+<msg timestamp="20170302 18:35:17.500" level="INFO">Read output: Last login: Thu Mar  2 15:00:44 2017 from 172.23.149.19
+[root@ENT-CL-000408 ~]#</msg>
+<status status="PASS" endtime="20170302 18:35:17.500" starttime="20170302 18:35:16.316"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:35:17.500" starttime="20170302 18:35:16.309"></status>
+</kw>
+<kw name="Switch and Verify Connection to LinuxServer1" library="serverConnection">
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
+<arguments>
+<arg>LinuxServer1</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:17.502" starttime="20170302 18:35:17.501"></status>
+</kw>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<assign>
+<var>${LinuxServer1}</var>
+</assign>
+<msg timestamp="20170302 18:35:17.503" level="INFO">index=1
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer1
+host=172.30.16.131
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<msg timestamp="20170302 18:35:17.503" level="INFO">${LinuxServer1} = index=1
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer1
+host=172.30.16.131
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20170302 18:35:17.503" starttime="20170302 18:35:17.502"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${LinuxServer1.alias}</arg>
+<arg>LinuxServer1</arg>
+<arg>.</arg>
+</arguments>
+<msg timestamp="20170302 18:35:17.504" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170302 18:35:17.504" starttime="20170302 18:35:17.504"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer1_hostname}</var>
+</assign>
+<msg timestamp="20170302 18:35:17.505" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 18:35:17.532" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 18:35:17.532" level="INFO">${LinuxServer1_hostname} = ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 18:35:17.532" starttime="20170302 18:35:17.505"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${LinuxServer1_hostname}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:17.533" level="INFO">ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 18:35:17.533" starttime="20170302 18:35:17.532"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:35:17.533" starttime="20170302 18:35:17.501"></status>
+</kw>
+<kw name="Switch and Verify Connection to LinuxServer2" library="serverConnection">
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
+<arguments>
+<arg>LinuxServer2</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:17.534" starttime="20170302 18:35:17.534"></status>
+</kw>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<assign>
+<var>${LinuxServer2}</var>
+</assign>
+<msg timestamp="20170302 18:35:17.535" level="INFO">index=2
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer2
+host=172.30.16.96
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<msg timestamp="20170302 18:35:17.535" level="INFO">${LinuxServer2} = index=2
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer2
+host=172.30.16.96
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20170302 18:35:17.536" starttime="20170302 18:35:17.535"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${LinuxServer2.alias}</arg>
+<arg>LinuxServer2</arg>
+<arg>.</arg>
+</arguments>
+<msg timestamp="20170302 18:35:17.537" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170302 18:35:17.537" starttime="20170302 18:35:17.536"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer2_hostname}</var>
+</assign>
+<msg timestamp="20170302 18:35:17.537" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 18:35:17.564" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 18:35:17.564" level="INFO">${LinuxServer2_hostname} = ENT-CL-001371</msg>
+<status status="PASS" endtime="20170302 18:35:17.564" starttime="20170302 18:35:17.537"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${LinuxServer2_hostname}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:17.565" level="INFO">ENT-CL-001371</msg>
+<status status="PASS" endtime="20170302 18:35:17.565" starttime="20170302 18:35:17.564"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:35:17.565" starttime="20170302 18:35:17.534"></status>
+</kw>
+<kw name="Switch and Verify Connection to LinuxServer3" library="serverConnection">
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
+<arguments>
+<arg>LinuxServer3</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:17.567" starttime="20170302 18:35:17.566"></status>
+</kw>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<assign>
+<var>${LinuxServer3}</var>
+</assign>
+<msg timestamp="20170302 18:35:17.568" level="INFO">index=3
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer3
+host=172.30.17.15
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<msg timestamp="20170302 18:35:17.568" level="INFO">${LinuxServer3} = index=3
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer3
+host=172.30.17.15
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20170302 18:35:17.568" starttime="20170302 18:35:17.567"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${LinuxServer3.alias}</arg>
+<arg>LinuxServer3</arg>
+<arg>.</arg>
+</arguments>
+<msg timestamp="20170302 18:35:17.569" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170302 18:35:17.569" starttime="20170302 18:35:17.568"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer3_hostname}</var>
+</assign>
+<msg timestamp="20170302 18:35:17.570" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 18:35:17.587" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 18:35:17.587" level="INFO">${LinuxServer3_hostname} = ENT-CL-000408</msg>
+<status status="PASS" endtime="20170302 18:35:17.587" starttime="20170302 18:35:17.570"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${LinuxServer3_hostname}</arg>
+</arguments>
+<msg timestamp="20170302 18:35:17.588" level="INFO">ENT-CL-000408</msg>
+<status status="PASS" endtime="20170302 18:35:17.588" starttime="20170302 18:35:17.587"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:35:17.588" starttime="20170302 18:35:17.566"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:35:17.588" starttime="20170302 18:35:13.719"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:35:17.588" starttime="20170302 18:35:13.708"></status>
+</kw>
+<test id="s1-t1" name="Simple ReST Request">
+<kw type="setup" name="ReST Test Setup" library="testSetup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>UI Test Setup nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:35:17.591" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:35:17.591" starttime="20170302 18:35:17.590"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:35:17.591" starttime="20170302 18:35:17.590"></status>
+</kw>
+<kw name="Get" library="requests">
+<doc>Sends a GET request.</doc>
+<arguments>
+<arg>http://echo.jsontest.com/framework/robot-framework/api/rest</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20170302 18:35:18.472" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20170302 18:35:18.472" starttime="20170302 18:35:17.591"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+<arg>${200}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:18.473" starttime="20170302 18:35:18.472"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${response.json()}</arg>
+</arguments>
+<assign>
+<var>${json}</var>
+</assign>
+<msg timestamp="20170302 18:35:18.478" level="INFO">${json} = {u'framework': u'robot-framework', u'api': u'rest'}</msg>
+<status status="PASS" endtime="20170302 18:35:18.478" starttime="20170302 18:35:18.473"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${json}</arg>
+<arg>framework</arg>
+</arguments>
+<assign>
+<var>${framework}</var>
+</assign>
+<msg timestamp="20170302 18:35:18.479" level="INFO">${framework} = robot-framework</msg>
+<status status="PASS" endtime="20170302 18:35:18.479" starttime="20170302 18:35:18.479"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${framework}</arg>
+<arg>robot-framework</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:18.480" starttime="20170302 18:35:18.480"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${json}</arg>
+<arg>api</arg>
+</arguments>
+<assign>
+<var>${api}</var>
+</assign>
+<msg timestamp="20170302 18:35:18.481" level="INFO">${api} = rest</msg>
+<status status="PASS" endtime="20170302 18:35:18.481" starttime="20170302 18:35:18.480"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${api}</arg>
+<arg>rest</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:18.482" starttime="20170302 18:35:18.481"></status>
+</kw>
+<kw type="teardown" name="ReST Test Teardown" library="testTearDown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:35:18.483" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:35:18.483" starttime="20170302 18:35:18.483"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:35:18.483" starttime="20170302 18:35:18.482"></status>
+</kw>
+<tags>
+<tag>ReST</tag>
+</tags>
+<status status="PASS" endtime="20170302 18:35:18.483" critical="yes" starttime="20170302 18:35:17.588"></status>
+</test>
+<test id="s1-t2" name="Request JSON 200">
+<kw type="setup" name="ReST Test Setup" library="testSetup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>UI Test Setup nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:35:18.485" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:35:18.485" starttime="20170302 18:35:18.485"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:35:18.485" starttime="20170302 18:35:18.484"></status>
+</kw>
+<kw name="Get" library="requests">
+<doc>Sends a GET request.</doc>
+<arguments>
+<arg>http://SHIGUPTA-T450:4444/app/api/conversion/toCentigrade/100</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20170302 18:35:39.550" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20170302 18:35:39.550" starttime="20170302 18:35:18.486"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+<arg>${200}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:39.551" starttime="20170302 18:35:39.550"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${response.json()}</arg>
+</arguments>
+<assign>
+<var>${json}</var>
+</assign>
+<msg timestamp="20170302 18:35:39.552" level="INFO">${json} = {u'fahrenheit': 100, u'centigrade': 37}</msg>
+<status status="PASS" endtime="20170302 18:35:39.552" starttime="20170302 18:35:39.551"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${json}</arg>
+<arg>fahrenheit</arg>
+</arguments>
+<assign>
+<var>${framework}</var>
+</assign>
+<msg timestamp="20170302 18:35:39.553" level="INFO">${framework} = 100</msg>
+<status status="PASS" endtime="20170302 18:35:39.553" starttime="20170302 18:35:39.552"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>'${framework}'</arg>
+<arg>'100'</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:39.554" starttime="20170302 18:35:39.553"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${json}</arg>
+<arg>centigrade</arg>
+</arguments>
+<assign>
+<var>${api}</var>
+</assign>
+<msg timestamp="20170302 18:35:39.554" level="INFO">${api} = 37</msg>
+<status status="PASS" endtime="20170302 18:35:39.554" starttime="20170302 18:35:39.554"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>'${api}'</arg>
+<arg>'37'</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:35:39.555" starttime="20170302 18:35:39.555"></status>
+</kw>
+<kw type="teardown" name="ReST Test Teardown" library="testTearDown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:35:39.556" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:35:39.556" starttime="20170302 18:35:39.556"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:35:39.556" starttime="20170302 18:35:39.555"></status>
+</kw>
+<tags>
+<tag>ReST</tag>
+</tags>
+<status status="PASS" endtime="20170302 18:35:39.556" critical="yes" starttime="20170302 18:35:18.484"></status>
+</test>
+<test id="s1-t3" name="Request JSON Bad 404">
+<kw type="setup" name="ReST Test Setup" library="testSetup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>UI Test Setup nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:35:39.559" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:35:39.559" starttime="20170302 18:35:39.558"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:35:39.559" starttime="20170302 18:35:39.558"></status>
+</kw>
+<kw name="Get" library="requests">
+<doc>Sends a GET request.</doc>
+<arguments>
+<arg>http://SHIGUPTA-T450:4444/app/api/conversion/toCentigrade/shivesh</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20170302 18:36:00.648" level="INFO">${response} = &lt;Response [404]&gt;</msg>
+<status status="PASS" endtime="20170302 18:36:00.648" starttime="20170302 18:35:39.559"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${response}</arg>
+</arguments>
+<msg timestamp="20170302 18:36:00.649" level="INFO">&lt;Response [404]&gt;</msg>
+<status status="PASS" endtime="20170302 18:36:00.649" starttime="20170302 18:36:00.649"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+<arg>${404}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:36:00.650" starttime="20170302 18:36:00.649"></status>
+</kw>
+<kw type="teardown" name="ReST Test Teardown" library="testTearDown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:36:00.652" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:36:00.652" starttime="20170302 18:36:00.651"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:36:00.652" starttime="20170302 18:36:00.651"></status>
+</kw>
+<tags>
+<tag>ReST</tag>
+</tags>
+<status status="PASS" endtime="20170302 18:36:00.652" critical="yes" starttime="20170302 18:35:39.557"></status>
+</test>
+<test id="s1-t4" name="Request XML Bad 404">
+<kw type="setup" name="ReST Test Setup" library="testSetup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>UI Test Setup nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:36:00.655" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:36:00.655" starttime="20170302 18:36:00.654"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:36:00.655" starttime="20170302 18:36:00.654"></status>
+</kw>
+<kw name="Get" library="requests">
+<doc>Sends a GET request.</doc>
+<arguments>
+<arg>http://SHIGUPTA-T450:4444/app/api/conversion/toFahrenheit/letsCheck</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20170302 18:36:21.676" level="INFO">${response} = &lt;Response [404]&gt;</msg>
+<status status="PASS" endtime="20170302 18:36:21.676" starttime="20170302 18:36:00.655"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${response}</arg>
+</arguments>
+<msg timestamp="20170302 18:36:21.677" level="INFO">&lt;Response [404]&gt;</msg>
+<status status="PASS" endtime="20170302 18:36:21.677" starttime="20170302 18:36:21.676"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+<arg>${404}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:36:21.677" starttime="20170302 18:36:21.677"></status>
+</kw>
+<kw type="teardown" name="ReST Test Teardown" library="testTearDown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:36:21.679" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:36:21.679" starttime="20170302 18:36:21.678"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:36:21.679" starttime="20170302 18:36:21.678"></status>
+</kw>
+<tags>
+<tag>ReST</tag>
+</tags>
+<status status="PASS" endtime="20170302 18:36:21.679" critical="yes" starttime="20170302 18:36:00.653"></status>
+</test>
+<test id="s1-t5" name="Request XML 200">
+<kw type="setup" name="ReST Test Setup" library="testSetup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>UI Test Setup nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:36:21.682" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:36:21.682" starttime="20170302 18:36:21.682"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:36:21.683" starttime="20170302 18:36:21.681"></status>
+</kw>
+<kw name="Get" library="requests">
+<doc>Sends a GET request.</doc>
+<arguments>
+<arg>http://SHIGUPTA-T450:4444/app/api/conversion/toFahrenheit/7</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20170302 18:36:42.743" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20170302 18:36:42.743" starttime="20170302 18:36:21.683"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${response}</arg>
+</arguments>
+<msg timestamp="20170302 18:36:42.744" level="INFO">&lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20170302 18:36:42.745" starttime="20170302 18:36:42.744"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${response.text}</arg>
+</arguments>
+<msg timestamp="20170302 18:36:42.869" level="INFO">&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;conversion&gt;&lt;centigrade&gt;7&lt;/centigrade&gt;&lt;fahrenheit&gt;44&lt;/fahrenheit&gt;&lt;/conversion&gt;</msg>
+<status status="PASS" endtime="20170302 18:36:42.869" starttime="20170302 18:36:42.745"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+<arg>${200}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 18:36:42.871" starttime="20170302 18:36:42.870"></status>
+</kw>
+<kw type="teardown" name="ReST Test Teardown" library="testTearDown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:36:42.872" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:36:42.873" starttime="20170302 18:36:42.872"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:36:42.873" starttime="20170302 18:36:42.871"></status>
+</kw>
+<tags>
+<tag>ReST</tag>
+</tags>
+<status status="PASS" endtime="20170302 18:36:42.873" critical="yes" starttime="20170302 18:36:21.680"></status>
+</test>
+<test id="s1-t6" name="Request XML 200 Failure">
+<kw type="setup" name="ReST Test Setup" library="testSetup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>UI Test Setup nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:36:42.876" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:36:42.876" starttime="20170302 18:36:42.876"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:36:42.876" starttime="20170302 18:36:42.875"></status>
+</kw>
+<kw name="Get" library="requests">
+<doc>Sends a GET request.</doc>
+<arguments>
+<arg>http://SHIGUPTA-T450:4444/app/api/conversion/toFahrenheit/7</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20170302 18:37:03.892" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20170302 18:37:03.892" starttime="20170302 18:36:42.877"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${response}</arg>
+</arguments>
+<msg timestamp="20170302 18:37:03.893" level="INFO">&lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20170302 18:37:03.893" starttime="20170302 18:37:03.893"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${response.text}</arg>
+</arguments>
+<msg timestamp="20170302 18:37:03.894" level="INFO">&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;conversion&gt;&lt;centigrade&gt;7&lt;/centigrade&gt;&lt;fahrenheit&gt;44&lt;/fahrenheit&gt;&lt;/conversion&gt;</msg>
+<status status="PASS" endtime="20170302 18:37:03.894" starttime="20170302 18:37:03.894"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+<arg>${404}</arg>
+</arguments>
+<msg timestamp="20170302 18:37:03.895" level="FAIL">200 != 404</msg>
+<status status="FAIL" endtime="20170302 18:37:03.895" starttime="20170302 18:37:03.895"></status>
+</kw>
+<kw type="teardown" name="ReST Test Teardown" library="testTearDown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:37:03.896" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:37:03.897" starttime="20170302 18:37:03.896"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:37:03.897" starttime="20170302 18:37:03.896"></status>
+</kw>
+<tags>
+<tag>ReST</tag>
+</tags>
+<status status="FAIL" endtime="20170302 18:37:03.897" critical="yes" starttime="20170302 18:36:42.874">200 != 404</status>
+</test>
+<test id="s1-t7" name="Post Request Example">
+<kw type="setup" name="ReST Test Setup" library="testSetup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>UI Test Setup nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:37:03.899" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:37:03.899" starttime="20170302 18:37:03.899"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:37:03.899" starttime="20170302 18:37:03.898"></status>
+</kw>
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>swagger</arg>
+<arg>http://petstore.swagger.wordnik.com:80/api</arg>
+</arguments>
+<msg timestamp="20170302 18:37:03.900" level="INFO">Creating Session using : alias=swagger, url=http://petstore.swagger.wordnik.com:80/api, headers={},                     cookies=None, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" endtime="20170302 18:37:03.900" starttime="20170302 18:37:03.899"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>id</arg>
+<arg>88</arg>
+<arg>name</arg>
+<arg>gerbil</arg>
+<arg>status</arg>
+<arg>available</arg>
+</arguments>
+<assign>
+<var>${data}</var>
+</assign>
+<msg timestamp="20170302 18:37:03.901" level="INFO">${data} = {u'id': u'88', u'name': u'gerbil', u'status': u'available'}</msg>
+<status status="PASS" endtime="20170302 18:37:03.901" starttime="20170302 18:37:03.900"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>'content-type'</arg>
+<arg>'application/json'</arg>
+</arguments>
+<assign>
+<var>${headers}</var>
+</assign>
+<msg timestamp="20170302 18:37:03.902" level="INFO">${headers} = {u"'content-type'": u"'application/json'"}</msg>
+<status status="PASS" endtime="20170302 18:37:03.902" starttime="20170302 18:37:03.901"></status>
+</kw>
+<kw name="Post" library="RequestsLibrary">
+<doc>**Deprecated- See Post Request now**</doc>
+<arguments>
+<arg>swagger</arg>
+<arg>/pet</arg>
+<arg>data=${data}</arg>
+<arg>headers=${headers}</arg>
+</arguments>
+<assign>
+<var>${resp}</var>
+</assign>
+<msg timestamp="20170302 18:37:03.902" level="WARN">Deprecation Warning: Use Post Request in the future</msg>
+<msg timestamp="20170302 18:37:24.971" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0F2F0&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',)': /api/pet</msg>
+<msg timestamp="20170302 18:37:46.179" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0F4D0&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',)': /api/pet</msg>
+<msg timestamp="20170302 18:38:07.602" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0F690&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',)': /api/pet</msg>
+<msg timestamp="20170302 18:38:28.612" level="FAIL">ConnectionError: HTTPConnectionPool(host='petstore.swagger.wordnik.com', port=80): Max retries exceeded with url: /api/pet (Caused by NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0F830&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',))</msg>
+<status status="FAIL" endtime="20170302 18:38:28.612" starttime="20170302 18:37:03.902"></status>
+</kw>
+<kw type="teardown" name="ReST Test Teardown" library="testTearDown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:38:28.613" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:38:28.613" starttime="20170302 18:38:28.613"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:38:28.614" starttime="20170302 18:38:28.613"></status>
+</kw>
+<tags>
+<tag>ReST</tag>
+</tags>
+<status status="FAIL" endtime="20170302 18:38:28.614" critical="yes" starttime="20170302 18:37:03.897">ConnectionError: HTTPConnectionPool(host='petstore.swagger.wordnik.com', port=80): Max retries exceeded with url: /api/pet (Caused by NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0F830&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',))</status>
+</test>
+<test id="s1-t8" name="Post Request Example Failure">
+<kw type="setup" name="ReST Test Setup" library="testSetup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>UI Test Setup nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:38:28.616" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:38:28.616" starttime="20170302 18:38:28.615"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:38:28.616" starttime="20170302 18:38:28.615"></status>
+</kw>
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>swagger</arg>
+<arg>http://petstore.swagger.wordnik.com:80/api</arg>
+</arguments>
+<msg timestamp="20170302 18:38:28.616" level="INFO">Creating Session using : alias=swagger, url=http://petstore.swagger.wordnik.com:80/api, headers={},                     cookies=None, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" endtime="20170302 18:38:28.617" starttime="20170302 18:38:28.616"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>id</arg>
+<arg>88</arg>
+<arg>name</arg>
+<arg>gerbil</arg>
+<arg>status</arg>
+<arg>available</arg>
+</arguments>
+<assign>
+<var>${data}</var>
+</assign>
+<msg timestamp="20170302 18:38:28.617" level="INFO">${data} = {u'id': u'88', u'name': u'gerbil', u'status': u'available'}</msg>
+<status status="PASS" endtime="20170302 18:38:28.618" starttime="20170302 18:38:28.617"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>'content-type'</arg>
+<arg>'application/json'</arg>
+</arguments>
+<assign>
+<var>${headers}</var>
+</assign>
+<msg timestamp="20170302 18:38:28.618" level="INFO">${headers} = {u"'content-type'": u"'application/json'"}</msg>
+<status status="PASS" endtime="20170302 18:38:28.618" starttime="20170302 18:38:28.618"></status>
+</kw>
+<kw name="Post" library="RequestsLibrary">
+<doc>**Deprecated- See Post Request now**</doc>
+<arguments>
+<arg>swagger</arg>
+<arg>/pet</arg>
+<arg>data=${data}</arg>
+<arg>headers=${headers}</arg>
+</arguments>
+<assign>
+<var>${resp}</var>
+</assign>
+<msg timestamp="20170302 18:38:28.619" level="WARN">Deprecation Warning: Use Post Request in the future</msg>
+<msg timestamp="20170302 18:38:49.618" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0F730&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',)': /api/pet</msg>
+<msg timestamp="20170302 18:39:10.897" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0F8D0&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',)': /api/pet</msg>
+<msg timestamp="20170302 18:39:32.301" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0FBF0&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',)': /api/pet</msg>
+<msg timestamp="20170302 18:39:53.303" level="FAIL">ConnectionError: HTTPConnectionPool(host='petstore.swagger.wordnik.com', port=80): Max retries exceeded with url: /api/pet (Caused by NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0FD90&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',))</msg>
+<status status="FAIL" endtime="20170302 18:39:53.303" starttime="20170302 18:38:28.619"></status>
+</kw>
+<kw type="teardown" name="ReST Test Teardown" library="testTearDown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 18:39:53.305" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 18:39:53.305" starttime="20170302 18:39:53.304"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:39:53.305" starttime="20170302 18:39:53.304"></status>
+</kw>
+<tags>
+<tag>ReST</tag>
+</tags>
+<status status="FAIL" endtime="20170302 18:39:53.305" critical="yes" starttime="20170302 18:38:28.614">ConnectionError: HTTPConnectionPool(host='petstore.swagger.wordnik.com', port=80): Max retries exceeded with url: /api/pet (Caused by NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0FD90&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',))</status>
+</test>
+<kw type="teardown" name="Suite Teardown" library="suiteTeardown">
+<kw name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20170302 18:39:53.329" starttime="20170302 18:39:53.308"></status>
+</kw>
+<status status="PASS" endtime="20170302 18:39:53.329" starttime="20170302 18:39:53.307"></status>
+</kw>
+<doc>A test suite with a test for ReST service automation.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" endtime="20170302 18:39:53.329" starttime="20170302 18:35:10.494"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="3" pass="5">Critical Tests</stat>
+<stat fail="3" pass="5">All Tests</stat>
+</total>
+<tag>
+<stat fail="3" pass="5">ReST</stat>
+</tag>
+<suite>
+<stat fail="3" id="s1" name="ReST Automation" pass="5">ReST Automation</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20170302 18:37:03.902" level="WARN">Deprecation Warning: Use Post Request in the future</msg>
+<msg timestamp="20170302 18:37:24.971" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0F2F0&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',)': /api/pet</msg>
+<msg timestamp="20170302 18:37:46.179" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0F4D0&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',)': /api/pet</msg>
+<msg timestamp="20170302 18:38:07.602" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0F690&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',)': /api/pet</msg>
+<msg timestamp="20170302 18:38:28.619" level="WARN">Deprecation Warning: Use Post Request in the future</msg>
+<msg timestamp="20170302 18:38:49.618" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0F730&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',)': /api/pet</msg>
+<msg timestamp="20170302 18:39:10.897" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0F8D0&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',)': /api/pet</msg>
+<msg timestamp="20170302 18:39:32.301" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x03D0FBF0&gt;: Failed to establish a new connection: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',)': /api/pet</msg>
+</errors>
+</robot>

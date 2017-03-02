@@ -27,3 +27,11 @@ ${ERROR URL}      http://${SERVER}/error.html
 ${ScreenshotOutputDirectory}		C:/NPMGit/WFO-Codeless/output/Screenshot
 ${ScreenshotName}		${ScreenshotOutputDirectory}${/}selenium-manual-screenshot-{index}.png
 ${DELAY}		.1
+
+###### mysql DB variables
+${DBName}		phs_edb
+${DBUser}		root
+${DBPass}		password
+${DBHost}		1.224.0.62
+${DBPort} 		3306
+${EMP_DataSql}		C:\\WFO-Codeless\\testdata\\DB\\my_db_test_insertData.sql

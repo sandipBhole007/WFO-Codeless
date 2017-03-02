@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     A test suite with a single test for valid login.
+Documentation     A test suite with a single test for DB connection.
 ...
 ...               This test has a workflow that is created using keywords in
 ...               the imported resource file.
@@ -10,7 +10,8 @@ Resource          	testSetup/testSetup.robot
 Resource          	testSetup/testTearDown.robot
 Resource            resources/automationProperties.robot
 Library      		SSHLibrary
-Library             DatabaseLibrary
+Library           	DatabaseLibrary
+Library       		OperatingSystem
 Suite Setup			Suite Setup     
 Suite Teardown      Suite Teardown
 Test Setup			DB Test Setup   
@@ -18,36 +19,47 @@ Test Teardown       DB Test Teardown
 *** Test Cases ***
 
 
-Connect To Servers and Get A Hostname
-	[Tags]    SSH
-	[Setup]		testSetup.SSH Test Setup   
-	serverConnection.Switch and Verify Connection to LinuxServer1
-	${LinuxServer1_hostname}=	SSHLibrary.Execute Command	 hostname
-	Log  	${LinuxServer1_hostname}
-	
-	serverConnection.Switch and Verify Connection to LinuxServer2
-	${LinuxServer2_hostname}=	SSHLibrary.Execute Command	 hostname
-	Log  	${LinuxServer2_hostname}
-	[Teardown] 	 testTearDown.SSH Test Teardown
+Connect To DB Servers and Create Employee Table
+	[Tags]    DB
+	[Setup]		DB Test Setup
+ 	${output} =    Execute SQL String    CREATE TABLE Employee (id integer unique,first_name varchar(20),last_name varchar(20));
+    Log    ${output}
+    Should Be Equal As Strings    ${output}    None
+	[Teardown] 	 testTearDown.DB Test Teardown
 
 
-Connect To NCAT Servers and Get Log Files to Local systems and Search for failures
-	[Tags]    SSH
-	[Setup]		testSetup.SSH Test Setup  
-	 serverConnection.Get NCAT Server Log Folder From Server to Local	LinuxServer3	${NCATLogFolderPath}	${LocalLogFolderPath} 
-	 ${LogFileName}=	BuiltIn.Catenate	catalina.out	
-	 
-	 ${NATLocalLogFilePath}= 	BuiltIn.Catenate 	${LocalLogFolderPath}//${LogFileName}
-	 serverConnection.Get NCAT Server Log Health	${NATLocalLogFilePath}
-	 [Teardown] 	 testTearDown.SSH Test Teardown
-Connect To NCAT Servers and delete the file from server
-	[Tags]    SSH
-	[Setup]		testSetup.SSH Test Setup
-	serverConnection.Switch and Verify Connection to Alias 	LinuxServer1
-	${RemoteFIleFilePath}= 	BuiltIn.Catenate 	//automationtemp//globalSetting.txt
-	SSHLibrary.List Directory		//automationtemp
-	SSHLibrary.File Should Exist	${RemoteFIleFilePath}
-	serverConnection.Delete File from Remote Server		LinuxServer1	${RemoteFIleFilePath}
-	SSHLibrary.File Should Not Exist	${RemoteFIleFilePath}
-	[Teardown] 	 testTearDown.SSH Test Teardown
-	
+    
+Execute SQL Script - Insert Data Employee table
+    [Tags]    DB    DB_SMOKE
+    Log		${EMP_DataSql}
+    OperatingSystem.File Should Exist		${EMP_DataSql}
+    ${output} =    Execute SQL Script 	${EMP_DataSql}
+    Log    ${output}
+    Should Be Equal As Strings    ${output}    None
+    
+Table Must Exist - Employee
+    [Tags]    DB    DB_SMOKE
+    Table Must Exist    Employee
+    
+    
+Table Must Exist - Employee1
+    [Tags]    DB    DB_SMOKE
+    Table Must Exist    Employee1
+    
+Check If Exists In DB - Franz Allan
+    [Tags]     DB    DB_SMOKE
+    Check If Exists In Database    SELECT id FROM Employee WHERE first_name = 'Franz Allan';
+    
+    
+Retrieve Row Count
+    [Tags]    DB    DB_SMOKE
+    ${output} =    Row Count    SELECT id FROM Employee;
+    Log    ${output}
+    Should Be Equal As Strings    ${output}    2
+    
+    
+Add Employee in first transaction
+    [Tags]    DB    DB_SMOKE
+    ${output} =    Execute SQL String    INSERT INTO Employee VALUES(101,'Bilbo','Baggins');
+    Log    ${output}
+    Should Be Equal As Strings    ${output}    None
