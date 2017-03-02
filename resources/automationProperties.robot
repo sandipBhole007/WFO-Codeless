@@ -35,3 +35,14 @@ ${DBPass}		password
 ${DBHost}		1.224.0.62
 ${DBPort} 		3306
 ${EMP_DataSql}		C:\\WFO-Codeless\\testdata\\DB\\my_db_test_insertData.sql
+=======
+########Mobile Variables ################
+
+${mserverURL}	http://127.0.0.1:4723/wd/hub
+${platformName}	Android
+${platformVersion}	4.4.4
+${deviceName}	emulator-5554
+${appPackage}	com.linkedin.android
+${appActivity}	com.linkedin.android.growth.login.LoginActivity
+${muserName}	ravivani10@gmail.com
+${mpassword}	linkedindemo

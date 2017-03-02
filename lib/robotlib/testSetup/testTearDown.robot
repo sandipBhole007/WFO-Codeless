@@ -19,3 +19,6 @@ SSH Test Teardown
 	
 DB Test Teardown
 	Log 	SSH Test Teardown nothing is implemented yet
+	
+Mobile Test Teardown
+	Log 	Mobile Test Teardown nothing is implemented yet
