@@ -27,3 +27,6 @@ SSH Test Setup
 	
 DB Test Setup
 	Log 	UI Test Setup nothing is implemented yet
+	
+ReST Test Setup
+	Log 	UI Test Setup nothing is implemented yet

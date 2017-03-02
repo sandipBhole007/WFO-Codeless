@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170302 13:21:04.205" generator="Robot 3.0.2 (Python 2.7.11 on win32)">
-<suite source="C:\NPMGit\WFO-Codeless\tests\Web\valid_login.robot" id="s1" name="Valid Login">
+<robot generated="20170302 16:35:12.661" generator="Robot 3.0.2 (Python 2.7.11 on win32)">
+<suite source="C:\WFO-Codeless\tests\SSH\linux_intaraction.robot" id="s1" name="Linux Intaraction">
 <kw type="setup" name="Suite Setup" library="suiteSetup">
 <kw name="Set Automation Global Variables" library="suiteSetup">
 <kw name="Set Global Variable" library="BuiltIn">
@@ -8,71 +8,71 @@
 <arguments>
 <arg>${ScreenshotOutputDirectory}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:06.433" level="INFO">${ScreenshotOutputDirectory} = C:/NPMGit/WFO-Codeless/output/Screenshot</msg>
-<status status="PASS" endtime="20170302 13:21:06.433" starttime="20170302 13:21:06.433"></status>
+<msg timestamp="20170302 16:35:14.769" level="INFO">${ScreenshotOutputDirectory} = C:/NPMGit/WFO-Codeless/output/Screenshot</msg>
+<status status="PASS" endtime="20170302 16:35:14.769" starttime="20170302 16:35:14.769"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:06.434" level="INFO">${DELAY} = .1 seconds</msg>
-<status status="PASS" endtime="20170302 13:21:06.434" starttime="20170302 13:21:06.434"></status>
+<msg timestamp="20170302 16:35:14.770" level="INFO">${DELAY} = .1 seconds</msg>
+<status status="PASS" endtime="20170302 16:35:14.770" starttime="20170302 16:35:14.770"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${ScreenshotName}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:06.434" level="INFO">${ScreenshotName} = C:/NPMGit/WFO-Codeless/output/Screenshot\selenium-manual-screenshot-{index}.png</msg>
-<status status="PASS" endtime="20170302 13:21:06.434" starttime="20170302 13:21:06.434"></status>
+<msg timestamp="20170302 16:35:14.771" level="INFO">${ScreenshotName} = C:/NPMGit/WFO-Codeless/output/Screenshot\selenium-manual-screenshot-{index}.png</msg>
+<status status="PASS" endtime="20170302 16:35:14.771" starttime="20170302 16:35:14.770"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${LocalLogFolderPath}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:06.434" level="INFO">${LocalLogFolderPath} = C:\NPMGit\WFO-Codeless\output\logs</msg>
-<status status="PASS" endtime="20170302 13:21:06.434" starttime="20170302 13:21:06.434"></status>
+<msg timestamp="20170302 16:35:14.771" level="INFO">${LocalLogFolderPath} = C:\NPMGit\WFO-Codeless\output\logs</msg>
+<status status="PASS" endtime="20170302 16:35:14.771" starttime="20170302 16:35:14.771"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${NCATLogFolderPath}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:06.434" level="INFO">${NCATLogFolderPath} = /NCAT/NCAT/server/apache-tomcat-7.0.57/logs</msg>
-<status status="PASS" endtime="20170302 13:21:06.434" starttime="20170302 13:21:06.434"></status>
+<msg timestamp="20170302 16:35:14.772" level="INFO">${NCATLogFolderPath} = /NCAT/NCAT/server/apache-tomcat-7.0.57/logs</msg>
+<status status="PASS" endtime="20170302 16:35:14.772" starttime="20170302 16:35:14.772"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${linux_server3}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:06.434" level="INFO">${linux_server3} = 172.30.17.15</msg>
-<status status="PASS" endtime="20170302 13:21:06.434" starttime="20170302 13:21:06.434"></status>
+<msg timestamp="20170302 16:35:14.773" level="INFO">${linux_server3} = 172.30.17.15</msg>
+<status status="PASS" endtime="20170302 16:35:14.773" starttime="20170302 16:35:14.773"></status>
 </kw>
 <kw name="Set Screenshot Directory" library="Screenshot">
 <doc>Sets the directory where screenshots are saved.</doc>
 <arguments>
 <arg>${ScreenshotOutputDirectory}</arg>
 </arguments>
-<status status="PASS" endtime="20170302 13:21:06.434" starttime="20170302 13:21:06.434"></status>
+<status status="PASS" endtime="20170302 16:35:14.775" starttime="20170302 16:35:14.773"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" endtime="20170302 13:21:06.434" starttime="20170302 13:21:06.434"></status>
+<status status="PASS" endtime="20170302 16:35:14.775" starttime="20170302 16:35:14.775"></status>
 </kw>
-<status status="PASS" endtime="20170302 13:21:06.434" starttime="20170302 13:21:06.433"></status>
+<status status="PASS" endtime="20170302 16:35:14.775" starttime="20170302 16:35:14.769"></status>
 </kw>
 <kw name="Set Default Configuration" library="SSHLibrary">
 <doc>Update the default `configuration`.</doc>
 <arguments>
 <arg>timeout=20 minute</arg>
 </arguments>
-<status status="PASS" endtime="20170302 13:21:06.434" starttime="20170302 13:21:06.434"></status>
+<status status="PASS" endtime="20170302 16:35:14.776" starttime="20170302 16:35:14.775"></status>
 </kw>
 <kw name="Open Server connecions" library="serverConnection">
 <kw name="Open Connection to LinuxServer1 And Log In" library="serverConnection">
@@ -82,24 +82,24 @@
 <arguments>
 <arg>${linux_server1}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:06.466" level="INFO">172.30.16.131</msg>
-<status status="PASS" endtime="20170302 13:21:06.466" starttime="20170302 13:21:06.450"></status>
+<msg timestamp="20170302 16:35:14.777" level="INFO">172.30.16.131</msg>
+<status status="PASS" endtime="20170302 16:35:14.778" starttime="20170302 16:35:14.777"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${USERNAME}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:06.466" level="INFO">root</msg>
-<status status="PASS" endtime="20170302 13:21:06.466" starttime="20170302 13:21:06.466"></status>
+<msg timestamp="20170302 16:35:14.778" level="INFO">root</msg>
+<status status="PASS" endtime="20170302 16:35:14.778" starttime="20170302 16:35:14.778"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${PASSWORD}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:06.466" level="INFO">Password1!</msg>
-<status status="PASS" endtime="20170302 13:21:06.466" starttime="20170302 13:21:06.466"></status>
+<msg timestamp="20170302 16:35:14.779" level="INFO">Password1!</msg>
+<status status="PASS" endtime="20170302 16:35:14.779" starttime="20170302 16:35:14.778"></status>
 </kw>
 <kw name="Open Connection" library="SSHLibrary">
 <doc>Opens a new SSH connection to the given `host` and `port`.</doc>
@@ -107,7 +107,7 @@
 <arg>${linux_server1}</arg>
 <arg>alias=LinuxServer1</arg>
 </arguments>
-<status status="PASS" endtime="20170302 13:21:06.466" starttime="20170302 13:21:06.466"></status>
+<status status="PASS" endtime="20170302 16:35:14.780" starttime="20170302 16:35:14.779"></status>
 </kw>
 <kw name="Login" library="SSHLibrary">
 <doc>Logs into the SSH server with the given `username` and `password`.</doc>
@@ -115,12 +115,12 @@
 <arg>${USERNAME}</arg>
 <arg>${PASSWORD}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:06.466" level="INFO">Logging into '172.30.16.131:22' as 'root'.</msg>
-<msg timestamp="20170302 13:21:07.935" level="INFO">Read output: Last login: Thu Mar  2 09:47:42 2017 from 172.23.149.19
+<msg timestamp="20170302 16:35:14.781" level="INFO">Logging into '172.30.16.131:22' as 'root'.</msg>
+<msg timestamp="20170302 16:35:16.576" level="INFO">Read output: Last login: Thu Mar  2 09:51:06 2017 from 172.23.149.19
 [root@ENT-CL-001409 ~]#</msg>
-<status status="PASS" endtime="20170302 13:21:07.935" starttime="20170302 13:21:06.466"></status>
+<status status="PASS" endtime="20170302 16:35:16.576" starttime="20170302 16:35:14.780"></status>
 </kw>
-<status status="PASS" endtime="20170302 13:21:07.935" starttime="20170302 13:21:06.435"></status>
+<status status="PASS" endtime="20170302 16:35:16.576" starttime="20170302 16:35:14.776"></status>
 </kw>
 <kw name="Open Connection to LinuxServer2 And Log In" library="serverConnection">
 <doc>This Keyword open a connection to a LinuxServer2 system</doc>
@@ -129,8 +129,8 @@
 <arguments>
 <arg>${linux_server2}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:07.935" level="INFO">172.30.16.96</msg>
-<status status="PASS" endtime="20170302 13:21:07.935" starttime="20170302 13:21:07.935"></status>
+<msg timestamp="20170302 16:35:16.577" level="INFO">172.30.16.96</msg>
+<status status="PASS" endtime="20170302 16:35:16.577" starttime="20170302 16:35:16.577"></status>
 </kw>
 <kw name="Open Connection" library="SSHLibrary">
 <doc>Opens a new SSH connection to the given `host` and `port`.</doc>
@@ -138,7 +138,7 @@
 <arg>${linux_server2}</arg>
 <arg>alias=LinuxServer2</arg>
 </arguments>
-<status status="PASS" endtime="20170302 13:21:07.935" starttime="20170302 13:21:07.935"></status>
+<status status="PASS" endtime="20170302 16:35:16.578" starttime="20170302 16:35:16.578"></status>
 </kw>
 <kw name="Login" library="SSHLibrary">
 <doc>Logs into the SSH server with the given `username` and `password`.</doc>
@@ -146,12 +146,12 @@
 <arg>${USERNAME}</arg>
 <arg>${PASSWORD}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:07.935" level="INFO">Logging into '172.30.16.96:22' as 'root'.</msg>
-<msg timestamp="20170302 13:21:09.124" level="INFO">Read output: Last login: Thu Mar  2 09:47:43 2017 from 172.23.149.19
+<msg timestamp="20170302 16:35:16.579" level="INFO">Logging into '172.30.16.96:22' as 'root'.</msg>
+<msg timestamp="20170302 16:35:17.723" level="INFO">Read output: Last login: Thu Mar  2 09:51:08 2017 from 172.23.149.19
 [root@ENT-CL-001371 ~]#</msg>
-<status status="PASS" endtime="20170302 13:21:09.124" starttime="20170302 13:21:07.935"></status>
+<status status="PASS" endtime="20170302 16:35:17.723" starttime="20170302 16:35:16.578"></status>
 </kw>
-<status status="PASS" endtime="20170302 13:21:09.124" starttime="20170302 13:21:07.935"></status>
+<status status="PASS" endtime="20170302 16:35:17.723" starttime="20170302 16:35:16.576"></status>
 </kw>
 <kw name="Open Connection to LinuxServer3 And Log In" library="serverConnection">
 <doc>This Keyword open a connection to a LinuxServer2 system</doc>
@@ -160,8 +160,8 @@
 <arguments>
 <arg>${linux_server3}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:09.124" level="INFO">172.30.17.15</msg>
-<status status="PASS" endtime="20170302 13:21:09.124" starttime="20170302 13:21:09.124"></status>
+<msg timestamp="20170302 16:35:17.724" level="INFO">172.30.17.15</msg>
+<status status="PASS" endtime="20170302 16:35:17.725" starttime="20170302 16:35:17.724"></status>
 </kw>
 <kw name="Open Connection" library="SSHLibrary">
 <doc>Opens a new SSH connection to the given `host` and `port`.</doc>
@@ -169,7 +169,7 @@
 <arg>${linux_server3}</arg>
 <arg>alias=LinuxServer3</arg>
 </arguments>
-<status status="PASS" endtime="20170302 13:21:09.124" starttime="20170302 13:21:09.124"></status>
+<status status="PASS" endtime="20170302 16:35:17.725" starttime="20170302 16:35:17.725"></status>
 </kw>
 <kw name="Login" library="SSHLibrary">
 <doc>Logs into the SSH server with the given `username` and `password`.</doc>
@@ -177,12 +177,12 @@
 <arg>${USERNAME}</arg>
 <arg>${PASSWORD}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:09.124" level="INFO">Logging into '172.30.17.15:22' as 'root'.</msg>
-<msg timestamp="20170302 13:21:10.279" level="INFO">Read output: Last login: Thu Mar  2 09:47:42 2017 from 172.23.149.19
+<msg timestamp="20170302 16:35:17.726" level="INFO">Logging into '172.30.17.15:22' as 'root'.</msg>
+<msg timestamp="20170302 16:35:19.169" level="INFO">Read output: Last login: Thu Mar  2 09:51:07 2017 from 172.23.149.19
 [root@ENT-CL-000408 ~]#</msg>
-<status status="PASS" endtime="20170302 13:21:10.279" starttime="20170302 13:21:09.124"></status>
+<status status="PASS" endtime="20170302 16:35:19.169" starttime="20170302 16:35:17.726"></status>
 </kw>
-<status status="PASS" endtime="20170302 13:21:10.279" starttime="20170302 13:21:09.124"></status>
+<status status="PASS" endtime="20170302 16:35:19.169" starttime="20170302 16:35:17.723"></status>
 </kw>
 <kw name="Switch and Verify Connection to LinuxServer1" library="serverConnection">
 <kw name="Switch Connection" library="SSHLibrary">
@@ -190,14 +190,14 @@
 <arguments>
 <arg>LinuxServer1</arg>
 </arguments>
-<status status="PASS" endtime="20170302 13:21:10.280" starttime="20170302 13:21:10.280"></status>
+<status status="PASS" endtime="20170302 16:35:19.170" starttime="20170302 16:35:19.170"></status>
 </kw>
 <kw name="Get Connection" library="SSHLibrary">
 <doc>Return information about the connection.</doc>
 <assign>
 <var>${LinuxServer1}</var>
 </assign>
-<msg timestamp="20170302 13:21:10.281" level="INFO">index=1
+<msg timestamp="20170302 16:35:19.171" level="INFO">index=1
 path_separator=/
 prompt=None
 width=80
@@ -210,7 +210,7 @@ host=172.30.16.131
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<msg timestamp="20170302 13:21:10.281" level="INFO">${LinuxServer1} = index=1
+<msg timestamp="20170302 16:35:19.171" level="INFO">${LinuxServer1} = index=1
 path_separator=/
 prompt=None
 width=80
@@ -223,7 +223,7 @@ host=172.30.16.131
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<status status="PASS" endtime="20170302 13:21:10.281" starttime="20170302 13:21:10.280"></status>
+<status status="PASS" endtime="20170302 16:35:19.171" starttime="20170302 16:35:19.170"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -232,10 +232,10 @@ port=22</msg>
 <arg>LinuxServer1</arg>
 <arg>.</arg>
 </arguments>
-<msg timestamp="20170302 13:21:10.282" level="INFO">Argument types are:
+<msg timestamp="20170302 16:35:19.171" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20170302 13:21:10.282" starttime="20170302 13:21:10.281"></status>
+<status status="PASS" endtime="20170302 16:35:19.171" starttime="20170302 16:35:19.171"></status>
 </kw>
 <kw name="Execute Command" library="SSHLibrary">
 <doc>Executes `command` on the remote machine and returns its outputs.</doc>
@@ -245,20 +245,20 @@ port=22</msg>
 <assign>
 <var>${LinuxServer1_hostname}</var>
 </assign>
-<msg timestamp="20170302 13:21:10.282" level="INFO">Executing command 'hostname'.</msg>
-<msg timestamp="20170302 13:21:10.331" level="INFO">Command exited with return code 0.</msg>
-<msg timestamp="20170302 13:21:10.331" level="INFO">${LinuxServer1_hostname} = ENT-CL-001409</msg>
-<status status="PASS" endtime="20170302 13:21:10.331" starttime="20170302 13:21:10.282"></status>
+<msg timestamp="20170302 16:35:19.172" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 16:35:19.196" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 16:35:19.196" level="INFO">${LinuxServer1_hostname} = ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 16:35:19.196" starttime="20170302 16:35:19.172"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${LinuxServer1_hostname}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:10.331" level="INFO">ENT-CL-001409</msg>
-<status status="PASS" endtime="20170302 13:21:10.331" starttime="20170302 13:21:10.331"></status>
+<msg timestamp="20170302 16:35:19.197" level="INFO">ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 16:35:19.197" starttime="20170302 16:35:19.196"></status>
 </kw>
-<status status="PASS" endtime="20170302 13:21:10.331" starttime="20170302 13:21:10.279"></status>
+<status status="PASS" endtime="20170302 16:35:19.198" starttime="20170302 16:35:19.169"></status>
 </kw>
 <kw name="Switch and Verify Connection to LinuxServer2" library="serverConnection">
 <kw name="Switch Connection" library="SSHLibrary">
@@ -266,14 +266,14 @@ port=22</msg>
 <arguments>
 <arg>LinuxServer2</arg>
 </arguments>
-<status status="PASS" endtime="20170302 13:21:10.331" starttime="20170302 13:21:10.331"></status>
+<status status="PASS" endtime="20170302 16:35:19.199" starttime="20170302 16:35:19.198"></status>
 </kw>
 <kw name="Get Connection" library="SSHLibrary">
 <doc>Return information about the connection.</doc>
 <assign>
 <var>${LinuxServer2}</var>
 </assign>
-<msg timestamp="20170302 13:21:10.331" level="INFO">index=2
+<msg timestamp="20170302 16:35:19.200" level="INFO">index=2
 path_separator=/
 prompt=None
 width=80
@@ -286,7 +286,7 @@ host=172.30.16.96
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<msg timestamp="20170302 13:21:10.331" level="INFO">${LinuxServer2} = index=2
+<msg timestamp="20170302 16:35:19.200" level="INFO">${LinuxServer2} = index=2
 path_separator=/
 prompt=None
 width=80
@@ -299,7 +299,7 @@ host=172.30.16.96
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<status status="PASS" endtime="20170302 13:21:10.331" starttime="20170302 13:21:10.331"></status>
+<status status="PASS" endtime="20170302 16:35:19.200" starttime="20170302 16:35:19.199"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -308,10 +308,10 @@ port=22</msg>
 <arg>LinuxServer2</arg>
 <arg>.</arg>
 </arguments>
-<msg timestamp="20170302 13:21:10.331" level="INFO">Argument types are:
+<msg timestamp="20170302 16:35:19.201" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20170302 13:21:10.331" starttime="20170302 13:21:10.331"></status>
+<status status="PASS" endtime="20170302 16:35:19.202" starttime="20170302 16:35:19.201"></status>
 </kw>
 <kw name="Execute Command" library="SSHLibrary">
 <doc>Executes `command` on the remote machine and returns its outputs.</doc>
@@ -321,20 +321,20 @@ port=22</msg>
 <assign>
 <var>${LinuxServer2_hostname}</var>
 </assign>
-<msg timestamp="20170302 13:21:10.331" level="INFO">Executing command 'hostname'.</msg>
-<msg timestamp="20170302 13:21:10.362" level="INFO">Command exited with return code 0.</msg>
-<msg timestamp="20170302 13:21:10.362" level="INFO">${LinuxServer2_hostname} = ENT-CL-001371</msg>
-<status status="PASS" endtime="20170302 13:21:10.362" starttime="20170302 13:21:10.331"></status>
+<msg timestamp="20170302 16:35:19.202" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 16:35:19.229" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 16:35:19.229" level="INFO">${LinuxServer2_hostname} = ENT-CL-001371</msg>
+<status status="PASS" endtime="20170302 16:35:19.229" starttime="20170302 16:35:19.202"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${LinuxServer2_hostname}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:10.362" level="INFO">ENT-CL-001371</msg>
-<status status="PASS" endtime="20170302 13:21:10.362" starttime="20170302 13:21:10.362"></status>
+<msg timestamp="20170302 16:35:19.230" level="INFO">ENT-CL-001371</msg>
+<status status="PASS" endtime="20170302 16:35:19.230" starttime="20170302 16:35:19.229"></status>
 </kw>
-<status status="PASS" endtime="20170302 13:21:10.362" starttime="20170302 13:21:10.331"></status>
+<status status="PASS" endtime="20170302 16:35:19.230" starttime="20170302 16:35:19.198"></status>
 </kw>
 <kw name="Switch and Verify Connection to LinuxServer3" library="serverConnection">
 <kw name="Switch Connection" library="SSHLibrary">
@@ -342,14 +342,14 @@ port=22</msg>
 <arguments>
 <arg>LinuxServer3</arg>
 </arguments>
-<status status="PASS" endtime="20170302 13:21:10.362" starttime="20170302 13:21:10.362"></status>
+<status status="PASS" endtime="20170302 16:35:19.231" starttime="20170302 16:35:19.231"></status>
 </kw>
 <kw name="Get Connection" library="SSHLibrary">
 <doc>Return information about the connection.</doc>
 <assign>
 <var>${LinuxServer3}</var>
 </assign>
-<msg timestamp="20170302 13:21:10.362" level="INFO">index=3
+<msg timestamp="20170302 16:35:19.232" level="INFO">index=3
 path_separator=/
 prompt=None
 width=80
@@ -362,7 +362,7 @@ host=172.30.17.15
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<msg timestamp="20170302 13:21:10.362" level="INFO">${LinuxServer3} = index=3
+<msg timestamp="20170302 16:35:19.232" level="INFO">${LinuxServer3} = index=3
 path_separator=/
 prompt=None
 width=80
@@ -375,7 +375,7 @@ host=172.30.17.15
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<status status="PASS" endtime="20170302 13:21:10.362" starttime="20170302 13:21:10.362"></status>
+<status status="PASS" endtime="20170302 16:35:19.232" starttime="20170302 16:35:19.232"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -384,10 +384,10 @@ port=22</msg>
 <arg>LinuxServer3</arg>
 <arg>.</arg>
 </arguments>
-<msg timestamp="20170302 13:21:10.362" level="INFO">Argument types are:
+<msg timestamp="20170302 16:35:19.233" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20170302 13:21:10.362" starttime="20170302 13:21:10.362"></status>
+<status status="PASS" endtime="20170302 16:35:19.233" starttime="20170302 16:35:19.232"></status>
 </kw>
 <kw name="Execute Command" library="SSHLibrary">
 <doc>Executes `command` on the remote machine and returns its outputs.</doc>
@@ -397,613 +397,721 @@ port=22</msg>
 <assign>
 <var>${LinuxServer3_hostname}</var>
 </assign>
-<msg timestamp="20170302 13:21:10.362" level="INFO">Executing command 'hostname'.</msg>
-<msg timestamp="20170302 13:21:10.409" level="INFO">Command exited with return code 0.</msg>
-<msg timestamp="20170302 13:21:10.409" level="INFO">${LinuxServer3_hostname} = ENT-CL-000408</msg>
-<status status="PASS" endtime="20170302 13:21:10.409" starttime="20170302 13:21:10.362"></status>
+<msg timestamp="20170302 16:35:19.234" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 16:35:19.260" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 16:35:19.260" level="INFO">${LinuxServer3_hostname} = ENT-CL-000408</msg>
+<status status="PASS" endtime="20170302 16:35:19.260" starttime="20170302 16:35:19.233"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${LinuxServer3_hostname}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:10.409" level="INFO">ENT-CL-000408</msg>
-<status status="PASS" endtime="20170302 13:21:10.409" starttime="20170302 13:21:10.409"></status>
+<msg timestamp="20170302 16:35:19.260" level="INFO">ENT-CL-000408</msg>
+<status status="PASS" endtime="20170302 16:35:19.261" starttime="20170302 16:35:19.260"></status>
 </kw>
-<status status="PASS" endtime="20170302 13:21:10.409" starttime="20170302 13:21:10.362"></status>
+<status status="PASS" endtime="20170302 16:35:19.261" starttime="20170302 16:35:19.231"></status>
 </kw>
-<status status="PASS" endtime="20170302 13:21:10.409" starttime="20170302 13:21:06.434"></status>
+<status status="PASS" endtime="20170302 16:35:19.261" starttime="20170302 16:35:14.776"></status>
 </kw>
-<status status="PASS" endtime="20170302 13:21:10.409" starttime="20170302 13:21:06.433"></status>
+<status status="PASS" endtime="20170302 16:35:19.261" starttime="20170302 16:35:14.768"></status>
 </kw>
-<test id="s1-t1" name="Open NCAT Page and follow Validation">
-<kw type="setup" name="UI Test Setup" library="testSetup">
+<test id="s1-t1" name="Connect To Servers and Get A Hostname">
+<kw type="setup" name="SSH Test Setup" library="testSetup">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>UI Test Setup nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 13:21:10.409" level="INFO">UI Test Setup nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 13:21:10.409" starttime="20170302 13:21:10.409"></status>
+<msg timestamp="20170302 16:35:19.263" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 16:35:19.263" starttime="20170302 16:35:19.263"></status>
 </kw>
-<status status="PASS" endtime="20170302 13:21:10.409" starttime="20170302 13:21:10.409"></status>
+<status status="PASS" endtime="20170302 16:35:19.263" starttime="20170302 16:35:19.262"></status>
 </kw>
-<kw name="Given NCATHome_Resource.Open NCAT Web HomePage" library="NCATHome_Resource">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to given URL.</doc>
+<kw name="Switch and Verify Connection to LinuxServer1" library="serverConnection">
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
 <arguments>
-<arg>${LOGIN URL}</arg>
-<arg>${BROWSER}</arg>
+<arg>LinuxServer1</arg>
 </arguments>
-<msg timestamp="20170302 13:21:10.409" level="INFO">Opening browser 'IE' to base url 'http://172.30.17.15:8280/ncat-ui/'</msg>
-<status status="PASS" endtime="20170302 13:21:16.067" starttime="20170302 13:21:10.409"></status>
+<status status="PASS" endtime="20170302 16:35:19.265" starttime="20170302 16:35:19.264"></status>
 </kw>
-<kw name="Maximize Browser Window" library="Selenium2Library">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20170302 13:21:16.192" starttime="20170302 13:21:16.067"></status>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<assign>
+<var>${LinuxServer1}</var>
+</assign>
+<msg timestamp="20170302 16:35:19.265" level="INFO">index=1
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer1
+host=172.30.16.131
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<msg timestamp="20170302 16:35:19.266" level="INFO">${LinuxServer1} = index=1
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer1
+host=172.30.16.131
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20170302 16:35:19.266" starttime="20170302 16:35:19.265"></status>
 </kw>
-<kw name="Set Selenium Speed" library="Selenium2Library">
-<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
 <arguments>
-<arg>${DELAY}</arg>
+<arg>${LinuxServer1.alias}</arg>
+<arg>LinuxServer1</arg>
+<arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20170302 13:21:16.192" starttime="20170302 13:21:16.192"></status>
+<msg timestamp="20170302 16:35:19.267" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170302 16:35:19.267" starttime="20170302 16:35:19.266"></status>
 </kw>
-<kw name="NCAT Home Variable Values" library="NCATHome_Resource">
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer1_hostname}</var>
+</assign>
+<msg timestamp="20170302 16:35:19.268" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 16:35:19.294" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 16:35:19.294" level="INFO">${LinuxServer1_hostname} = ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 16:35:19.294" starttime="20170302 16:35:19.267"></status>
+</kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${Btn_NCAT_FileMenu}</arg>
+<arg>${LinuxServer1_hostname}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:16.192" level="INFO">id=topForm:dynaButton</msg>
-<status status="PASS" endtime="20170302 13:21:16.192" starttime="20170302 13:21:16.192"></status>
+<msg timestamp="20170302 16:35:19.295" level="INFO">ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 16:35:19.295" starttime="20170302 16:35:19.294"></status>
+</kw>
+<status status="PASS" endtime="20170302 16:35:19.295" starttime="20170302 16:35:19.264"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer1_hostname}</var>
+</assign>
+<msg timestamp="20170302 16:35:19.296" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 16:35:19.382" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 16:35:19.382" level="INFO">${LinuxServer1_hostname} = ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 16:35:19.382" starttime="20170302 16:35:19.295"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${ShowJobs_Lable}</arg>
+<arg>${LinuxServer1_hostname}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:16.192" level="INFO">id=j_idt318:j_idt319:jobScope</msg>
-<status status="PASS" endtime="20170302 13:21:16.192" starttime="20170302 13:21:16.192"></status>
+<msg timestamp="20170302 16:35:19.383" level="INFO">ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 16:35:19.383" starttime="20170302 16:35:19.382"></status>
+</kw>
+<kw name="Switch and Verify Connection to LinuxServer2" library="serverConnection">
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
+<arguments>
+<arg>LinuxServer2</arg>
+</arguments>
+<status status="PASS" endtime="20170302 16:35:19.384" starttime="20170302 16:35:19.383"></status>
+</kw>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<assign>
+<var>${LinuxServer2}</var>
+</assign>
+<msg timestamp="20170302 16:35:19.384" level="INFO">index=2
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer2
+host=172.30.16.96
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<msg timestamp="20170302 16:35:19.384" level="INFO">${LinuxServer2} = index=2
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer2
+host=172.30.16.96
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20170302 16:35:19.385" starttime="20170302 16:35:19.384"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${LinuxServer2.alias}</arg>
+<arg>LinuxServer2</arg>
+<arg>.</arg>
+</arguments>
+<msg timestamp="20170302 16:35:19.385" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170302 16:35:19.385" starttime="20170302 16:35:19.385"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer2_hostname}</var>
+</assign>
+<msg timestamp="20170302 16:35:19.386" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 16:35:19.413" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 16:35:19.413" level="INFO">${LinuxServer2_hostname} = ENT-CL-001371</msg>
+<status status="PASS" endtime="20170302 16:35:19.413" starttime="20170302 16:35:19.386"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${selectJobScope_DropDown}</arg>
+<arg>${LinuxServer2_hostname}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:16.192" level="INFO">id=j_idt318:j_idt319:selectJobScope</msg>
-<status status="PASS" endtime="20170302 13:21:16.192" starttime="20170302 13:21:16.192"></status>
+<msg timestamp="20170302 16:35:19.414" level="INFO">ENT-CL-001371</msg>
+<status status="PASS" endtime="20170302 16:35:19.414" starttime="20170302 16:35:19.413"></status>
+</kw>
+<status status="PASS" endtime="20170302 16:35:19.414" starttime="20170302 16:35:19.383"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer2_hostname}</var>
+</assign>
+<msg timestamp="20170302 16:35:19.415" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 16:35:19.492" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 16:35:19.492" level="INFO">${LinuxServer2_hostname} = ENT-CL-001371</msg>
+<status status="PASS" endtime="20170302 16:35:19.492" starttime="20170302 16:35:19.415"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${ClearSuccesses_Link}</arg>
+<arg>${LinuxServer2_hostname}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:16.192" level="INFO">id=j_idt318:j_idt319:j_idt324</msg>
-<status status="PASS" endtime="20170302 13:21:16.192" starttime="20170302 13:21:16.192"></status>
+<msg timestamp="20170302 16:35:19.492" level="INFO">ENT-CL-001371</msg>
+<status status="PASS" endtime="20170302 16:35:19.493" starttime="20170302 16:35:19.492"></status>
 </kw>
+<kw type="teardown" name="SSH Test Teardown" library="testTearDown">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${ClearFailures_Link}</arg>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 13:21:16.192" level="INFO">id=j_idt318:j_idt319:j_idt325</msg>
-<status status="PASS" endtime="20170302 13:21:16.192" starttime="20170302 13:21:16.192"></status>
+<msg timestamp="20170302 16:35:19.493" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 16:35:19.494" starttime="20170302 16:35:19.493"></status>
 </kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${ClearAllInactive_Link}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:16.192" level="INFO">id=j_idt318:j_idt319:j_idt326</msg>
-<status status="PASS" endtime="20170302 13:21:16.192" starttime="20170302 13:21:16.192"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:21:16.192" starttime="20170302 13:21:16.192"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:21:16.192" starttime="20170302 13:21:10.409"></status>
-</kw>
-<kw name="Then NCATHome_Resource.Verify All Element on Login Page" library="NCATHome_Resource">
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${NCAT_Lable}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:16.192" level="INFO">Verifying element 'css=h1' is visible.</msg>
-<status status="PASS" endtime="20170302 13:21:16.746" starttime="20170302 13:21:16.192"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${Username_Lable}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:16.746" level="INFO">Verifying element 'css=td.loginTd' is visible.</msg>
-<status status="PASS" endtime="20170302 13:21:17.248" starttime="20170302 13:21:16.746"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${Password_Lable}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:17.248" level="INFO">Verifying element 'xpath=//tr[2]/td' is visible.</msg>
-<status status="PASS" endtime="20170302 13:21:17.709" starttime="20170302 13:21:17.248"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${Username_TextBox}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:17.709" level="INFO">Verifying element 'id=userName' is visible.</msg>
-<status status="PASS" endtime="20170302 13:21:18.181" starttime="20170302 13:21:17.709"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${Password_TextBox}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:18.181" level="INFO">Verifying element 'id=password' is visible.</msg>
-<status status="PASS" endtime="20170302 13:21:18.629" starttime="20170302 13:21:18.181"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${LogIn_HelpLink}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:18.630" level="INFO">Verifying element 'id=loginHelpLink' is visible.</msg>
-<status status="PASS" endtime="20170302 13:21:19.204" starttime="20170302 13:21:18.629"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${NCAT_Lable1}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:19.204" level="INFO">Verifying element 'css=div[class='loginHeader']' is visible.</msg>
-<status status="PASS" endtime="20170302 13:21:19.739" starttime="20170302 13:21:19.204"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${LogIn_Button}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:19.739" level="INFO">Verifying element 'xpath=//input[@value='Login']' is visible.</msg>
-<status status="PASS" endtime="20170302 13:21:20.257" starttime="20170302 13:21:19.739"></status>
-</kw>
-<kw name="Run Keyword And Ignore Error" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<arguments>
-<arg>Element Should Not Be Visible</arg>
-<arg>${LogIn_Button}</arg>
-</arguments>
-<kw name="Element Should Not Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is NOT visible.</doc>
-<arguments>
-<arg>${LogIn_Button}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:20.257" level="INFO">Verifying element 'xpath=//input[@value='Login']' is not visible.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170302 13:21:20.958" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170302 13:21:20.958" starttime="20170302 13:21:20.716"></status>
-</kw>
-<msg timestamp="20170302 13:21:20.958" level="FAIL">The element 'xpath=//input[@value='Login']' should not be visible, but it is.</msg>
-<status status="FAIL" endtime="20170302 13:21:20.958" starttime="20170302 13:21:20.257"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:21:20.958" starttime="20170302 13:21:20.257"></status>
-</kw>
-<kw name="Run Keyword And Ignore Error" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<arguments>
-<arg>Element Should Not Be Visible</arg>
-<arg>${Password_TextBox}</arg>
-</arguments>
-<kw name="Element Should Not Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is NOT visible.</doc>
-<arguments>
-<arg>${Password_TextBox}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:20.958" level="INFO">Verifying element 'id=password' is not visible.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170302 13:21:21.626" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170302 13:21:21.626" starttime="20170302 13:21:21.361"></status>
-</kw>
-<msg timestamp="20170302 13:21:21.626" level="FAIL">The element 'id=password' should not be visible, but it is.</msg>
-<status status="FAIL" endtime="20170302 13:21:21.626" starttime="20170302 13:21:20.958"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:21:21.626" starttime="20170302 13:21:20.958"></status>
-</kw>
-<kw name="Run Keyword And Ignore Error" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<arguments>
-<arg>Element Should Not Be Visible</arg>
-<arg>${NCAT_Lable}</arg>
-</arguments>
-<kw name="Element Should Not Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is NOT visible.</doc>
-<arguments>
-<arg>${NCAT_Lable}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:21.626" level="INFO">Verifying element 'css=h1' is not visible.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170302 13:21:22.388" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170302 13:21:22.388" starttime="20170302 13:21:22.148"></status>
-</kw>
-<msg timestamp="20170302 13:21:22.388" level="FAIL">The element 'css=h1' should not be visible, but it is.</msg>
-<status status="FAIL" endtime="20170302 13:21:22.388" starttime="20170302 13:21:21.626"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:21:22.388" starttime="20170302 13:21:21.626"></status>
-</kw>
-<kw name="Element Should Not Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is NOT visible.</doc>
-<arguments>
-<arg>${Login_Error}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:22.388" level="INFO">Verifying element 'id=errorDiv' is not visible.</msg>
-<status status="PASS" endtime="20170302 13:21:22.866" starttime="20170302 13:21:22.388"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${Login_Error}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:22.866" level="INFO">Verifying element 'id=errorDiv' is visible.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170302 13:21:23.563" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170302 13:21:23.563" starttime="20170302 13:21:23.313"></status>
-</kw>
-<msg timestamp="20170302 13:21:23.563" level="FAIL">The element 'id=errorDiv' should be visible, but it is not.</msg>
-<status status="FAIL" endtime="20170302 13:21:23.563" starttime="20170302 13:21:22.866"></status>
-</kw>
-<status status="FAIL" endtime="20170302 13:21:23.563" starttime="20170302 13:21:16.192"></status>
-</kw>
-<kw type="teardown" name="UI Test Teardown" library="testTearDown">
-<kw name="Run Keyword If Test Failed" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<arguments>
-<arg>Capture Page Screenshot</arg>
-<arg>${ScreenshotName}</arg>
-</arguments>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<arguments>
-<arg>${ScreenshotName}</arg>
-</arguments>
-<msg timestamp="20170302 13:21:23.804" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/Screenshot/selenium-manual-screenshot-1.png"&gt;&lt;img src="output/Screenshot/selenium-manual-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170302 13:21:23.804" starttime="20170302 13:21:23.563"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:21:23.804" starttime="20170302 13:21:23.563"></status>
-</kw>
-<kw name="Close Browser" library="Selenium2Library">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170302 13:21:26.985" starttime="20170302 13:21:23.804"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:21:26.985" starttime="20170302 13:21:23.563"></status>
+<status status="PASS" endtime="20170302 16:35:19.494" starttime="20170302 16:35:19.493"></status>
 </kw>
 <tags>
-<tag>UI</tag>
+<tag>SSH</tag>
 </tags>
-<status status="FAIL" endtime="20170302 13:21:26.985" critical="yes" starttime="20170302 13:21:10.409">The element 'id=errorDiv' should be visible, but it is not.</status>
+<status status="PASS" endtime="20170302 16:35:19.494" critical="yes" starttime="20170302 16:35:19.261"></status>
 </test>
-<test id="s1-t2" name="Login TO NCAT and Verify Login Succssful">
-<kw type="setup" name="UI Test Setup" library="testSetup">
+<test id="s1-t2" name="Connect To NCAT Servers and Get Log Files to Local systems and Search for failures">
+<kw type="setup" name="SSH Test Setup" library="testSetup">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>UI Test Setup nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 13:21:26.985" level="INFO">UI Test Setup nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 13:21:26.985" starttime="20170302 13:21:26.985"></status>
+<msg timestamp="20170302 16:35:19.496" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 16:35:19.496" starttime="20170302 16:35:19.496"></status>
 </kw>
-<status status="PASS" endtime="20170302 13:21:26.985" starttime="20170302 13:21:26.985"></status>
+<status status="PASS" endtime="20170302 16:35:19.496" starttime="20170302 16:35:19.495"></status>
 </kw>
-<kw name="Given NCATHome_Resource.Open NCAT Web HomePage and Login By Valid Admin" library="NCATHome_Resource">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to given URL.</doc>
+<kw name="Get NCAT Server Log Folder From Server to Local" library="serverConnection">
+<doc>This Keyword will get NCAT Install log from remote system to local system</doc>
 <arguments>
-<arg>${LOGIN URL}</arg>
-<arg>${BROWSER}</arg>
+<arg>LinuxServer3</arg>
+<arg>${NCATLogFolderPath}</arg>
+<arg>${LocalLogFolderPath}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:26.985" level="INFO">Opening browser 'IE' to base url 'http://172.30.17.15:8280/ncat-ui/'</msg>
-<status status="PASS" endtime="20170302 13:21:32.826" starttime="20170302 13:21:26.985"></status>
-</kw>
-<kw name="Maximize Browser Window" library="Selenium2Library">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20170302 13:21:32.951" starttime="20170302 13:21:32.826"></status>
-</kw>
-<kw name="Set Selenium Speed" library="Selenium2Library">
-<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<kw name="Switch and Verify Connection to Alias" library="serverConnection">
 <arguments>
-<arg>${DELAY}</arg>
+<arg>${ServerAlias}</arg>
 </arguments>
-<status status="PASS" endtime="20170302 13:21:32.951" starttime="20170302 13:21:32.951"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
 <arguments>
-<arg>${Username_TextBox}</arg>
+<arg>${ServerAlias}</arg>
 </arguments>
-<msg timestamp="20170302 13:21:32.951" level="INFO">Verifying element 'id=userName' is visible.</msg>
-<status status="PASS" endtime="20170302 13:21:33.381" starttime="20170302 13:21:32.951"></status>
+<status status="PASS" endtime="20170302 16:35:19.501" starttime="20170302 16:35:19.500"></status>
 </kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<assign>
+<var>${LinuxServer}</var>
+</assign>
+<msg timestamp="20170302 16:35:19.501" level="INFO">index=3
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer3
+host=172.30.17.15
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<msg timestamp="20170302 16:35:19.502" level="INFO">${LinuxServer} = index=3
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer3
+host=172.30.17.15
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20170302 16:35:19.502" starttime="20170302 16:35:19.501"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
 <arguments>
-<arg>${Password_TextBox}</arg>
+<arg>${LinuxServer.alias}</arg>
+<arg>${ServerAlias}</arg>
+<arg>.</arg>
 </arguments>
-<msg timestamp="20170302 13:21:33.382" level="INFO">Verifying element 'id=password' is visible.</msg>
-<status status="PASS" endtime="20170302 13:21:33.829" starttime="20170302 13:21:33.381"></status>
+<msg timestamp="20170302 16:35:19.503" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170302 16:35:19.503" starttime="20170302 16:35:19.502"></status>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
 <arguments>
-<arg>${Username_TextBox}</arg>
-<arg>ncatadmin1</arg>
+<arg>hostname</arg>
 </arguments>
-<msg timestamp="20170302 13:21:33.829" level="INFO">Typing text 'ncatadmin1' into text field 'id=userName'</msg>
-<status status="PASS" endtime="20170302 13:22:24.947" starttime="20170302 13:21:33.829"></status>
+<assign>
+<var>${LinuxServer_hostname}</var>
+</assign>
+<msg timestamp="20170302 16:35:19.503" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 16:35:19.532" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 16:35:19.532" level="INFO">${LinuxServer_hostname} = ENT-CL-000408</msg>
+<status status="PASS" endtime="20170302 16:35:19.532" starttime="20170302 16:35:19.503"></status>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${Password_TextBox}</arg>
-<arg>ncat123</arg>
+<arg>${LinuxServer_hostname}</arg>
 </arguments>
-<msg timestamp="20170302 13:22:24.947" level="INFO">Typing text 'ncat123' into text field 'id=password'</msg>
-<status status="PASS" endtime="20170302 13:23:01.138" starttime="20170302 13:22:24.947"></status>
+<msg timestamp="20170302 16:35:19.533" level="INFO">ENT-CL-000408</msg>
+<status status="PASS" endtime="20170302 16:35:19.533" starttime="20170302 16:35:19.533"></status>
 </kw>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<arguments>
-<arg>${ScreenshotName}</arg>
-</arguments>
-<msg timestamp="20170302 13:23:01.396" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/Screenshot/selenium-manual-screenshot-2.png"&gt;&lt;img src="output/Screenshot/selenium-manual-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170302 13:23:01.396" starttime="20170302 13:23:01.138"></status>
+<status status="PASS" endtime="20170302 16:35:19.533" starttime="20170302 16:35:19.500"></status>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>${LogIn_Button}</arg>
-</arguments>
-<msg timestamp="20170302 13:23:01.396" level="INFO">Clicking element 'xpath=//input[@value='Login']'.</msg>
-<status status="PASS" endtime="20170302 13:23:02.251" starttime="20170302 13:23:01.396"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>3s</arg>
-</arguments>
-<msg timestamp="20170302 13:23:05.261" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20170302 13:23:05.261" starttime="20170302 13:23:02.251"></status>
-</kw>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<arguments>
-<arg>${ScreenshotName}</arg>
-</arguments>
-<msg timestamp="20170302 13:23:05.592" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/Screenshot/selenium-manual-screenshot-3.png"&gt;&lt;img src="output/Screenshot/selenium-manual-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170302 13:23:05.592" starttime="20170302 13:23:05.261"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:23:05.592" starttime="20170302 13:21:26.985"></status>
-</kw>
-<kw name="Then NCATHome_Resource.Verify Admin Got Logged in Succssfully" library="NCATHome_Resource">
 <kw name="Run Keyword" library="BuiltIn">
 <doc>Executes the given keyword with the given arguments.</doc>
 <arguments>
-<arg>Verify All Element on NCAT Home Page</arg>
+<arg>SSHLibrary.Get Directory</arg>
+<arg>${RemoteLogFolderPath}/</arg>
+<arg>${LocalLogFolderPath}/.</arg>
 </arguments>
-<kw name="Verify All Element on NCAT Home Page" library="NCATHome_Resource">
+<kw name="Get Directory" library="SSHLibrary">
+<doc>Downloads a directory, including its content, from the remote machine to the local machine.</doc>
+<arguments>
+<arg>${RemoteLogFolderPath}/</arg>
+<arg>${LocalLogFolderPath}/.</arg>
+</arguments>
+<msg timestamp="20170302 16:35:19.614" level="INFO">[chan 3] Opened sftp connection (server version 3)</msg>
+<msg timestamp="20170302 16:35:20.482" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/host-manager.2017-03-01.log' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\host-manager.2017-03-01.log'</msg>
+<msg timestamp="20170302 16:35:20.482" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/localhost.2017-03-01.log' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\localhost.2017-03-01.log'</msg>
+<msg timestamp="20170302 16:35:20.482" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/localhost_access_log.2017-03-01.txt' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\localhost_access_log.2017-03-01.txt'</msg>
+<msg timestamp="20170302 16:35:20.482" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/ncat-ui.log' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\ncat-ui.log'</msg>
+<msg timestamp="20170302 16:35:20.482" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/catalina.2017-03-01.log' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\catalina.2017-03-01.log'</msg>
+<msg timestamp="20170302 16:35:20.482" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/localhost_access_log.2017-03-02.txt' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\localhost_access_log.2017-03-02.txt'</msg>
+<msg timestamp="20170302 16:35:20.482" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/manager.2017-03-01.log' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\manager.2017-03-01.log'</msg>
+<msg timestamp="20170302 16:35:20.482" level="INFO">'/NCAT/NCAT/server/apache-tomcat-7.0.57/logs/catalina.out' -&gt; 'C:\NPMGit\WFO-Codeless\output\logs\catalina.out'</msg>
+<status status="PASS" endtime="20170302 16:35:20.483" starttime="20170302 16:35:19.535"></status>
+</kw>
+<status status="PASS" endtime="20170302 16:35:20.483" starttime="20170302 16:35:19.534"></status>
+</kw>
+<status status="PASS" endtime="20170302 16:35:20.483" starttime="20170302 16:35:19.499"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>catalina.out</arg>
+</arguments>
+<assign>
+<var>${LogFileName}</var>
+</assign>
+<msg timestamp="20170302 16:35:20.484" level="INFO">${LogFileName} = catalina.out</msg>
+<status status="PASS" endtime="20170302 16:35:20.484" starttime="20170302 16:35:20.483"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>${LocalLogFolderPath}//${LogFileName}</arg>
+</arguments>
+<assign>
+<var>${NATLocalLogFilePath}</var>
+</assign>
+<msg timestamp="20170302 16:35:20.484" level="INFO">${NATLocalLogFilePath} = C:\NPMGit\WFO-Codeless\output\logs//catalina.out</msg>
+<status status="PASS" endtime="20170302 16:35:20.484" starttime="20170302 16:35:20.484"></status>
+</kw>
+<kw name="Get NCAT Server Log Health" library="serverConnection">
+<arguments>
+<arg>${NATLocalLogFilePath}</arg>
+</arguments>
+<kw name="File Should Exist" library="OperatingSystem">
+<doc>Fails unless the given ``path`` points to an existing file.</doc>
+<arguments>
+<arg>${LocalLogFilePath}</arg>
+</arguments>
+<msg timestamp="20170302 16:35:20.486" html="yes" level="INFO">File '&lt;a href="file://C:\NPMGit\WFO-Codeless\output\logs\catalina.out"&gt;C:\NPMGit\WFO-Codeless\output\logs\catalina.out&lt;/a&gt;' exists.</msg>
+<status status="PASS" endtime="20170302 16:35:20.486" starttime="20170302 16:35:20.485"></status>
+</kw>
+<kw name="Grep File" library="OperatingSystem">
+<doc>Returns the lines of the specified file that match the ``pattern``.</doc>
+<arguments>
+<arg>${LocalLogFilePath}</arg>
+<arg>ERROR</arg>
+</arguments>
+<assign>
+<var>${All_errors}</var>
+</assign>
+<msg timestamp="20170302 16:35:20.487" html="yes" level="INFO">Reading file '&lt;a href="file://C:\NPMGit\WFO-Codeless\output\logs\catalina.out"&gt;C:\NPMGit\WFO-Codeless\output\logs\catalina.out&lt;/a&gt;'.</msg>
+<msg timestamp="20170302 16:35:20.489" level="INFO">0 out of 86 lines matched</msg>
+<msg timestamp="20170302 16:35:20.489" level="INFO">${All_errors} = </msg>
+<status status="PASS" endtime="20170302 16:35:20.489" starttime="20170302 16:35:20.487"></status>
+</kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${Btn_NCAT_FileMenu}</arg>
+<arg>${All_errors}</arg>
 </arguments>
-<msg timestamp="20170302 13:23:05.592" level="INFO">id=topForm:dynaButton</msg>
-<status status="PASS" endtime="20170302 13:23:05.592" starttime="20170302 13:23:05.592"></status>
+<msg timestamp="20170302 16:35:20.490" level="INFO"></msg>
+<status status="PASS" endtime="20170302 16:35:20.490" starttime="20170302 16:35:20.490"></status>
+</kw>
+<kw name="Grep File" library="OperatingSystem">
+<doc>Returns the lines of the specified file that match the ``pattern``.</doc>
+<arguments>
+<arg>${LocalLogFilePath}</arg>
+<arg>INFO</arg>
+</arguments>
+<assign>
+<var>${All_info}</var>
+</assign>
+<msg timestamp="20170302 16:35:20.491" html="yes" level="INFO">Reading file '&lt;a href="file://C:\NPMGit\WFO-Codeless\output\logs\catalina.out"&gt;C:\NPMGit\WFO-Codeless\output\logs\catalina.out&lt;/a&gt;'.</msg>
+<msg timestamp="20170302 16:35:20.492" level="INFO">43 out of 86 lines matched</msg>
+<msg timestamp="20170302 16:35:20.493" level="INFO">${All_info} = INFO: Server version:        Apache Tomcat/7.0.57
+INFO: Server built:          Nov 3 2014 08:39:16 UTC
+INFO: Server number:         7.0.57.0
+INFO: OS Name:               Linux
+INFO: OS Version:       ...</msg>
+<status status="PASS" endtime="20170302 16:35:20.493" starttime="20170302 16:35:20.491"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${ShowJobs_Lable}</arg>
+<arg>${All_info}</arg>
 </arguments>
-<msg timestamp="20170302 13:23:05.592" level="INFO">id=j_idt318:j_idt319:jobScope</msg>
-<status status="PASS" endtime="20170302 13:23:05.592" starttime="20170302 13:23:05.592"></status>
+<msg timestamp="20170302 16:35:20.494" level="INFO">INFO: Server version:        Apache Tomcat/7.0.57
+INFO: Server built:          Nov 3 2014 08:39:16 UTC
+INFO: Server number:         7.0.57.0
+INFO: OS Name:               Linux
+INFO: OS Version:            2.6.32-358.el6.x86_64
+INFO: Architecture:          amd64
+INFO: JAVA_HOME:             /usr/java/jdk1.8.0_71/jre
+INFO: JVM Version:           1.8.0_71-b15
+INFO: JVM Vendor:            Oracle Corporation
+INFO: CATALINA_BASE:         /NCAT/NCAT/server/apache-tomcat-7.0.57
+INFO: CATALINA_HOME:         /NCAT/NCAT/server/apache-tomcat-7.0.57
+INFO: Command line argument: -Djava.util.logging.config.file=/NCAT/NCAT/server/apache-tomcat-7.0.57/conf/logging.properties
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+INFO: Command line argument: -Djava.endorsed.dirs=/NCAT/NCAT/server/apache-tomcat-7.0.57/endorsed
+INFO: Command line argument: -Dcatalina.base=/NCAT/NCAT/server/apache-tomcat-7.0.57
+INFO: Command line argument: -Dcatalina.home=/NCAT/NCAT/server/apache-tomcat-7.0.57
+INFO: Command line argument: -Djava.io.tmpdir=/NCAT/NCAT/server/apache-tomcat-7.0.57/temp
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+INFO: Initializing ProtocolHandler ["http-bio-8280"]
+INFO: Initialization processed in 895 ms
+INFO: Starting service Catalina
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.57
+INFO: Deploying web application archive /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/ncat-ui.war
+INFO: validateJarFile(/NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/ncat-ui/WEB-INF/lib/el-api-2.2.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/el/Expression.class
+INFO: validateJarFile(/NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/ncat-ui/WEB-INF/lib/javax.servlet-api-3.0.1.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+INFO: validateJarFile(/NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/ncat-ui/WEB-INF/lib/jsp-api-2.1.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/el/Expression.class
+INFO: Initializing Mojarra 2.2.10 ( 20150205-0906 https://svn.java.net/svn/mojarra~svn/tags/2.2.10@14334) for context '/ncat-ui'
+INFO: JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+INFO: Running on PrimeFaces 5.1
+INFO: Deployment of web application archive /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/ncat-ui.war has finished in 5,785 ms
+INFO: Deploying web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/examples
+INFO: Deployment of web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/examples has finished in 184 ms
+INFO: Deploying web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/ROOT
+INFO: Deployment of web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/ROOT has finished in 32 ms
+INFO: Deploying web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/host-manager
+INFO: Deployment of web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/host-manager has finished in 44 ms
+INFO: Deploying web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/manager
+INFO: Deployment of web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/manager has finished in 37 ms
+INFO: Deploying web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/docs
+INFO: Deployment of web application directory /NCAT/NCAT/server/apache-tomcat-7.0.57/webapps/docs has finished in 26 ms
+INFO: Starting ProtocolHandler ["http-bio-8280"]
+INFO: Server startup in 6219 ms
+INFO: CDI @ViewScoped bean functionality unavailable</msg>
+<status status="PASS" endtime="20170302 16:35:20.494" starttime="20170302 16:35:20.493"></status>
+</kw>
+<kw name="Grep File" library="OperatingSystem">
+<doc>Returns the lines of the specified file that match the ``pattern``.</doc>
+<arguments>
+<arg>${LocalLogFilePath}</arg>
+<arg>Exception</arg>
+</arguments>
+<assign>
+<var>${All_Exceptions}</var>
+</assign>
+<msg timestamp="20170302 16:35:20.495" html="yes" level="INFO">Reading file '&lt;a href="file://C:\NPMGit\WFO-Codeless\output\logs\catalina.out"&gt;C:\NPMGit\WFO-Codeless\output\logs\catalina.out&lt;/a&gt;'.</msg>
+<msg timestamp="20170302 16:35:20.496" level="INFO">0 out of 86 lines matched</msg>
+<msg timestamp="20170302 16:35:20.496" level="INFO">${All_Exceptions} = </msg>
+<status status="PASS" endtime="20170302 16:35:20.496" starttime="20170302 16:35:20.494"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${selectJobScope_DropDown}</arg>
+<arg>${All_Exceptions}</arg>
 </arguments>
-<msg timestamp="20170302 13:23:05.592" level="INFO">id=j_idt318:j_idt319:selectJobScope</msg>
-<status status="PASS" endtime="20170302 13:23:05.592" starttime="20170302 13:23:05.592"></status>
+<msg timestamp="20170302 16:35:20.497" level="INFO"></msg>
+<status status="PASS" endtime="20170302 16:35:20.497" starttime="20170302 16:35:20.496"></status>
 </kw>
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>${LocalLogFilePath}</arg>
+</arguments>
+<assign>
+<var>${all_Contents}</var>
+</assign>
+<msg timestamp="20170302 16:35:20.498" html="yes" level="INFO">Getting file '&lt;a href="file://C:\NPMGit\WFO-Codeless\output\logs\catalina.out"&gt;C:\NPMGit\WFO-Codeless\output\logs\catalina.out&lt;/a&gt;'.</msg>
+<msg timestamp="20170302 16:35:20.499" level="INFO">${all_Contents} = Mar 01, 2017 9:50:54 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.57
+Mar 01, 2017 9:50:54 AM org.apache.catalina.startup.VersionLoggerListene...</msg>
+<status status="PASS" endtime="20170302 16:35:20.499" starttime="20170302 16:35:20.497"></status>
+</kw>
+<status status="PASS" endtime="20170302 16:35:20.499" starttime="20170302 16:35:20.485"></status>
+</kw>
+<kw type="teardown" name="SSH Test Teardown" library="testTearDown">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${ClearSuccesses_Link}</arg>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 13:23:05.592" level="INFO">id=j_idt318:j_idt319:j_idt324</msg>
-<status status="PASS" endtime="20170302 13:23:05.592" starttime="20170302 13:23:05.592"></status>
+<msg timestamp="20170302 16:35:20.500" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 16:35:20.501" starttime="20170302 16:35:20.500"></status>
 </kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${ClearFailures_Link}</arg>
-</arguments>
-<msg timestamp="20170302 13:23:05.592" level="INFO">id=j_idt318:j_idt319:j_idt325</msg>
-<status status="PASS" endtime="20170302 13:23:05.592" starttime="20170302 13:23:05.592"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${ClearAllInactive_Link}</arg>
-</arguments>
-<msg timestamp="20170302 13:23:05.592" level="INFO">id=j_idt318:j_idt319:j_idt326</msg>
-<status status="PASS" endtime="20170302 13:23:05.592" starttime="20170302 13:23:05.592"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${Btn_NCAT_FileMenu}</arg>
-</arguments>
-<msg timestamp="20170302 13:23:05.592" level="INFO">Verifying element 'id=topForm:dynaButton' is visible.</msg>
-<status status="PASS" endtime="20170302 13:23:06.031" starttime="20170302 13:23:05.592"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${ShowJobs_Lable}</arg>
-</arguments>
-<msg timestamp="20170302 13:23:06.031" level="INFO">Verifying element 'id=j_idt318:j_idt319:jobScope' is visible.</msg>
-<status status="PASS" endtime="20170302 13:23:06.456" starttime="20170302 13:23:06.031"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${selectJobScope_DropDown}</arg>
-</arguments>
-<msg timestamp="20170302 13:23:06.456" level="INFO">Verifying element 'id=j_idt318:j_idt319:selectJobScope' is visible.</msg>
-<status status="PASS" endtime="20170302 13:23:07.011" starttime="20170302 13:23:06.456"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${ClearSuccesses_Link}</arg>
-</arguments>
-<msg timestamp="20170302 13:23:07.011" level="INFO">Verifying element 'id=j_idt318:j_idt319:j_idt324' is visible.</msg>
-<status status="PASS" endtime="20170302 13:23:07.533" starttime="20170302 13:23:07.011"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${ClearFailures_Link}</arg>
-</arguments>
-<msg timestamp="20170302 13:23:07.533" level="INFO">Verifying element 'id=j_idt318:j_idt319:j_idt325' is visible.</msg>
-<status status="PASS" endtime="20170302 13:23:08.018" starttime="20170302 13:23:07.533"></status>
-</kw>
-<kw name="Element Should Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is visible.</doc>
-<arguments>
-<arg>${ClearAllInactive_Link}</arg>
-</arguments>
-<msg timestamp="20170302 13:23:08.018" level="INFO">Verifying element 'id=j_idt318:j_idt319:j_idt326' is visible.</msg>
-<status status="PASS" endtime="20170302 13:23:08.489" starttime="20170302 13:23:08.018"></status>
-</kw>
-<kw name="Run Keyword And Ignore Error" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<arguments>
-<arg>Element Should Not Be Visible</arg>
-<arg>${selectJobScope_DropDown}</arg>
-</arguments>
-<kw name="Element Should Not Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is NOT visible.</doc>
-<arguments>
-<arg>${selectJobScope_DropDown}</arg>
-</arguments>
-<msg timestamp="20170302 13:23:08.489" level="INFO">Verifying element 'id=j_idt318:j_idt319:selectJobScope' is not visible.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170302 13:23:09.286" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170302 13:23:09.286" starttime="20170302 13:23:08.926"></status>
-</kw>
-<msg timestamp="20170302 13:23:09.286" level="FAIL">The element 'id=j_idt318:j_idt319:selectJobScope' should not be visible, but it is.</msg>
-<status status="FAIL" endtime="20170302 13:23:09.286" starttime="20170302 13:23:08.489"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:23:09.286" starttime="20170302 13:23:08.489"></status>
-</kw>
-<kw name="Run Keyword And Ignore Error" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<arguments>
-<arg>Element Should Not Be Visible</arg>
-<arg>${ShowJobs_Lable}</arg>
-</arguments>
-<kw name="Element Should Not Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is NOT visible.</doc>
-<arguments>
-<arg>${ShowJobs_Lable}</arg>
-</arguments>
-<msg timestamp="20170302 13:23:09.286" level="INFO">Verifying element 'id=j_idt318:j_idt319:jobScope' is not visible.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170302 13:23:10.104" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170302 13:23:10.104" starttime="20170302 13:23:09.708"></status>
-</kw>
-<msg timestamp="20170302 13:23:10.104" level="FAIL">The element 'id=j_idt318:j_idt319:jobScope' should not be visible, but it is.</msg>
-<status status="FAIL" endtime="20170302 13:23:10.104" starttime="20170302 13:23:09.286"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:23:10.104" starttime="20170302 13:23:09.286"></status>
-</kw>
-<kw name="Run Keyword And Ignore Error" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<arguments>
-<arg>Element Should Not Be Visible</arg>
-<arg>${ClearAllInactive_Link}</arg>
-</arguments>
-<kw name="Element Should Not Be Visible" library="Selenium2Library">
-<doc>Verifies that the element identified by `locator` is NOT visible.</doc>
-<arguments>
-<arg>${ClearAllInactive_Link}</arg>
-</arguments>
-<msg timestamp="20170302 13:23:10.104" level="INFO">Verifying element 'id=j_idt318:j_idt319:j_idt326' is not visible.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170302 13:23:10.922" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170302 13:23:10.922" starttime="20170302 13:23:10.560"></status>
-</kw>
-<msg timestamp="20170302 13:23:10.922" level="FAIL">The element 'id=j_idt318:j_idt319:j_idt326' should not be visible, but it is.</msg>
-<status status="FAIL" endtime="20170302 13:23:10.922" starttime="20170302 13:23:10.104"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:23:10.922" starttime="20170302 13:23:10.104"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:23:10.922" starttime="20170302 13:23:05.592"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:23:10.922" starttime="20170302 13:23:05.592"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:23:10.922" starttime="20170302 13:23:05.592"></status>
-</kw>
-<kw type="teardown" name="UI Test Teardown" library="testTearDown">
-<kw name="Run Keyword If Test Failed" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<arguments>
-<arg>Capture Page Screenshot</arg>
-<arg>${ScreenshotName}</arg>
-</arguments>
-<status status="PASS" endtime="20170302 13:23:10.922" starttime="20170302 13:23:10.922"></status>
-</kw>
-<kw name="Close Browser" library="Selenium2Library">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170302 13:23:14.121" starttime="20170302 13:23:10.922"></status>
-</kw>
-<status status="PASS" endtime="20170302 13:23:14.121" starttime="20170302 13:23:10.922"></status>
+<status status="PASS" endtime="20170302 16:35:20.501" starttime="20170302 16:35:20.500"></status>
 </kw>
 <tags>
-<tag>UI</tag>
+<tag>SSH</tag>
 </tags>
-<status status="PASS" endtime="20170302 13:23:14.121" critical="yes" starttime="20170302 13:21:26.985"></status>
+<status status="PASS" endtime="20170302 16:35:20.501" critical="yes" starttime="20170302 16:35:19.494"></status>
+</test>
+<test id="s1-t3" name="Connect To NCAT Servers and delete the file from server">
+<kw type="setup" name="SSH Test Setup" library="testSetup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>UI Test Setup nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 16:35:20.503" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 16:35:20.503" starttime="20170302 16:35:20.503"></status>
+</kw>
+<status status="PASS" endtime="20170302 16:35:20.504" starttime="20170302 16:35:20.502"></status>
+</kw>
+<kw name="Switch and Verify Connection to Alias" library="serverConnection">
+<arguments>
+<arg>LinuxServer1</arg>
+</arguments>
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
+<arguments>
+<arg>${ServerAlias}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 16:35:20.505" starttime="20170302 16:35:20.505"></status>
+</kw>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<assign>
+<var>${LinuxServer}</var>
+</assign>
+<msg timestamp="20170302 16:35:20.506" level="INFO">index=1
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer1
+host=172.30.16.131
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<msg timestamp="20170302 16:35:20.506" level="INFO">${LinuxServer} = index=1
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=LinuxServer1
+host=172.30.16.131
+timeout=20 minutes
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20170302 16:35:20.506" starttime="20170302 16:35:20.505"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${LinuxServer.alias}</arg>
+<arg>${ServerAlias}</arg>
+<arg>.</arg>
+</arguments>
+<msg timestamp="20170302 16:35:20.507" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170302 16:35:20.507" starttime="20170302 16:35:20.506"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>hostname</arg>
+</arguments>
+<assign>
+<var>${LinuxServer_hostname}</var>
+</assign>
+<msg timestamp="20170302 16:35:20.508" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170302 16:35:20.534" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170302 16:35:20.534" level="INFO">${LinuxServer_hostname} = ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 16:35:20.534" starttime="20170302 16:35:20.507"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${LinuxServer_hostname}</arg>
+</arguments>
+<msg timestamp="20170302 16:35:20.535" level="INFO">ENT-CL-001409</msg>
+<status status="PASS" endtime="20170302 16:35:20.535" starttime="20170302 16:35:20.534"></status>
+</kw>
+<status status="PASS" endtime="20170302 16:35:20.535" starttime="20170302 16:35:20.504"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>//automationtemp//globalSetting.txt</arg>
+</arguments>
+<assign>
+<var>${RemoteFIleFilePath}</var>
+</assign>
+<msg timestamp="20170302 16:35:20.536" level="INFO">${RemoteFIleFilePath} = //automationtemp//globalSetting.txt</msg>
+<status status="PASS" endtime="20170302 16:35:20.536" starttime="20170302 16:35:20.536"></status>
+</kw>
+<kw name="List Directory" library="SSHLibrary">
+<doc>Returns and logs items in the remote `path`, optionally filtered with `pattern`.</doc>
+<arguments>
+<arg>//automationtemp</arg>
+</arguments>
+<msg timestamp="20170302 16:35:20.618" level="INFO">[chan 5] Opened sftp connection (server version 3)</msg>
+<msg timestamp="20170302 16:35:20.635" level="INFO">12 items:
+FeedMetaData.txt
+TransactionFeedDataType.txt
+TransactionFeedFile_Template.txt
+TransactionMobiles.txt
+TransactionPhones.txt
+VoCRootMetadata.txt
+dashboardSetting.txt
+language.txt
+nice_events2_rwprz_tvalid_feed_1.csv
+nice_events2_rwprz_tvalid_feed_1233.csv
+nice_events2_rwprz_tvalid_feed_1233sa.csv
+timeZones.txt</msg>
+<status status="PASS" endtime="20170302 16:35:20.636" starttime="20170302 16:35:20.536"></status>
+</kw>
+<kw name="File Should Exist" library="SSHLibrary">
+<doc>Fails if the given `path` does NOT point to an existing file.</doc>
+<arguments>
+<arg>${RemoteFIleFilePath}</arg>
+</arguments>
+<msg timestamp="20170302 16:35:20.641" level="FAIL">File '//automationtemp//globalSetting.txt' does not exist.</msg>
+<status status="FAIL" endtime="20170302 16:35:20.641" starttime="20170302 16:35:20.636"></status>
+</kw>
+<kw type="teardown" name="SSH Test Teardown" library="testTearDown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170302 16:35:20.643" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170302 16:35:20.643" starttime="20170302 16:35:20.642"></status>
+</kw>
+<status status="PASS" endtime="20170302 16:35:20.643" starttime="20170302 16:35:20.641"></status>
+</kw>
+<tags>
+<tag>SSH</tag>
+</tags>
+<status status="FAIL" endtime="20170302 16:35:20.643" critical="yes" starttime="20170302 16:35:20.501">File '//automationtemp//globalSetting.txt' does not exist.</status>
 </test>
 <kw type="teardown" name="Suite Teardown" library="suiteTeardown">
 <kw name="Close All Connections" library="SSHLibrary">
 <doc>Closes all open connections.</doc>
-<status status="PASS" endtime="20170302 13:23:14.184" starttime="20170302 13:23:14.121"></status>
+<status status="PASS" endtime="20170302 16:35:20.779" starttime="20170302 16:35:20.645"></status>
 </kw>
-<status status="PASS" endtime="20170302 13:23:14.184" starttime="20170302 13:23:14.121"></status>
+<status status="PASS" endtime="20170302 16:35:20.779" starttime="20170302 16:35:20.644"></status>
 </kw>
-<doc>A test suite with a single test for valid login.
+<doc>A test suite with a single test for SSH connection.
 
 This test has a workflow that is created using keywords in
 the imported resource file.</doc>
-<status status="FAIL" endtime="20170302 13:23:14.184" starttime="20170302 13:21:04.221"></status>
+<status status="FAIL" endtime="20170302 16:35:20.779" starttime="20170302 16:35:12.670"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="1">Critical Tests</stat>
-<stat fail="1" pass="1">All Tests</stat>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
 </total>
 <tag>
-<stat fail="1" pass="1">UI</stat>
+<stat fail="1" pass="2">SSH</stat>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Valid Login" pass="1">Valid Login</stat>
+<stat fail="1" id="s1" name="Linux Intaraction" pass="2">Linux Intaraction</stat>
 </suite>
 </statistics>
 <errors>
