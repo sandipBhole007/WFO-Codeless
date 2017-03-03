@@ -1,78 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170302 20:13:18.231" generator="Robot 3.0.2 (Python 2.7.11 on win32)">
+<robot generated="20170303 11:31:27.573" generator="Robot 3.0.2 (Python 2.7.11 on win32)">
 <suite source="C:\WFO-Codeless\tests\DB\DB_intaraction.robot" id="s1" name="DB intaraction">
 <kw type="setup" name="Suite Setup" library="suiteSetup">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Disconnect From Database</arg>
+</arguments>
+<kw name="Disconnect From Database" library="DatabaseLibrary">
+<doc>Disconnects from the database.</doc>
+<msg timestamp="20170303 11:31:29.816" level="FAIL">AttributeError: 'NoneType' object has no attribute 'close'</msg>
+<status status="FAIL" endtime="20170303 11:31:29.816" starttime="20170303 11:31:29.816"></status>
+</kw>
+<status status="PASS" endtime="20170303 11:31:29.816" starttime="20170303 11:31:29.816"></status>
+</kw>
 <kw name="Set Automation Global Variables" library="suiteSetup">
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${ScreenshotOutputDirectory}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:20.960" level="INFO">${ScreenshotOutputDirectory} = C:/NPMGit/WFO-Codeless/output/Screenshot</msg>
-<status status="PASS" endtime="20170302 20:13:20.960" starttime="20170302 20:13:20.959"></status>
+<msg timestamp="20170303 11:31:29.816" level="INFO">${ScreenshotOutputDirectory} = C:/NPMGit/WFO-Codeless/output/Screenshot</msg>
+<status status="PASS" endtime="20170303 11:31:29.816" starttime="20170303 11:31:29.816"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:20.961" level="INFO">${DELAY} = .1 seconds</msg>
-<status status="PASS" endtime="20170302 20:13:20.961" starttime="20170302 20:13:20.960"></status>
+<msg timestamp="20170303 11:31:29.816" level="INFO">${DELAY} = .1 seconds</msg>
+<status status="PASS" endtime="20170303 11:31:29.816" starttime="20170303 11:31:29.816"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${ScreenshotName}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:20.962" level="INFO">${ScreenshotName} = C:/NPMGit/WFO-Codeless/output/Screenshot\selenium-manual-screenshot-{index}.png</msg>
-<status status="PASS" endtime="20170302 20:13:20.962" starttime="20170302 20:13:20.961"></status>
+<msg timestamp="20170303 11:31:29.816" level="INFO">${ScreenshotName} = C:/NPMGit/WFO-Codeless/output/Screenshot\selenium-manual-screenshot-{index}.png</msg>
+<status status="PASS" endtime="20170303 11:31:29.816" starttime="20170303 11:31:29.816"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${LocalLogFolderPath}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:20.964" level="INFO">${LocalLogFolderPath} = C:\NPMGit\WFO-Codeless\output\logs</msg>
-<status status="PASS" endtime="20170302 20:13:20.964" starttime="20170302 20:13:20.963"></status>
+<msg timestamp="20170303 11:31:29.816" level="INFO">${LocalLogFolderPath} = C:\NPMGit\WFO-Codeless\output\logs</msg>
+<status status="PASS" endtime="20170303 11:31:29.816" starttime="20170303 11:31:29.816"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${NCATLogFolderPath}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:20.965" level="INFO">${NCATLogFolderPath} = /NCAT/NCAT/server/apache-tomcat-7.0.57/logs</msg>
-<status status="PASS" endtime="20170302 20:13:20.965" starttime="20170302 20:13:20.964"></status>
+<msg timestamp="20170303 11:31:29.816" level="INFO">${NCATLogFolderPath} = /NCAT/NCAT/server/apache-tomcat-7.0.57/logs</msg>
+<status status="PASS" endtime="20170303 11:31:29.816" starttime="20170303 11:31:29.816"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${linux_server3}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:20.966" level="INFO">${linux_server3} = 172.30.17.15</msg>
-<status status="PASS" endtime="20170302 20:13:20.966" starttime="20170302 20:13:20.966"></status>
+<msg timestamp="20170303 11:31:29.816" level="INFO">${linux_server3} = 172.30.17.15</msg>
+<status status="PASS" endtime="20170303 11:31:29.816" starttime="20170303 11:31:29.816"></status>
 </kw>
-<kw name="Set Screenshot Directory" library="Screenshot">
-<doc>Sets the directory where screenshots are saved.</doc>
-<arguments>
-<arg>${ScreenshotOutputDirectory}</arg>
-</arguments>
-<status status="PASS" endtime="20170302 20:13:20.969" starttime="20170302 20:13:20.967"></status>
-</kw>
-<kw name="Set Selenium Speed" library="Selenium2Library">
-<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
-<arguments>
-<arg>${DELAY}</arg>
-</arguments>
-<status status="PASS" endtime="20170302 20:13:20.970" starttime="20170302 20:13:20.970"></status>
-</kw>
-<status status="PASS" endtime="20170302 20:13:20.971" starttime="20170302 20:13:20.959"></status>
+<status status="PASS" endtime="20170303 11:31:29.816" starttime="20170303 11:31:29.816"></status>
 </kw>
 <kw name="Set Default Configuration" library="SSHLibrary">
 <doc>Update the default `configuration`.</doc>
 <arguments>
 <arg>timeout=20 minute</arg>
 </arguments>
-<status status="PASS" endtime="20170302 20:13:20.972" starttime="20170302 20:13:20.971"></status>
+<status status="PASS" endtime="20170303 11:31:29.816" starttime="20170303 11:31:29.816"></status>
 </kw>
 <kw name="Open Server connecions" library="serverConnection">
 <kw name="Open Connection to LinuxServer1 And Log In" library="serverConnection">
@@ -82,24 +80,24 @@
 <arguments>
 <arg>${linux_server1}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:20.974" level="INFO">172.30.16.131</msg>
-<status status="PASS" endtime="20170302 20:13:20.974" starttime="20170302 20:13:20.974"></status>
+<msg timestamp="20170303 11:31:29.816" level="INFO">172.30.16.131</msg>
+<status status="PASS" endtime="20170303 11:31:29.816" starttime="20170303 11:31:29.816"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${USERNAME}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:20.975" level="INFO">root</msg>
-<status status="PASS" endtime="20170302 20:13:20.976" starttime="20170302 20:13:20.975"></status>
+<msg timestamp="20170303 11:31:29.817" level="INFO">root</msg>
+<status status="PASS" endtime="20170303 11:31:29.817" starttime="20170303 11:31:29.816"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${PASSWORD}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:20.977" level="INFO">Password1!</msg>
-<status status="PASS" endtime="20170302 20:13:20.977" starttime="20170302 20:13:20.976"></status>
+<msg timestamp="20170303 11:31:29.817" level="INFO">Password1!</msg>
+<status status="PASS" endtime="20170303 11:31:29.817" starttime="20170303 11:31:29.817"></status>
 </kw>
 <kw name="Open Connection" library="SSHLibrary">
 <doc>Opens a new SSH connection to the given `host` and `port`.</doc>
@@ -107,7 +105,7 @@
 <arg>${linux_server1}</arg>
 <arg>alias=LinuxServer1</arg>
 </arguments>
-<status status="PASS" endtime="20170302 20:13:20.978" starttime="20170302 20:13:20.977"></status>
+<status status="PASS" endtime="20170303 11:31:29.817" starttime="20170303 11:31:29.817"></status>
 </kw>
 <kw name="Login" library="SSHLibrary">
 <doc>Logs into the SSH server with the given `username` and `password`.</doc>
@@ -115,12 +113,12 @@
 <arg>${USERNAME}</arg>
 <arg>${PASSWORD}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:20.979" level="INFO">Logging into '172.30.16.131:22' as 'root'.</msg>
-<msg timestamp="20170302 20:13:22.764" level="INFO">Read output: Last login: Thu Mar  2 16:42:05 2017 from 172.23.149.19
+<msg timestamp="20170303 11:31:29.817" level="INFO">Logging into '172.30.16.131:22' as 'root'.</msg>
+<msg timestamp="20170303 11:31:31.544" level="INFO">Read output: Last login: Fri Mar  3 07:59:16 2017 from 172.23.149.19
 [root@ENT-CL-001409 ~]#</msg>
-<status status="PASS" endtime="20170302 20:13:22.764" starttime="20170302 20:13:20.978"></status>
+<status status="PASS" endtime="20170303 11:31:31.544" starttime="20170303 11:31:29.817"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:22.764" starttime="20170302 20:13:20.973"></status>
+<status status="PASS" endtime="20170303 11:31:31.544" starttime="20170303 11:31:29.816"></status>
 </kw>
 <kw name="Open Connection to LinuxServer2 And Log In" library="serverConnection">
 <doc>This Keyword open a connection to a LinuxServer2 system</doc>
@@ -129,8 +127,8 @@
 <arguments>
 <arg>${linux_server2}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:22.766" level="INFO">172.30.16.96</msg>
-<status status="PASS" endtime="20170302 20:13:22.766" starttime="20170302 20:13:22.765"></status>
+<msg timestamp="20170303 11:31:31.544" level="INFO">172.30.16.96</msg>
+<status status="PASS" endtime="20170303 11:31:31.544" starttime="20170303 11:31:31.544"></status>
 </kw>
 <kw name="Open Connection" library="SSHLibrary">
 <doc>Opens a new SSH connection to the given `host` and `port`.</doc>
@@ -138,7 +136,7 @@
 <arg>${linux_server2}</arg>
 <arg>alias=LinuxServer2</arg>
 </arguments>
-<status status="PASS" endtime="20170302 20:13:22.767" starttime="20170302 20:13:22.766"></status>
+<status status="PASS" endtime="20170303 11:31:31.544" starttime="20170303 11:31:31.544"></status>
 </kw>
 <kw name="Login" library="SSHLibrary">
 <doc>Logs into the SSH server with the given `username` and `password`.</doc>
@@ -146,12 +144,12 @@
 <arg>${USERNAME}</arg>
 <arg>${PASSWORD}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:22.767" level="INFO">Logging into '172.30.16.96:22' as 'root'.</msg>
-<msg timestamp="20170302 20:13:23.981" level="INFO">Read output: Last login: Thu Mar  2 16:42:06 2017 from 172.23.149.19
+<msg timestamp="20170303 11:31:31.544" level="INFO">Logging into '172.30.16.96:22' as 'root'.</msg>
+<msg timestamp="20170303 11:31:32.676" level="INFO">Read output: Last login: Fri Mar  3 07:59:17 2017 from 172.23.149.19
 [root@ENT-CL-001371 ~]#</msg>
-<status status="PASS" endtime="20170302 20:13:23.981" starttime="20170302 20:13:22.767"></status>
+<status status="PASS" endtime="20170303 11:31:32.676" starttime="20170303 11:31:31.544"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:23.981" starttime="20170302 20:13:22.765"></status>
+<status status="PASS" endtime="20170303 11:31:32.676" starttime="20170303 11:31:31.544"></status>
 </kw>
 <kw name="Open Connection to LinuxServer3 And Log In" library="serverConnection">
 <doc>This Keyword open a connection to a LinuxServer2 system</doc>
@@ -160,8 +158,8 @@
 <arguments>
 <arg>${linux_server3}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:23.981" level="INFO">172.30.17.15</msg>
-<status status="PASS" endtime="20170302 20:13:23.981" starttime="20170302 20:13:23.981"></status>
+<msg timestamp="20170303 11:31:32.677" level="INFO">172.30.17.15</msg>
+<status status="PASS" endtime="20170303 11:31:32.677" starttime="20170303 11:31:32.677"></status>
 </kw>
 <kw name="Open Connection" library="SSHLibrary">
 <doc>Opens a new SSH connection to the given `host` and `port`.</doc>
@@ -169,7 +167,7 @@
 <arg>${linux_server3}</arg>
 <arg>alias=LinuxServer3</arg>
 </arguments>
-<status status="PASS" endtime="20170302 20:13:23.981" starttime="20170302 20:13:23.981"></status>
+<status status="PASS" endtime="20170303 11:31:32.678" starttime="20170303 11:31:32.677"></status>
 </kw>
 <kw name="Login" library="SSHLibrary">
 <doc>Logs into the SSH server with the given `username` and `password`.</doc>
@@ -177,12 +175,12 @@
 <arg>${USERNAME}</arg>
 <arg>${PASSWORD}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:23.981" level="INFO">Logging into '172.30.17.15:22' as 'root'.</msg>
-<msg timestamp="20170302 20:13:25.474" level="INFO">Read output: Last login: Thu Mar  2 16:42:05 2017 from 172.23.149.19
+<msg timestamp="20170303 11:31:32.678" level="INFO">Logging into '172.30.17.15:22' as 'root'.</msg>
+<msg timestamp="20170303 11:31:34.162" level="INFO">Read output: Last login: Fri Mar  3 07:59:16 2017 from 172.23.149.19
 [root@ENT-CL-000408 ~]#</msg>
-<status status="PASS" endtime="20170302 20:13:25.474" starttime="20170302 20:13:23.981"></status>
+<status status="PASS" endtime="20170303 11:31:34.162" starttime="20170303 11:31:32.678"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.474" starttime="20170302 20:13:23.981"></status>
+<status status="PASS" endtime="20170303 11:31:34.162" starttime="20170303 11:31:32.676"></status>
 </kw>
 <kw name="Switch and Verify Connection to LinuxServer1" library="serverConnection">
 <kw name="Switch Connection" library="SSHLibrary">
@@ -190,14 +188,14 @@
 <arguments>
 <arg>LinuxServer1</arg>
 </arguments>
-<status status="PASS" endtime="20170302 20:13:25.474" starttime="20170302 20:13:25.474"></status>
+<status status="PASS" endtime="20170303 11:31:34.162" starttime="20170303 11:31:34.162"></status>
 </kw>
 <kw name="Get Connection" library="SSHLibrary">
 <doc>Return information about the connection.</doc>
 <assign>
 <var>${LinuxServer1}</var>
 </assign>
-<msg timestamp="20170302 20:13:25.474" level="INFO">index=1
+<msg timestamp="20170303 11:31:34.162" level="INFO">index=1
 path_separator=/
 prompt=None
 width=80
@@ -210,7 +208,7 @@ host=172.30.16.131
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<msg timestamp="20170302 20:13:25.474" level="INFO">${LinuxServer1} = index=1
+<msg timestamp="20170303 11:31:34.162" level="INFO">${LinuxServer1} = index=1
 path_separator=/
 prompt=None
 width=80
@@ -223,7 +221,7 @@ host=172.30.16.131
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<status status="PASS" endtime="20170302 20:13:25.474" starttime="20170302 20:13:25.474"></status>
+<status status="PASS" endtime="20170303 11:31:34.162" starttime="20170303 11:31:34.162"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -232,10 +230,10 @@ port=22</msg>
 <arg>LinuxServer1</arg>
 <arg>.</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.474" level="INFO">Argument types are:
+<msg timestamp="20170303 11:31:34.162" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20170302 20:13:25.474" starttime="20170302 20:13:25.474"></status>
+<status status="PASS" endtime="20170303 11:31:34.162" starttime="20170303 11:31:34.162"></status>
 </kw>
 <kw name="Execute Command" library="SSHLibrary">
 <doc>Executes `command` on the remote machine and returns its outputs.</doc>
@@ -245,20 +243,20 @@ port=22</msg>
 <assign>
 <var>${LinuxServer1_hostname}</var>
 </assign>
-<msg timestamp="20170302 20:13:25.474" level="INFO">Executing command 'hostname'.</msg>
-<msg timestamp="20170302 20:13:25.505" level="INFO">Command exited with return code 0.</msg>
-<msg timestamp="20170302 20:13:25.505" level="INFO">${LinuxServer1_hostname} = ENT-CL-001409</msg>
-<status status="PASS" endtime="20170302 20:13:25.505" starttime="20170302 20:13:25.474"></status>
+<msg timestamp="20170303 11:31:34.162" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170303 11:31:34.164" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170303 11:31:34.164" level="INFO">${LinuxServer1_hostname} = ENT-CL-001409</msg>
+<status status="PASS" endtime="20170303 11:31:34.164" starttime="20170303 11:31:34.162"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${LinuxServer1_hostname}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.505" level="INFO">ENT-CL-001409</msg>
-<status status="PASS" endtime="20170302 20:13:25.505" starttime="20170302 20:13:25.505"></status>
+<msg timestamp="20170303 11:31:34.165" level="INFO">ENT-CL-001409</msg>
+<status status="PASS" endtime="20170303 11:31:34.165" starttime="20170303 11:31:34.165"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.505" starttime="20170302 20:13:25.474"></status>
+<status status="PASS" endtime="20170303 11:31:34.165" starttime="20170303 11:31:34.162"></status>
 </kw>
 <kw name="Switch and Verify Connection to LinuxServer2" library="serverConnection">
 <kw name="Switch Connection" library="SSHLibrary">
@@ -266,14 +264,14 @@ port=22</msg>
 <arguments>
 <arg>LinuxServer2</arg>
 </arguments>
-<status status="PASS" endtime="20170302 20:13:25.505" starttime="20170302 20:13:25.505"></status>
+<status status="PASS" endtime="20170303 11:31:34.166" starttime="20170303 11:31:34.166"></status>
 </kw>
 <kw name="Get Connection" library="SSHLibrary">
 <doc>Return information about the connection.</doc>
 <assign>
 <var>${LinuxServer2}</var>
 </assign>
-<msg timestamp="20170302 20:13:25.505" level="INFO">index=2
+<msg timestamp="20170303 11:31:34.166" level="INFO">index=2
 path_separator=/
 prompt=None
 width=80
@@ -286,7 +284,7 @@ host=172.30.16.96
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<msg timestamp="20170302 20:13:25.505" level="INFO">${LinuxServer2} = index=2
+<msg timestamp="20170303 11:31:34.166" level="INFO">${LinuxServer2} = index=2
 path_separator=/
 prompt=None
 width=80
@@ -299,7 +297,7 @@ host=172.30.16.96
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<status status="PASS" endtime="20170302 20:13:25.505" starttime="20170302 20:13:25.505"></status>
+<status status="PASS" endtime="20170303 11:31:34.167" starttime="20170303 11:31:34.166"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -308,10 +306,10 @@ port=22</msg>
 <arg>LinuxServer2</arg>
 <arg>.</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.505" level="INFO">Argument types are:
+<msg timestamp="20170303 11:31:34.167" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20170302 20:13:25.505" starttime="20170302 20:13:25.505"></status>
+<status status="PASS" endtime="20170303 11:31:34.167" starttime="20170303 11:31:34.167"></status>
 </kw>
 <kw name="Execute Command" library="SSHLibrary">
 <doc>Executes `command` on the remote machine and returns its outputs.</doc>
@@ -321,20 +319,20 @@ port=22</msg>
 <assign>
 <var>${LinuxServer2_hostname}</var>
 </assign>
-<msg timestamp="20170302 20:13:25.505" level="INFO">Executing command 'hostname'.</msg>
-<msg timestamp="20170302 20:13:25.543" level="INFO">Command exited with return code 0.</msg>
-<msg timestamp="20170302 20:13:25.543" level="INFO">${LinuxServer2_hostname} = ENT-CL-001371</msg>
-<status status="PASS" endtime="20170302 20:13:25.543" starttime="20170302 20:13:25.505"></status>
+<msg timestamp="20170303 11:31:34.168" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170303 11:31:34.230" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170303 11:31:34.230" level="INFO">${LinuxServer2_hostname} = ENT-CL-001371</msg>
+<status status="PASS" endtime="20170303 11:31:34.230" starttime="20170303 11:31:34.167"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${LinuxServer2_hostname}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.543" level="INFO">ENT-CL-001371</msg>
-<status status="PASS" endtime="20170302 20:13:25.543" starttime="20170302 20:13:25.543"></status>
+<msg timestamp="20170303 11:31:34.230" level="INFO">ENT-CL-001371</msg>
+<status status="PASS" endtime="20170303 11:31:34.230" starttime="20170303 11:31:34.230"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.543" starttime="20170302 20:13:25.505"></status>
+<status status="PASS" endtime="20170303 11:31:34.230" starttime="20170303 11:31:34.165"></status>
 </kw>
 <kw name="Switch and Verify Connection to LinuxServer3" library="serverConnection">
 <kw name="Switch Connection" library="SSHLibrary">
@@ -342,14 +340,14 @@ port=22</msg>
 <arguments>
 <arg>LinuxServer3</arg>
 </arguments>
-<status status="PASS" endtime="20170302 20:13:25.543" starttime="20170302 20:13:25.543"></status>
+<status status="PASS" endtime="20170303 11:31:34.230" starttime="20170303 11:31:34.230"></status>
 </kw>
 <kw name="Get Connection" library="SSHLibrary">
 <doc>Return information about the connection.</doc>
 <assign>
 <var>${LinuxServer3}</var>
 </assign>
-<msg timestamp="20170302 20:13:25.543" level="INFO">index=3
+<msg timestamp="20170303 11:31:34.230" level="INFO">index=3
 path_separator=/
 prompt=None
 width=80
@@ -362,7 +360,7 @@ host=172.30.17.15
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<msg timestamp="20170302 20:13:25.543" level="INFO">${LinuxServer3} = index=3
+<msg timestamp="20170303 11:31:34.230" level="INFO">${LinuxServer3} = index=3
 path_separator=/
 prompt=None
 width=80
@@ -375,7 +373,7 @@ host=172.30.17.15
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<status status="PASS" endtime="20170302 20:13:25.543" starttime="20170302 20:13:25.543"></status>
+<status status="PASS" endtime="20170303 11:31:34.230" starttime="20170303 11:31:34.230"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -384,10 +382,10 @@ port=22</msg>
 <arg>LinuxServer3</arg>
 <arg>.</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.543" level="INFO">Argument types are:
+<msg timestamp="20170303 11:31:34.230" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20170302 20:13:25.543" starttime="20170302 20:13:25.543"></status>
+<status status="PASS" endtime="20170303 11:31:34.230" starttime="20170303 11:31:34.230"></status>
 </kw>
 <kw name="Execute Command" library="SSHLibrary">
 <doc>Executes `command` on the remote machine and returns its outputs.</doc>
@@ -397,22 +395,22 @@ port=22</msg>
 <assign>
 <var>${LinuxServer3_hostname}</var>
 </assign>
-<msg timestamp="20170302 20:13:25.543" level="INFO">Executing command 'hostname'.</msg>
-<msg timestamp="20170302 20:13:25.566" level="INFO">Command exited with return code 0.</msg>
-<msg timestamp="20170302 20:13:25.566" level="INFO">${LinuxServer3_hostname} = ENT-CL-000408</msg>
-<status status="PASS" endtime="20170302 20:13:25.566" starttime="20170302 20:13:25.543"></status>
+<msg timestamp="20170303 11:31:34.230" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170303 11:31:34.261" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170303 11:31:34.261" level="INFO">${LinuxServer3_hostname} = ENT-CL-000408</msg>
+<status status="PASS" endtime="20170303 11:31:34.261" starttime="20170303 11:31:34.230"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${LinuxServer3_hostname}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.566" level="INFO">ENT-CL-000408</msg>
-<status status="PASS" endtime="20170302 20:13:25.576" starttime="20170302 20:13:25.566"></status>
+<msg timestamp="20170303 11:31:34.261" level="INFO">ENT-CL-000408</msg>
+<status status="PASS" endtime="20170303 11:31:34.261" starttime="20170303 11:31:34.261"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.576" starttime="20170302 20:13:25.543"></status>
+<status status="PASS" endtime="20170303 11:31:34.261" starttime="20170303 11:31:34.230"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.576" starttime="20170302 20:13:20.972"></status>
+<status status="PASS" endtime="20170303 11:31:34.261" starttime="20170303 11:31:29.816"></status>
 </kw>
 <kw name="Open Connection To MYSQL PHS_EDB Database" library="DB_intaraction">
 <kw name="Log" library="BuiltIn">
@@ -420,40 +418,40 @@ port=22</msg>
 <arguments>
 <arg>${DBName}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.586" level="INFO">phs_edb</msg>
-<status status="PASS" endtime="20170302 20:13:25.586" starttime="20170302 20:13:25.576"></status>
+<msg timestamp="20170303 11:31:34.261" level="INFO">phs_edb</msg>
+<status status="PASS" endtime="20170303 11:31:34.261" starttime="20170303 11:31:34.261"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DBUser}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.586" level="INFO">root</msg>
-<status status="PASS" endtime="20170302 20:13:25.586" starttime="20170302 20:13:25.586"></status>
+<msg timestamp="20170303 11:31:34.261" level="INFO">root</msg>
+<status status="PASS" endtime="20170303 11:31:34.261" starttime="20170303 11:31:34.261"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DBPass}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.586" level="INFO">password</msg>
-<status status="PASS" endtime="20170302 20:13:25.586" starttime="20170302 20:13:25.586"></status>
+<msg timestamp="20170303 11:31:34.261" level="INFO">password</msg>
+<status status="PASS" endtime="20170303 11:31:34.261" starttime="20170303 11:31:34.261"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DBHost}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.586" level="INFO">1.224.0.62</msg>
-<status status="PASS" endtime="20170302 20:13:25.586" starttime="20170302 20:13:25.586"></status>
+<msg timestamp="20170303 11:31:34.261" level="INFO">1.224.0.62</msg>
+<status status="PASS" endtime="20170303 11:31:34.261" starttime="20170303 11:31:34.261"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DBPort}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.586" level="INFO">3306</msg>
-<status status="PASS" endtime="20170302 20:13:25.586" starttime="20170302 20:13:25.586"></status>
+<msg timestamp="20170303 11:31:34.261" level="INFO">3306</msg>
+<status status="PASS" endtime="20170303 11:31:34.261" starttime="20170303 11:31:34.261"></status>
 </kw>
 <kw name="Connect To Database" library="DatabaseLibrary">
 <doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to</doc>
@@ -465,11 +463,11 @@ port=22</msg>
 <arg>${DBHost}</arg>
 <arg>${DBPort}</arg>
 </arguments>
-<status status="PASS" endtime="20170302 20:13:25.687" starttime="20170302 20:13:25.586"></status>
+<status status="PASS" endtime="20170303 11:31:34.356" starttime="20170303 11:31:34.261"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.687" starttime="20170302 20:13:25.576"></status>
+<status status="PASS" endtime="20170303 11:31:34.356" starttime="20170303 11:31:34.261"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.687" starttime="20170302 20:13:20.958"></status>
+<status status="PASS" endtime="20170303 11:31:34.356" starttime="20170303 11:31:29.816"></status>
 </kw>
 <test id="s1-t1" name="Connect To DB Servers and Create Employee Table">
 <kw type="setup" name="DB Test Setup" library="testSetup">
@@ -478,10 +476,10 @@ port=22</msg>
 <arguments>
 <arg>UI Test Setup nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.687" level="INFO">UI Test Setup nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 20:13:25.687" starttime="20170302 20:13:25.687"></status>
+<msg timestamp="20170303 11:31:34.356" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.357" starttime="20170303 11:31:34.356"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.687" starttime="20170302 20:13:25.687"></status>
+<status status="PASS" endtime="20170303 11:31:34.357" starttime="20170303 11:31:34.356"></status>
 </kw>
 <kw name="Execute Sql String" library="DatabaseLibrary">
 <doc>Executes the sqlString as SQL commands.</doc>
@@ -491,16 +489,16 @@ port=22</msg>
 <assign>
 <var>${output}</var>
 </assign>
-<msg timestamp="20170302 20:13:25.708" level="INFO">${output} = None</msg>
-<status status="PASS" endtime="20170302 20:13:25.708" starttime="20170302 20:13:25.687"></status>
+<msg timestamp="20170303 11:31:34.388" level="INFO">${output} = None</msg>
+<status status="PASS" endtime="20170303 11:31:34.388" starttime="20170303 11:31:34.357"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${output}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.708" level="INFO">None</msg>
-<status status="PASS" endtime="20170302 20:13:25.708" starttime="20170302 20:13:25.708"></status>
+<msg timestamp="20170303 11:31:34.388" level="INFO">None</msg>
+<status status="PASS" endtime="20170303 11:31:34.388" starttime="20170303 11:31:34.388"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -508,10 +506,10 @@ port=22</msg>
 <arg>${output}</arg>
 <arg>None</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.708" level="INFO">Argument types are:
+<msg timestamp="20170303 11:31:34.388" level="INFO">Argument types are:
 &lt;type 'NoneType'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20170302 20:13:25.708" starttime="20170302 20:13:25.708"></status>
+<status status="PASS" endtime="20170303 11:31:34.388" starttime="20170303 11:31:34.388"></status>
 </kw>
 <kw type="teardown" name="DB Test Teardown" library="testTearDown">
 <kw name="Log" library="BuiltIn">
@@ -519,15 +517,15 @@ port=22</msg>
 <arguments>
 <arg>SSH Test Teardown nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.708" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 20:13:25.708" starttime="20170302 20:13:25.708"></status>
+<msg timestamp="20170303 11:31:34.388" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.388" starttime="20170303 11:31:34.388"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.708" starttime="20170302 20:13:25.708"></status>
+<status status="PASS" endtime="20170303 11:31:34.388" starttime="20170303 11:31:34.388"></status>
 </kw>
 <tags>
 <tag>DB</tag>
 </tags>
-<status status="PASS" endtime="20170302 20:13:25.708" critical="yes" starttime="20170302 20:13:25.687"></status>
+<status status="PASS" endtime="20170303 11:31:34.388" critical="yes" starttime="20170303 11:31:34.356"></status>
 </test>
 <test id="s1-t2" name="Execute SQL Script - Insert Data Employee table">
 <kw type="setup" name="DB Test Setup" library="testSetup">
@@ -536,26 +534,26 @@ port=22</msg>
 <arguments>
 <arg>UI Test Setup nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.708" level="INFO">UI Test Setup nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 20:13:25.708" starttime="20170302 20:13:25.708"></status>
+<msg timestamp="20170303 11:31:34.388" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.388" starttime="20170303 11:31:34.388"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.708" starttime="20170302 20:13:25.708"></status>
+<status status="PASS" endtime="20170303 11:31:34.388" starttime="20170303 11:31:34.388"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${EMP_DataSql}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.708" level="INFO">C:\WFO-Codeless\testdata\DB\my_db_test_insertData.sql</msg>
-<status status="PASS" endtime="20170302 20:13:25.708" starttime="20170302 20:13:25.708"></status>
+<msg timestamp="20170303 11:31:34.388" level="INFO">C:\WFO-Codeless\testdata\DB\my_db_test_insertData.sql</msg>
+<status status="PASS" endtime="20170303 11:31:34.388" starttime="20170303 11:31:34.388"></status>
 </kw>
 <kw name="File Should Exist" library="OperatingSystem">
 <doc>Fails unless the given ``path`` points to an existing file.</doc>
 <arguments>
 <arg>${EMP_DataSql}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.718" html="yes" level="INFO">File '&lt;a href="file://C:\WFO-Codeless\testdata\DB\my_db_test_insertData.sql"&gt;C:\WFO-Codeless\testdata\DB\my_db_test_insertData.sql&lt;/a&gt;' exists.</msg>
-<status status="PASS" endtime="20170302 20:13:25.718" starttime="20170302 20:13:25.708"></status>
+<msg timestamp="20170303 11:31:34.388" html="yes" level="INFO">File '&lt;a href="file://C:\WFO-Codeless\testdata\DB\my_db_test_insertData.sql"&gt;C:\WFO-Codeless\testdata\DB\my_db_test_insertData.sql&lt;/a&gt;' exists.</msg>
+<status status="PASS" endtime="20170303 11:31:34.388" starttime="20170303 11:31:34.388"></status>
 </kw>
 <kw name="Execute Sql Script" library="DatabaseLibrary">
 <doc>Executes the content of the `sqlScriptFileName` as SQL commands.</doc>
@@ -565,16 +563,16 @@ port=22</msg>
 <assign>
 <var>${output}</var>
 </assign>
-<msg timestamp="20170302 20:13:25.728" level="INFO">${output} = None</msg>
-<status status="PASS" endtime="20170302 20:13:25.728" starttime="20170302 20:13:25.718"></status>
+<msg timestamp="20170303 11:31:34.404" level="INFO">${output} = None</msg>
+<status status="PASS" endtime="20170303 11:31:34.404" starttime="20170303 11:31:34.388"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${output}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.728" level="INFO">None</msg>
-<status status="PASS" endtime="20170302 20:13:25.728" starttime="20170302 20:13:25.728"></status>
+<msg timestamp="20170303 11:31:34.404" level="INFO">None</msg>
+<status status="PASS" endtime="20170303 11:31:34.404" starttime="20170303 11:31:34.404"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -582,10 +580,10 @@ port=22</msg>
 <arg>${output}</arg>
 <arg>None</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.728" level="INFO">Argument types are:
+<msg timestamp="20170303 11:31:34.404" level="INFO">Argument types are:
 &lt;type 'NoneType'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20170302 20:13:25.728" starttime="20170302 20:13:25.728"></status>
+<status status="PASS" endtime="20170303 11:31:34.404" starttime="20170303 11:31:34.404"></status>
 </kw>
 <kw type="teardown" name="DB Test Teardown" library="testTearDown">
 <kw name="Log" library="BuiltIn">
@@ -593,16 +591,16 @@ port=22</msg>
 <arguments>
 <arg>SSH Test Teardown nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.728" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 20:13:25.728" starttime="20170302 20:13:25.728"></status>
+<msg timestamp="20170303 11:31:34.404" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.404" starttime="20170303 11:31:34.404"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.728" starttime="20170302 20:13:25.728"></status>
+<status status="PASS" endtime="20170303 11:31:34.404" starttime="20170303 11:31:34.404"></status>
 </kw>
 <tags>
 <tag>DB</tag>
 <tag>DB_SMOKE</tag>
 </tags>
-<status status="PASS" endtime="20170302 20:13:25.728" critical="yes" starttime="20170302 20:13:25.708"></status>
+<status status="PASS" endtime="20170303 11:31:34.404" critical="yes" starttime="20170303 11:31:34.388"></status>
 </test>
 <test id="s1-t3" name="Table Must Exist - Employee">
 <kw type="setup" name="DB Test Setup" library="testSetup">
@@ -611,17 +609,17 @@ port=22</msg>
 <arguments>
 <arg>UI Test Setup nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.738" level="INFO">UI Test Setup nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 20:13:25.738" starttime="20170302 20:13:25.738"></status>
+<msg timestamp="20170303 11:31:34.404" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.404" starttime="20170303 11:31:34.404"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.738" starttime="20170302 20:13:25.738"></status>
+<status status="PASS" endtime="20170303 11:31:34.404" starttime="20170303 11:31:34.404"></status>
 </kw>
 <kw name="Table Must Exist" library="DatabaseLibrary">
 <doc>Check if the table given exists in the database.</doc>
 <arguments>
 <arg>Employee</arg>
 </arguments>
-<status status="PASS" endtime="20170302 20:13:25.748" starttime="20170302 20:13:25.738"></status>
+<status status="PASS" endtime="20170303 11:31:34.419" starttime="20170303 11:31:34.404"></status>
 </kw>
 <kw type="teardown" name="DB Test Teardown" library="testTearDown">
 <kw name="Log" library="BuiltIn">
@@ -629,16 +627,16 @@ port=22</msg>
 <arguments>
 <arg>SSH Test Teardown nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.748" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 20:13:25.748" starttime="20170302 20:13:25.748"></status>
+<msg timestamp="20170303 11:31:34.419" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.419" starttime="20170303 11:31:34.419"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.748" starttime="20170302 20:13:25.748"></status>
+<status status="PASS" endtime="20170303 11:31:34.419" starttime="20170303 11:31:34.419"></status>
 </kw>
 <tags>
 <tag>DB</tag>
 <tag>DB_SMOKE</tag>
 </tags>
-<status status="PASS" endtime="20170302 20:13:25.748" critical="yes" starttime="20170302 20:13:25.728"></status>
+<status status="PASS" endtime="20170303 11:31:34.419" critical="yes" starttime="20170303 11:31:34.404"></status>
 </test>
 <test id="s1-t4" name="Table Must Exist - Employee1">
 <kw type="setup" name="DB Test Setup" library="testSetup">
@@ -647,18 +645,18 @@ port=22</msg>
 <arguments>
 <arg>UI Test Setup nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.748" level="INFO">UI Test Setup nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 20:13:25.748" starttime="20170302 20:13:25.748"></status>
+<msg timestamp="20170303 11:31:34.419" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.419" starttime="20170303 11:31:34.419"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.748" starttime="20170302 20:13:25.748"></status>
+<status status="PASS" endtime="20170303 11:31:34.419" starttime="20170303 11:31:34.419"></status>
 </kw>
 <kw name="Table Must Exist" library="DatabaseLibrary">
 <doc>Check if the table given exists in the database.</doc>
 <arguments>
 <arg>Employee1</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.758" level="FAIL">Table 'Employee1' does not exist in the db</msg>
-<status status="FAIL" endtime="20170302 20:13:25.758" starttime="20170302 20:13:25.748"></status>
+<msg timestamp="20170303 11:31:34.435" level="FAIL">Table 'Employee1' does not exist in the db</msg>
+<status status="FAIL" endtime="20170303 11:31:34.435" starttime="20170303 11:31:34.419"></status>
 </kw>
 <kw type="teardown" name="DB Test Teardown" library="testTearDown">
 <kw name="Log" library="BuiltIn">
@@ -666,16 +664,16 @@ port=22</msg>
 <arguments>
 <arg>SSH Test Teardown nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.758" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 20:13:25.758" starttime="20170302 20:13:25.758"></status>
+<msg timestamp="20170303 11:31:34.435" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.435" starttime="20170303 11:31:34.435"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.758" starttime="20170302 20:13:25.758"></status>
+<status status="PASS" endtime="20170303 11:31:34.435" starttime="20170303 11:31:34.435"></status>
 </kw>
 <tags>
 <tag>DB</tag>
 <tag>DB_SMOKE</tag>
 </tags>
-<status status="FAIL" endtime="20170302 20:13:25.758" critical="yes" starttime="20170302 20:13:25.748">Table 'Employee1' does not exist in the db</status>
+<status status="FAIL" endtime="20170303 11:31:34.435" critical="yes" starttime="20170303 11:31:34.419">Table 'Employee1' does not exist in the db</status>
 </test>
 <test id="s1-t5" name="Check If Exists In DB - Franz Allan">
 <kw type="setup" name="DB Test Setup" library="testSetup">
@@ -684,17 +682,17 @@ port=22</msg>
 <arguments>
 <arg>UI Test Setup nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.758" level="INFO">UI Test Setup nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 20:13:25.758" starttime="20170302 20:13:25.758"></status>
+<msg timestamp="20170303 11:31:34.435" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.435" starttime="20170303 11:31:34.435"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.758" starttime="20170302 20:13:25.758"></status>
+<status status="PASS" endtime="20170303 11:31:34.435" starttime="20170303 11:31:34.435"></status>
 </kw>
 <kw name="Check If Exists In Database" library="DatabaseLibrary">
 <doc>Check if any row would be returned by given the input</doc>
 <arguments>
 <arg>SELECT id FROM Employee WHERE first_name = 'Franz Allan';</arg>
 </arguments>
-<status status="PASS" endtime="20170302 20:13:25.768" starttime="20170302 20:13:25.758"></status>
+<status status="PASS" endtime="20170303 11:31:34.435" starttime="20170303 11:31:34.435"></status>
 </kw>
 <kw type="teardown" name="DB Test Teardown" library="testTearDown">
 <kw name="Log" library="BuiltIn">
@@ -702,16 +700,16 @@ port=22</msg>
 <arguments>
 <arg>SSH Test Teardown nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.768" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 20:13:25.768" starttime="20170302 20:13:25.768"></status>
+<msg timestamp="20170303 11:31:34.435" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.435" starttime="20170303 11:31:34.435"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.768" starttime="20170302 20:13:25.768"></status>
+<status status="PASS" endtime="20170303 11:31:34.435" starttime="20170303 11:31:34.435"></status>
 </kw>
 <tags>
 <tag>DB</tag>
 <tag>DB_SMOKE</tag>
 </tags>
-<status status="PASS" endtime="20170302 20:13:25.768" critical="yes" starttime="20170302 20:13:25.758"></status>
+<status status="PASS" endtime="20170303 11:31:34.435" critical="yes" starttime="20170303 11:31:34.435"></status>
 </test>
 <test id="s1-t6" name="Retrieve Row Count">
 <kw type="setup" name="DB Test Setup" library="testSetup">
@@ -720,10 +718,10 @@ port=22</msg>
 <arguments>
 <arg>UI Test Setup nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.768" level="INFO">UI Test Setup nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 20:13:25.768" starttime="20170302 20:13:25.768"></status>
+<msg timestamp="20170303 11:31:34.435" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.435" starttime="20170303 11:31:34.435"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.768" starttime="20170302 20:13:25.768"></status>
+<status status="PASS" endtime="20170303 11:31:34.435" starttime="20170303 11:31:34.435"></status>
 </kw>
 <kw name="Row Count" library="DatabaseLibrary">
 <doc>Uses the input `selectStatement` to query the database and returns</doc>
@@ -733,16 +731,16 @@ port=22</msg>
 <assign>
 <var>${output}</var>
 </assign>
-<msg timestamp="20170302 20:13:25.768" level="INFO">${output} = 2</msg>
-<status status="PASS" endtime="20170302 20:13:25.768" starttime="20170302 20:13:25.768"></status>
+<msg timestamp="20170303 11:31:34.451" level="INFO">${output} = 2</msg>
+<status status="PASS" endtime="20170303 11:31:34.451" starttime="20170303 11:31:34.435"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${output}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.778" level="INFO">2</msg>
-<status status="PASS" endtime="20170302 20:13:25.778" starttime="20170302 20:13:25.768"></status>
+<msg timestamp="20170303 11:31:34.451" level="INFO">2</msg>
+<status status="PASS" endtime="20170303 11:31:34.451" starttime="20170303 11:31:34.451"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -750,10 +748,10 @@ port=22</msg>
 <arg>${output}</arg>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.778" level="INFO">Argument types are:
+<msg timestamp="20170303 11:31:34.451" level="INFO">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20170302 20:13:25.778" starttime="20170302 20:13:25.778"></status>
+<status status="PASS" endtime="20170303 11:31:34.451" starttime="20170303 11:31:34.451"></status>
 </kw>
 <kw type="teardown" name="DB Test Teardown" library="testTearDown">
 <kw name="Log" library="BuiltIn">
@@ -761,16 +759,16 @@ port=22</msg>
 <arguments>
 <arg>SSH Test Teardown nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.778" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 20:13:25.778" starttime="20170302 20:13:25.778"></status>
+<msg timestamp="20170303 11:31:34.451" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.451" starttime="20170303 11:31:34.451"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.778" starttime="20170302 20:13:25.778"></status>
+<status status="PASS" endtime="20170303 11:31:34.451" starttime="20170303 11:31:34.451"></status>
 </kw>
 <tags>
-<tag>db</tag>
-<tag>smoke</tag>
+<tag>DB</tag>
+<tag>DB_SMOKE</tag>
 </tags>
-<status status="PASS" endtime="20170302 20:13:25.778" critical="yes" starttime="20170302 20:13:25.768"></status>
+<status status="PASS" endtime="20170303 11:31:34.451" critical="yes" starttime="20170303 11:31:34.435"></status>
 </test>
 <test id="s1-t7" name="Add Employee in first transaction">
 <kw type="setup" name="DB Test Setup" library="testSetup">
@@ -779,10 +777,10 @@ port=22</msg>
 <arguments>
 <arg>UI Test Setup nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.778" level="INFO">UI Test Setup nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 20:13:25.778" starttime="20170302 20:13:25.778"></status>
+<msg timestamp="20170303 11:31:34.451" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.451" starttime="20170303 11:31:34.451"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.778" starttime="20170302 20:13:25.778"></status>
+<status status="PASS" endtime="20170303 11:31:34.451" starttime="20170303 11:31:34.451"></status>
 </kw>
 <kw name="Execute Sql String" library="DatabaseLibrary">
 <doc>Executes the sqlString as SQL commands.</doc>
@@ -792,16 +790,16 @@ port=22</msg>
 <assign>
 <var>${output}</var>
 </assign>
-<msg timestamp="20170302 20:13:25.788" level="INFO">${output} = None</msg>
-<status status="PASS" endtime="20170302 20:13:25.788" starttime="20170302 20:13:25.778"></status>
+<msg timestamp="20170303 11:31:34.466" level="INFO">${output} = None</msg>
+<status status="PASS" endtime="20170303 11:31:34.466" starttime="20170303 11:31:34.451"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${output}</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.788" level="INFO">None</msg>
-<status status="PASS" endtime="20170302 20:13:25.788" starttime="20170302 20:13:25.788"></status>
+<msg timestamp="20170303 11:31:34.466" level="INFO">None</msg>
+<status status="PASS" endtime="20170303 11:31:34.466" starttime="20170303 11:31:34.466"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -809,10 +807,10 @@ port=22</msg>
 <arg>${output}</arg>
 <arg>None</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.788" level="INFO">Argument types are:
+<msg timestamp="20170303 11:31:34.466" level="INFO">Argument types are:
 &lt;type 'NoneType'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20170302 20:13:25.788" starttime="20170302 20:13:25.788"></status>
+<status status="PASS" endtime="20170303 11:31:34.466" starttime="20170303 11:31:34.466"></status>
 </kw>
 <kw type="teardown" name="DB Test Teardown" library="testTearDown">
 <kw name="Log" library="BuiltIn">
@@ -820,42 +818,103 @@ port=22</msg>
 <arguments>
 <arg>SSH Test Teardown nothing is implemented yet</arg>
 </arguments>
-<msg timestamp="20170302 20:13:25.788" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
-<status status="PASS" endtime="20170302 20:13:25.788" starttime="20170302 20:13:25.788"></status>
+<msg timestamp="20170303 11:31:34.466" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.466" starttime="20170303 11:31:34.466"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.788" starttime="20170302 20:13:25.788"></status>
+<status status="PASS" endtime="20170303 11:31:34.466" starttime="20170303 11:31:34.466"></status>
 </kw>
 <tags>
-<tag>db</tag>
-<tag>smoke</tag>
+<tag>DB</tag>
+<tag>DB_SMOKE</tag>
 </tags>
-<status status="PASS" endtime="20170302 20:13:25.788" critical="yes" starttime="20170302 20:13:25.778"></status>
+<status status="PASS" endtime="20170303 11:31:34.466" critical="yes" starttime="20170303 11:31:34.451"></status>
+</test>
+<test id="s1-t8" name="Connect To DB Servers and Drop Employee Table">
+<kw type="setup" name="DB Test Setup" library="testSetup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>UI Test Setup nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170303 11:31:34.466" level="INFO">UI Test Setup nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.466" starttime="20170303 11:31:34.466"></status>
+</kw>
+<status status="PASS" endtime="20170303 11:31:34.466" starttime="20170303 11:31:34.466"></status>
+</kw>
+<kw name="Execute Sql String" library="DatabaseLibrary">
+<doc>Executes the sqlString as SQL commands.</doc>
+<arguments>
+<arg>DROP TABLE Employee ;</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<msg timestamp="20170303 11:31:34.483" level="INFO">${output} = None</msg>
+<status status="PASS" endtime="20170303 11:31:34.483" starttime="20170303 11:31:34.466"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output}</arg>
+</arguments>
+<msg timestamp="20170303 11:31:34.483" level="INFO">None</msg>
+<status status="PASS" endtime="20170303 11:31:34.483" starttime="20170303 11:31:34.483"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${output}</arg>
+<arg>None</arg>
+</arguments>
+<msg timestamp="20170303 11:31:34.483" level="INFO">Argument types are:
+&lt;type 'NoneType'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170303 11:31:34.483" starttime="20170303 11:31:34.483"></status>
+</kw>
+<kw type="teardown" name="DB Test Teardown" library="testTearDown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>SSH Test Teardown nothing is implemented yet</arg>
+</arguments>
+<msg timestamp="20170303 11:31:34.483" level="INFO">SSH Test Teardown nothing is implemented yet</msg>
+<status status="PASS" endtime="20170303 11:31:34.483" starttime="20170303 11:31:34.483"></status>
+</kw>
+<status status="PASS" endtime="20170303 11:31:34.483" starttime="20170303 11:31:34.483"></status>
+</kw>
+<tags>
+<tag>DB</tag>
+</tags>
+<status status="PASS" endtime="20170303 11:31:34.483" critical="yes" starttime="20170303 11:31:34.466"></status>
 </test>
 <kw type="teardown" name="Suite Teardown" library="suiteTeardown">
 <kw name="Close All Connections" library="SSHLibrary">
 <doc>Closes all open connections.</doc>
-<status status="PASS" endtime="20170302 20:13:25.829" starttime="20170302 20:13:25.788"></status>
+<status status="PASS" endtime="20170303 11:31:34.545" starttime="20170303 11:31:34.483"></status>
 </kw>
-<status status="PASS" endtime="20170302 20:13:25.829" starttime="20170302 20:13:25.788"></status>
+<kw name="Disconnect From Database" library="DatabaseLibrary">
+<doc>Disconnects from the database.</doc>
+<status status="PASS" endtime="20170303 11:31:34.545" starttime="20170303 11:31:34.545"></status>
+</kw>
+<status status="PASS" endtime="20170303 11:31:34.545" starttime="20170303 11:31:34.483"></status>
 </kw>
 <doc>A test suite with a single test for DB connection.
 
 This test has a workflow that is created using keywords in
 the imported resource file.</doc>
-<status status="FAIL" endtime="20170302 20:13:25.829" starttime="20170302 20:13:18.241"></status>
+<status status="FAIL" endtime="20170303 11:31:34.545" starttime="20170303 11:31:27.574"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="6">Critical Tests</stat>
-<stat fail="1" pass="6">All Tests</stat>
+<stat fail="1" pass="7">Critical Tests</stat>
+<stat fail="1" pass="7">All Tests</stat>
 </total>
 <tag>
-<stat fail="1" pass="6">DB</stat>
-<stat fail="1" pass="3">DB_SMOKE</stat>
-<stat fail="0" pass="2">smoke</stat>
+<stat fail="1" pass="7">DB</stat>
+<stat fail="1" pass="5">DB_SMOKE</stat>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="DB intaraction" pass="6">DB intaraction</stat>
+<stat fail="1" id="s1" name="DB intaraction" pass="7">DB intaraction</stat>
 </suite>
 </statistics>
 <errors>

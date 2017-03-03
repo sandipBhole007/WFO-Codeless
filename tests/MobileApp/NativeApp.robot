@@ -1,5 +1,5 @@
 ***Settings***
-Library				AppiumLibrary
+Library				AppiumLibrary	run_on_failure=AppiumLibrary.CapturePageScreenshot
 Resource			MobileApp/LinkedinFlow_Resource.robot
 Resource    		resources/automationProperties.robot
 Resource          	suiteSetup/suiteSetup.robot
@@ -13,6 +13,13 @@ Test Teardown       Mobile Test Teardown
 ***Variables***
 
 ***TestCases***
+Invalid Login in Linkedin App 
+	[Tags] 	Mobile
+	[Setup] 	Mobile Test Setup
+	Open Linkedin Login Page
+	Login TO App ${muserName} ${mInvalidPassword}
+	Verfiy Page Contains Text Bad username/password
+
 Search NICE Ltd in Linkedin App 
 	[Tags] 		Mobile
 	[Setup] 	Mobile Test Setup

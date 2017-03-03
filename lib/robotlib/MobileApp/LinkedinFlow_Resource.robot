@@ -1,5 +1,5 @@
 ***Settings***
-Library		AppiumLibrary
+Library		AppiumLibrary		run_on_failure=AppiumLibrary.CapturePageScreenshot
 Resource    resources/automationProperties.robot
 Resource    POM/MobileApp.txt
 ***Variables***

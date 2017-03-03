@@ -11,3 +11,4 @@ ${Docker_feedPath}
 
 Suite Teardown
 	Close All Connections
+	Disconnect From Database

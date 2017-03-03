@@ -22,3 +22,6 @@ DB Test Teardown
 	
 Mobile Test Teardown
 	Log 	Mobile Test Teardown nothing is implemented yet
+
+ReST Test Teardown
+	Log 	SSH Test Teardown nothing is implemented yet

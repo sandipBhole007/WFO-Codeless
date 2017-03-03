@@ -46,3 +46,5 @@ ${appPackage}	com.linkedin.android
 ${appActivity}	com.linkedin.android.growth.login.LoginActivity
 ${muserName}	ravivani10@gmail.com
 ${mpassword}	linkedindemo
+${mInvalidPassword} 	1234567
+

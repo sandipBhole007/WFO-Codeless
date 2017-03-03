@@ -63,3 +63,11 @@ Add Employee in first transaction
     ${output} =    Execute SQL String    INSERT INTO Employee VALUES(101,'Bilbo','Baggins');
     Log    ${output}
     Should Be Equal As Strings    ${output}    None
+    
+ Connect To DB Servers and Drop Employee Table
+	[Tags]    DB
+	[Setup]		DB Test Setup
+ 	${output} =    Execute SQL String    DROP TABLE Employee ;
+    Log    ${output}
+    Should Be Equal As Strings    ${output}    None
+	[Teardown] 	 testTearDown.DB Test Teardown
