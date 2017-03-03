@@ -1,6 +1,5 @@
 *** Settings ***
 Library             SSHLibrary
-Library             OperatingSystem
 Library             DatabaseLibrary
 Resource        	resources/automationProperties.robot
 

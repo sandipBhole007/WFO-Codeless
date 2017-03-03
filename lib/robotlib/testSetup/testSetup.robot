@@ -1,11 +1,8 @@
 *** Settings ***
-Library             SSHLibrary
-Library             OperatingSystem
-Library           	Selenium2Library
-Library           	Screenshot
-Library             DatabaseLibrary
 Resource            resources/automationProperties.robot
 Resource			MobileApp/LinkedinFlow_Resource.robot
+Resource            AngularJS/AngularJS.robot
+Resource            UI/NCATHome_Resource.robot
 **** Variables***
 
 
@@ -21,8 +18,7 @@ Feed Test Setup
 	Log 	nothing is implemented yet
 
 UI Test Setup 
-	Screenshot.Set Screenshot Directory		${ScreenshotOutputDirectory}
-	Selenium2Library.Set Selenium Speed     ${DELAY}  
+	NCATHome_Resource.UI Set Properties
 	Log 	UI Test Setup nothing is implemented yet
 	
 SSH Test Setup
@@ -36,3 +32,6 @@ ReST Test Setup
 	
 Mobile Test Setup
 	LinkedinFlow_Resource.Open Mobile Application
+
+AngularJS Test Setup
+	AngularJS.Open Application in Browser

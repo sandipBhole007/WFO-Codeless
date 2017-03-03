@@ -17,7 +17,11 @@ Library           	OperatingSystem
 
  	
 *** Keywords ***
-
+DB Suite Setup Step
+	Run Keyword And Ignore Error	Disconnect From Database
+	Open Connection To MYSQL PHS_EDB Database
+	
+	
 Open Connection To MYSQL PHS_EDB Database
 	Log		 	${DBName}
 	Log		 	${DBUser}

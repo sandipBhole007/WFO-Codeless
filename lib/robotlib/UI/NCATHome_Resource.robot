@@ -13,8 +13,13 @@ Resource          resources/automationProperties.robot
 
 *** Keywords ***
 
-Set Properties
+UI Set Properties
+	Screenshot.Set Screenshot Directory		${ScreenshotOutputDirectory}
+	Selenium2Library.Set Selenium Speed     ${DELAY}  
 	
+UI Failed Step 	
+	Run Keyword If Test Failed    	Capture Page Screenshot		${ScreenshotName}
+	Close Browser
 Open Browser NCAT Page
 
 	

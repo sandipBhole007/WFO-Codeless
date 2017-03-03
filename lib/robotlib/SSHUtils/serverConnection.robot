@@ -7,12 +7,14 @@ Library      	SSHLibrary
 Resource        resources/automationProperties.robot
 Resource        SSHUtils/serverConnection.robot
 * Variables
-
+${LinuxUSERNAME}			root
+${LinuxPASSWORD}			Password1!
 
  	
 *** Keywords ***
 
-Open Server connecions
+SSH Suite Setup Step
+	SSHLibrary.Set Default Configuration	timeout=20 minute
 	Open Connection to LinuxServer1 And Log In
 	Open Connection to LinuxServer2 And Log In
 	Open Connection to LinuxServer3 And Log In
@@ -21,15 +23,15 @@ Open Server connecions
 	Switch and Verify Connection to LinuxServer3 
 	  	
 Open SSH Connection to server And Log In
- 	[Arguments]    ${HOST}		${USERNAME}		${PASSWORD}		${Alias}
+ 	[Arguments]    ${HOST}		${LinuxUSERNAME}		${LinuxPASSWORD}		${Alias}
  	[Documentation]   This Keyword open a connection to any linux server by argument
 	...					arg1 = ${HOST}  Server IP or Name
-	...					arg2 = ${USERNAME} Server username 
-	...					arg3 = ${PASSWORD} Server password
+	...					arg2 = ${LinuxUSERNAME} Server username 
+	...					arg3 = ${LinuxPASSWORD} Server password
 	...					arg4 = ${Alias}	connection alisa which can be used for switch connection
 	
  	Open Connection   ${HOST}		alias=${Alias}
-   	Login   ${USERNAME}    ${PASSWORD}
+   	Login   ${LinuxUSERNAME}    ${LinuxPASSWORD}
    	
    	
  
@@ -39,24 +41,24 @@ Open Connection to LinuxServer1 And Log In
 	...
 	
 	Log 	${linux_server1}	  # 
-	Log 	${USERNAME}	  # 
-	Log 	${PASSWORD}	  #  
+	Log 	${LinuxUSERNAME}	  # 
+	Log 	${LinuxPASSWORD}	  #  
 	Open Connection	 ${linux_server1}		alias=LinuxServer1
-	Login    ${USERNAME}    ${PASSWORD}
+	Login    ${LinuxUSERNAME}    ${LinuxPASSWORD}
    	
 
 Open Connection to LinuxServer2 And Log In
 	[Documentation]   This Keyword open a connection to a LinuxServer2  system 
 	Log 	${linux_server2}	  #  
 	Open Connection	 ${linux_server2}		alias=LinuxServer2
-	Login    ${USERNAME}    ${PASSWORD}
+	Login    ${LinuxUSERNAME}    ${LinuxPASSWORD}
    	
 
 Open Connection to LinuxServer3 And Log In
 	[Documentation]   This Keyword open a connection to a LinuxServer2  system 
 	Log 	${linux_server3}	  #  
 	Open Connection	 ${linux_server3}		alias=LinuxServer3
-	Login    ${USERNAME}    ${PASSWORD}
+	Login    ${LinuxUSERNAME}    ${LinuxPASSWORD}
 
    
 Switch and Verify Connection to LinuxServer1  

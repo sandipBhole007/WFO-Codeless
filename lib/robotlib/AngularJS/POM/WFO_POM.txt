@@ -1,0 +1,13 @@
+*** Variables ***
+${txt_Login_emailID}	model=user.email
+${txt_Password}			model=user.password
+${btn_LogIn_Button} 	id=loginBtn
+${Login_Error}				css=.error-message.login-error-message.ng-binding
+${Login_Header}				css=.form-frame.form-header.ng-scope
+${Forgot_Password_link}		id=forgot-password-link
+${showPasswordButton}		css=.showPasswordButton.passwordHidden
+${ContactUs}				css=.contact-us.pull-right.ng-scope
+${logo_NICELogo}			css=.nice-logo.pull-left
+${Logo_NICE_App_IMG}		css=.nice-app
+${Lbl_NICE_EvolveWFO}		css=.nice-txt.ng-scope
+${ttl_UserName}				css=.titleText.ng-binding

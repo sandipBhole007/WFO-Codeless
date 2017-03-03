@@ -1,18 +1,14 @@
 *** Settings ***
-Library             SSHLibrary
-Library             OperatingSystem
-Library           	Selenium2Library
-Library           	Screenshot
-Library             DatabaseLibrary
 Resource            resources/automationProperties.robot
+Resource            AngularJS/AngularJS.robot
+Resource            UI/NCATHome_Resource.robot
 **** Variables***
 
 
 *** Keywords ***
 
 UI Test Teardown
-	Run Keyword If Test Failed    	Capture Page Screenshot		${ScreenshotName}
-	Close Browser
+	NCATHome_Resource.UI Failed Step 	
 
 SSH Test Teardown
 	Log 	SSH Test Teardown nothing is implemented yet
@@ -25,3 +21,6 @@ Mobile Test Teardown
 
 ReST Test Teardown
 	Log 	SSH Test Teardown nothing is implemented yet
+	
+AngularJS Test Teardown
+	AngularJS.AngularJS Failed Step
