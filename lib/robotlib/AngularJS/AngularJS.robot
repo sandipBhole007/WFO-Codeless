@@ -17,6 +17,7 @@ AngularJS Failed Step
 	ExtendedSelenium2Library.Close Browser
 	
 Open Application in Browser
+	Set Library Search Order	ExtendedSelenium2Library	Selenium2Library	
 	ExtendedSelenium2Library.Open Browser	${AngularJSURL}		${AngularJS_BROWSER}
 	ExtendedSelenium2Library.Element Should Be Visible		${logo_NICELogo}
 	ExtendedSelenium2Library.Element Should Be Visible		${btn_LogIn_Button}

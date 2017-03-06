@@ -28,3 +28,15 @@ Login TO NCAT and Verify Login Succssful
 	Given NCATHome_Resource.Open NCAT Web HomePage and Login By Valid Admin 
 	Then NCATHome_Resource.Verify Admin Got Logged in Succssfully 
 	[Teardown]    testTearDown.UI Test Teardown
+	
+	
+Invalid password
+	[Tags]    UI
+    [Template]    Invalid user with invalid password should fail
+    abCD5            abCD5
+    abCD567890123    abCD567890123
+    123DEFG          123DEFG
+    abcd56789        abcd56789
+    AbCdEfGh         AbCdEfGh
+    abCD56+          abCD56+
+    [Teardown]    testTearDown.UI Test Teardown

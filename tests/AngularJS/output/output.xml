@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170303 16:05:37.598" generator="Robot 3.0.2 (Python 2.7.11 on win32)">
+<robot generated="20170306 14:03:21.026" generator="Robot 3.0.2 (Python 2.7.11 on win32)">
 <suite source="C:\WFO-Codeless\tests\AngularJS\AngularJSTest.robot" id="s1" name="AngularJSTest">
 <kw type="setup" name="Suite Setup" library="suiteSetup">
 <kw name="Set Automation Global Variables" library="suiteSetup">
@@ -8,50 +8,50 @@
 <arguments>
 <arg>${ScreenshotOutputDirectory}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:40.149" level="INFO">${ScreenshotOutputDirectory} = C:/NPMGit/WFO-Codeless/output/Screenshot</msg>
-<status status="PASS" endtime="20170303 16:05:40.149" starttime="20170303 16:05:40.149"></status>
+<msg timestamp="20170306 14:03:24.248" level="INFO">${ScreenshotOutputDirectory} = C:/NPMGit/WFO-Codeless/output/Screenshot</msg>
+<status status="PASS" endtime="20170306 14:03:24.248" starttime="20170306 14:03:24.248"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:40.149" level="INFO">${DELAY} = .1 seconds</msg>
-<status status="PASS" endtime="20170303 16:05:40.149" starttime="20170303 16:05:40.149"></status>
+<msg timestamp="20170306 14:03:24.249" level="INFO">${DELAY} = .1 seconds</msg>
+<status status="PASS" endtime="20170306 14:03:24.250" starttime="20170306 14:03:24.249"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${ScreenshotName}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:40.149" level="INFO">${ScreenshotName} = C:/NPMGit/WFO-Codeless/output/Screenshot\selenium-manual-screenshot-{index}.png</msg>
-<status status="PASS" endtime="20170303 16:05:40.149" starttime="20170303 16:05:40.149"></status>
+<msg timestamp="20170306 14:03:24.251" level="INFO">${ScreenshotName} = C:/NPMGit/WFO-Codeless/output/Screenshot\selenium-manual-screenshot-{index}.png</msg>
+<status status="PASS" endtime="20170306 14:03:24.251" starttime="20170306 14:03:24.250"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${LocalLogFolderPath}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:40.149" level="INFO">${LocalLogFolderPath} = C:\NPMGit\WFO-Codeless\output\logs</msg>
-<status status="PASS" endtime="20170303 16:05:40.149" starttime="20170303 16:05:40.149"></status>
+<msg timestamp="20170306 14:03:24.252" level="INFO">${LocalLogFolderPath} = C:\NPMGit\WFO-Codeless\output\logs</msg>
+<status status="PASS" endtime="20170306 14:03:24.252" starttime="20170306 14:03:24.251"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${NCATLogFolderPath}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:40.149" level="INFO">${NCATLogFolderPath} = /NCAT/NCAT/server/apache-tomcat-7.0.57/logs</msg>
-<status status="PASS" endtime="20170303 16:05:40.149" starttime="20170303 16:05:40.149"></status>
+<msg timestamp="20170306 14:03:24.252" level="INFO">${NCATLogFolderPath} = /NCAT/NCAT/server/apache-tomcat-7.0.57/logs</msg>
+<status status="PASS" endtime="20170306 14:03:24.252" starttime="20170306 14:03:24.252"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${linux_server3}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:40.149" level="INFO">${linux_server3} = 172.30.17.15</msg>
-<status status="PASS" endtime="20170303 16:05:40.149" starttime="20170303 16:05:40.149"></status>
+<msg timestamp="20170306 14:03:24.253" level="INFO">${linux_server3} = 172.30.17.15</msg>
+<status status="PASS" endtime="20170306 14:03:24.253" starttime="20170306 14:03:24.253"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:05:40.149" starttime="20170303 16:05:40.149"></status>
+<status status="PASS" endtime="20170306 14:03:24.253" starttime="20170306 14:03:24.247"></status>
 </kw>
 <kw name="SSH Suite Setup Step" library="serverConnection">
 <kw name="Set Default Configuration" library="SSHLibrary">
@@ -59,7 +59,7 @@
 <arguments>
 <arg>timeout=20 minute</arg>
 </arguments>
-<status status="PASS" endtime="20170303 16:05:40.149" starttime="20170303 16:05:40.149"></status>
+<status status="PASS" endtime="20170306 14:03:24.255" starttime="20170306 14:03:24.254"></status>
 </kw>
 <kw name="Open Connection to LinuxServer1 And Log In" library="serverConnection">
 <doc>This Keyword open a connection to a LinuxServer1</doc>
@@ -68,24 +68,24 @@
 <arguments>
 <arg>${linux_server1}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:40.149" level="INFO">172.30.16.131</msg>
-<status status="PASS" endtime="20170303 16:05:40.149" starttime="20170303 16:05:40.149"></status>
+<msg timestamp="20170306 14:03:24.256" level="INFO">172.30.16.131</msg>
+<status status="PASS" endtime="20170306 14:03:24.256" starttime="20170306 14:03:24.255"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${LinuxUSERNAME}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:40.149" level="INFO">root</msg>
-<status status="PASS" endtime="20170303 16:05:40.149" starttime="20170303 16:05:40.149"></status>
+<msg timestamp="20170306 14:03:24.256" level="INFO">root</msg>
+<status status="PASS" endtime="20170306 14:03:24.256" starttime="20170306 14:03:24.256"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${LinuxPASSWORD}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:40.149" level="INFO">Password1!</msg>
-<status status="PASS" endtime="20170303 16:05:40.149" starttime="20170303 16:05:40.149"></status>
+<msg timestamp="20170306 14:03:24.257" level="INFO">Password1!</msg>
+<status status="PASS" endtime="20170306 14:03:24.257" starttime="20170306 14:03:24.257"></status>
 </kw>
 <kw name="Open Connection" library="SSHLibrary">
 <doc>Opens a new SSH connection to the given `host` and `port`.</doc>
@@ -93,7 +93,7 @@
 <arg>${linux_server1}</arg>
 <arg>alias=LinuxServer1</arg>
 </arguments>
-<status status="PASS" endtime="20170303 16:05:40.149" starttime="20170303 16:05:40.149"></status>
+<status status="PASS" endtime="20170306 14:03:24.258" starttime="20170306 14:03:24.258"></status>
 </kw>
 <kw name="Login" library="SSHLibrary">
 <doc>Logs into the SSH server with the given `username` and `password`.</doc>
@@ -101,12 +101,12 @@
 <arg>${LinuxUSERNAME}</arg>
 <arg>${LinuxPASSWORD}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:40.150" level="INFO">Logging into '172.30.16.131:22' as 'root'.</msg>
-<msg timestamp="20170303 16:05:41.619" level="INFO">Read output: Last login: Fri Mar  3 12:33:10 2017 from 172.23.149.19
+<msg timestamp="20170306 14:03:24.259" level="INFO">Logging into '172.30.16.131:22' as 'root'.</msg>
+<msg timestamp="20170306 14:03:25.708" level="INFO">Read output: Last login: Mon Mar  6 10:29:07 2017 from 172.23.149.19
 [root@ENT-CL-001409 ~]#</msg>
-<status status="PASS" endtime="20170303 16:05:41.619" starttime="20170303 16:05:40.149"></status>
+<status status="PASS" endtime="20170306 14:03:25.708" starttime="20170306 14:03:24.259"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:05:41.619" starttime="20170303 16:05:40.149"></status>
+<status status="PASS" endtime="20170306 14:03:25.708" starttime="20170306 14:03:24.255"></status>
 </kw>
 <kw name="Open Connection to LinuxServer2 And Log In" library="serverConnection">
 <doc>This Keyword open a connection to a LinuxServer2 system</doc>
@@ -115,8 +115,8 @@
 <arguments>
 <arg>${linux_server2}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:41.619" level="INFO">172.30.16.96</msg>
-<status status="PASS" endtime="20170303 16:05:41.619" starttime="20170303 16:05:41.619"></status>
+<msg timestamp="20170306 14:03:25.709" level="INFO">172.30.16.96</msg>
+<status status="PASS" endtime="20170306 14:03:25.709" starttime="20170306 14:03:25.709"></status>
 </kw>
 <kw name="Open Connection" library="SSHLibrary">
 <doc>Opens a new SSH connection to the given `host` and `port`.</doc>
@@ -124,7 +124,7 @@
 <arg>${linux_server2}</arg>
 <arg>alias=LinuxServer2</arg>
 </arguments>
-<status status="PASS" endtime="20170303 16:05:41.619" starttime="20170303 16:05:41.619"></status>
+<status status="PASS" endtime="20170306 14:03:25.710" starttime="20170306 14:03:25.709"></status>
 </kw>
 <kw name="Login" library="SSHLibrary">
 <doc>Logs into the SSH server with the given `username` and `password`.</doc>
@@ -132,12 +132,12 @@
 <arg>${LinuxUSERNAME}</arg>
 <arg>${LinuxPASSWORD}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:41.619" level="INFO">Logging into '172.30.16.96:22' as 'root'.</msg>
-<msg timestamp="20170303 16:05:42.790" level="INFO">Read output: Last login: Fri Mar  3 12:33:11 2017 from 172.23.149.19
+<msg timestamp="20170306 14:03:25.710" level="INFO">Logging into '172.30.16.96:22' as 'root'.</msg>
+<msg timestamp="20170306 14:03:26.897" level="INFO">Read output: Last login: Mon Mar  6 10:29:08 2017 from 172.23.149.19
 [root@ENT-CL-001371 ~]#</msg>
-<status status="PASS" endtime="20170303 16:05:42.790" starttime="20170303 16:05:41.619"></status>
+<status status="PASS" endtime="20170306 14:03:26.897" starttime="20170306 14:03:25.710"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:05:42.790" starttime="20170303 16:05:41.619"></status>
+<status status="PASS" endtime="20170306 14:03:26.897" starttime="20170306 14:03:25.708"></status>
 </kw>
 <kw name="Open Connection to LinuxServer3 And Log In" library="serverConnection">
 <doc>This Keyword open a connection to a LinuxServer2 system</doc>
@@ -146,8 +146,8 @@
 <arguments>
 <arg>${linux_server3}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:42.790" level="INFO">172.30.17.15</msg>
-<status status="PASS" endtime="20170303 16:05:42.790" starttime="20170303 16:05:42.790"></status>
+<msg timestamp="20170306 14:03:26.899" level="INFO">172.30.17.15</msg>
+<status status="PASS" endtime="20170306 14:03:26.899" starttime="20170306 14:03:26.898"></status>
 </kw>
 <kw name="Open Connection" library="SSHLibrary">
 <doc>Opens a new SSH connection to the given `host` and `port`.</doc>
@@ -155,7 +155,7 @@
 <arg>${linux_server3}</arg>
 <arg>alias=LinuxServer3</arg>
 </arguments>
-<status status="PASS" endtime="20170303 16:05:42.790" starttime="20170303 16:05:42.790"></status>
+<status status="PASS" endtime="20170306 14:03:26.900" starttime="20170306 14:03:26.899"></status>
 </kw>
 <kw name="Login" library="SSHLibrary">
 <doc>Logs into the SSH server with the given `username` and `password`.</doc>
@@ -163,12 +163,12 @@
 <arg>${LinuxUSERNAME}</arg>
 <arg>${LinuxPASSWORD}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:42.790" level="INFO">Logging into '172.30.17.15:22' as 'root'.</msg>
-<msg timestamp="20170303 16:05:43.928" level="INFO">Read output: Last login: Fri Mar  3 12:33:10 2017 from 172.23.149.19
+<msg timestamp="20170306 14:03:26.901" level="INFO">Logging into '172.30.17.15:22' as 'root'.</msg>
+<msg timestamp="20170306 14:03:28.083" level="INFO">Read output: Last login: Mon Mar  6 10:29:07 2017 from 172.23.149.19
 [root@ENT-CL-000408 ~]#</msg>
-<status status="PASS" endtime="20170303 16:05:43.928" starttime="20170303 16:05:42.790"></status>
+<status status="PASS" endtime="20170306 14:03:28.083" starttime="20170306 14:03:26.900"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:05:43.928" starttime="20170303 16:05:42.790"></status>
+<status status="PASS" endtime="20170306 14:03:28.083" starttime="20170306 14:03:26.898"></status>
 </kw>
 <kw name="Switch and Verify Connection to LinuxServer1" library="serverConnection">
 <kw name="Switch Connection" library="SSHLibrary">
@@ -176,14 +176,14 @@
 <arguments>
 <arg>LinuxServer1</arg>
 </arguments>
-<status status="PASS" endtime="20170303 16:05:43.928" starttime="20170303 16:05:43.928"></status>
+<status status="PASS" endtime="20170306 14:03:28.085" starttime="20170306 14:03:28.084"></status>
 </kw>
 <kw name="Get Connection" library="SSHLibrary">
 <doc>Return information about the connection.</doc>
 <assign>
 <var>${LinuxServer1}</var>
 </assign>
-<msg timestamp="20170303 16:05:43.928" level="INFO">index=1
+<msg timestamp="20170306 14:03:28.086" level="INFO">index=1
 path_separator=/
 prompt=None
 width=80
@@ -196,7 +196,7 @@ host=172.30.16.131
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<msg timestamp="20170303 16:05:43.928" level="INFO">${LinuxServer1} = index=1
+<msg timestamp="20170306 14:03:28.086" level="INFO">${LinuxServer1} = index=1
 path_separator=/
 prompt=None
 width=80
@@ -209,7 +209,7 @@ host=172.30.16.131
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<status status="PASS" endtime="20170303 16:05:43.928" starttime="20170303 16:05:43.928"></status>
+<status status="PASS" endtime="20170306 14:03:28.086" starttime="20170306 14:03:28.086"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -218,10 +218,10 @@ port=22</msg>
 <arg>LinuxServer1</arg>
 <arg>.</arg>
 </arguments>
-<msg timestamp="20170303 16:05:43.928" level="INFO">Argument types are:
+<msg timestamp="20170306 14:03:28.087" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20170303 16:05:43.928" starttime="20170303 16:05:43.928"></status>
+<status status="PASS" endtime="20170306 14:03:28.087" starttime="20170306 14:03:28.087"></status>
 </kw>
 <kw name="Execute Command" library="SSHLibrary">
 <doc>Executes `command` on the remote machine and returns its outputs.</doc>
@@ -231,20 +231,20 @@ port=22</msg>
 <assign>
 <var>${LinuxServer1_hostname}</var>
 </assign>
-<msg timestamp="20170303 16:05:43.928" level="INFO">Executing command 'hostname'.</msg>
-<msg timestamp="20170303 16:05:43.975" level="INFO">Command exited with return code 0.</msg>
-<msg timestamp="20170303 16:05:43.975" level="INFO">${LinuxServer1_hostname} = ENT-CL-001409</msg>
-<status status="PASS" endtime="20170303 16:05:43.975" starttime="20170303 16:05:43.928"></status>
+<msg timestamp="20170306 14:03:28.088" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170306 14:03:28.120" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170306 14:03:28.120" level="INFO">${LinuxServer1_hostname} = ENT-CL-001409</msg>
+<status status="PASS" endtime="20170306 14:03:28.120" starttime="20170306 14:03:28.088"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${LinuxServer1_hostname}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:43.975" level="INFO">ENT-CL-001409</msg>
-<status status="PASS" endtime="20170303 16:05:43.975" starttime="20170303 16:05:43.975"></status>
+<msg timestamp="20170306 14:03:28.121" level="INFO">ENT-CL-001409</msg>
+<status status="PASS" endtime="20170306 14:03:28.121" starttime="20170306 14:03:28.120"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:05:43.975" starttime="20170303 16:05:43.928"></status>
+<status status="PASS" endtime="20170306 14:03:28.121" starttime="20170306 14:03:28.084"></status>
 </kw>
 <kw name="Switch and Verify Connection to LinuxServer2" library="serverConnection">
 <kw name="Switch Connection" library="SSHLibrary">
@@ -252,14 +252,14 @@ port=22</msg>
 <arguments>
 <arg>LinuxServer2</arg>
 </arguments>
-<status status="PASS" endtime="20170303 16:05:43.975" starttime="20170303 16:05:43.975"></status>
+<status status="PASS" endtime="20170306 14:03:28.123" starttime="20170306 14:03:28.122"></status>
 </kw>
 <kw name="Get Connection" library="SSHLibrary">
 <doc>Return information about the connection.</doc>
 <assign>
 <var>${LinuxServer2}</var>
 </assign>
-<msg timestamp="20170303 16:05:43.975" level="INFO">index=2
+<msg timestamp="20170306 14:03:28.124" level="INFO">index=2
 path_separator=/
 prompt=None
 width=80
@@ -272,7 +272,7 @@ host=172.30.16.96
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<msg timestamp="20170303 16:05:43.975" level="INFO">${LinuxServer2} = index=2
+<msg timestamp="20170306 14:03:28.124" level="INFO">${LinuxServer2} = index=2
 path_separator=/
 prompt=None
 width=80
@@ -285,7 +285,7 @@ host=172.30.16.96
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<status status="PASS" endtime="20170303 16:05:43.975" starttime="20170303 16:05:43.975"></status>
+<status status="PASS" endtime="20170306 14:03:28.124" starttime="20170306 14:03:28.123"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -294,10 +294,10 @@ port=22</msg>
 <arg>LinuxServer2</arg>
 <arg>.</arg>
 </arguments>
-<msg timestamp="20170303 16:05:43.975" level="INFO">Argument types are:
+<msg timestamp="20170306 14:03:28.125" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20170303 16:05:43.975" starttime="20170303 16:05:43.975"></status>
+<status status="PASS" endtime="20170306 14:03:28.125" starttime="20170306 14:03:28.124"></status>
 </kw>
 <kw name="Execute Command" library="SSHLibrary">
 <doc>Executes `command` on the remote machine and returns its outputs.</doc>
@@ -307,20 +307,20 @@ port=22</msg>
 <assign>
 <var>${LinuxServer2_hostname}</var>
 </assign>
-<msg timestamp="20170303 16:05:43.975" level="INFO">Executing command 'hostname'.</msg>
-<msg timestamp="20170303 16:05:44.007" level="INFO">Command exited with return code 0.</msg>
-<msg timestamp="20170303 16:05:44.007" level="INFO">${LinuxServer2_hostname} = ENT-CL-001371</msg>
-<status status="PASS" endtime="20170303 16:05:44.007" starttime="20170303 16:05:43.975"></status>
+<msg timestamp="20170306 14:03:28.126" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170306 14:03:28.147" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170306 14:03:28.147" level="INFO">${LinuxServer2_hostname} = ENT-CL-001371</msg>
+<status status="PASS" endtime="20170306 14:03:28.147" starttime="20170306 14:03:28.125"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${LinuxServer2_hostname}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:44.007" level="INFO">ENT-CL-001371</msg>
-<status status="PASS" endtime="20170303 16:05:44.007" starttime="20170303 16:05:44.007"></status>
+<msg timestamp="20170306 14:03:28.148" level="INFO">ENT-CL-001371</msg>
+<status status="PASS" endtime="20170306 14:03:28.148" starttime="20170306 14:03:28.148"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:05:44.007" starttime="20170303 16:05:43.975"></status>
+<status status="PASS" endtime="20170306 14:03:28.148" starttime="20170306 14:03:28.121"></status>
 </kw>
 <kw name="Switch and Verify Connection to LinuxServer3" library="serverConnection">
 <kw name="Switch Connection" library="SSHLibrary">
@@ -328,14 +328,14 @@ port=22</msg>
 <arguments>
 <arg>LinuxServer3</arg>
 </arguments>
-<status status="PASS" endtime="20170303 16:05:44.007" starttime="20170303 16:05:44.007"></status>
+<status status="PASS" endtime="20170306 14:03:28.150" starttime="20170306 14:03:28.149"></status>
 </kw>
 <kw name="Get Connection" library="SSHLibrary">
 <doc>Return information about the connection.</doc>
 <assign>
 <var>${LinuxServer3}</var>
 </assign>
-<msg timestamp="20170303 16:05:44.007" level="INFO">index=3
+<msg timestamp="20170306 14:03:28.150" level="INFO">index=3
 path_separator=/
 prompt=None
 width=80
@@ -348,7 +348,7 @@ host=172.30.17.15
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<msg timestamp="20170303 16:05:44.007" level="INFO">${LinuxServer3} = index=3
+<msg timestamp="20170306 14:03:28.151" level="INFO">${LinuxServer3} = index=3
 path_separator=/
 prompt=None
 width=80
@@ -361,7 +361,7 @@ host=172.30.17.15
 timeout=20 minutes
 term_type=vt100
 port=22</msg>
-<status status="PASS" endtime="20170303 16:05:44.007" starttime="20170303 16:05:44.007"></status>
+<status status="PASS" endtime="20170306 14:03:28.151" starttime="20170306 14:03:28.150"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -370,10 +370,10 @@ port=22</msg>
 <arg>LinuxServer3</arg>
 <arg>.</arg>
 </arguments>
-<msg timestamp="20170303 16:05:44.007" level="INFO">Argument types are:
+<msg timestamp="20170306 14:03:28.152" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20170303 16:05:44.007" starttime="20170303 16:05:44.007"></status>
+<status status="PASS" endtime="20170306 14:03:28.152" starttime="20170306 14:03:28.151"></status>
 </kw>
 <kw name="Execute Command" library="SSHLibrary">
 <doc>Executes `command` on the remote machine and returns its outputs.</doc>
@@ -383,22 +383,22 @@ port=22</msg>
 <assign>
 <var>${LinuxServer3_hostname}</var>
 </assign>
-<msg timestamp="20170303 16:05:44.007" level="INFO">Executing command 'hostname'.</msg>
-<msg timestamp="20170303 16:05:44.038" level="INFO">Command exited with return code 0.</msg>
-<msg timestamp="20170303 16:05:44.038" level="INFO">${LinuxServer3_hostname} = ENT-CL-000408</msg>
-<status status="PASS" endtime="20170303 16:05:44.038" starttime="20170303 16:05:44.007"></status>
+<msg timestamp="20170306 14:03:28.153" level="INFO">Executing command 'hostname'.</msg>
+<msg timestamp="20170306 14:03:28.174" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20170306 14:03:28.174" level="INFO">${LinuxServer3_hostname} = ENT-CL-000408</msg>
+<status status="PASS" endtime="20170306 14:03:28.174" starttime="20170306 14:03:28.152"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${LinuxServer3_hostname}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:44.038" level="INFO">ENT-CL-000408</msg>
-<status status="PASS" endtime="20170303 16:05:44.038" starttime="20170303 16:05:44.038"></status>
+<msg timestamp="20170306 14:03:28.175" level="INFO">ENT-CL-000408</msg>
+<status status="PASS" endtime="20170306 14:03:28.175" starttime="20170306 14:03:28.175"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:05:44.038" starttime="20170303 16:05:44.007"></status>
+<status status="PASS" endtime="20170306 14:03:28.175" starttime="20170306 14:03:28.149"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:05:44.038" starttime="20170303 16:05:40.149"></status>
+<status status="PASS" endtime="20170306 14:03:28.176" starttime="20170306 14:03:24.254"></status>
 </kw>
 <kw name="DB Suite Setup Step" library="DB_intaraction">
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
@@ -408,10 +408,10 @@ port=22</msg>
 </arguments>
 <kw name="Disconnect From Database" library="DatabaseLibrary">
 <doc>Disconnects from the database.</doc>
-<msg timestamp="20170303 16:05:44.038" level="FAIL">AttributeError: 'NoneType' object has no attribute 'close'</msg>
-<status status="FAIL" endtime="20170303 16:05:44.038" starttime="20170303 16:05:44.038"></status>
+<msg timestamp="20170306 14:03:28.179" level="FAIL">AttributeError: 'NoneType' object has no attribute 'close'</msg>
+<status status="FAIL" endtime="20170306 14:03:28.179" starttime="20170306 14:03:28.177"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:05:44.038" starttime="20170303 16:05:44.038"></status>
+<status status="PASS" endtime="20170306 14:03:28.179" starttime="20170306 14:03:28.177"></status>
 </kw>
 <kw name="Open Connection To MYSQL PHS_EDB Database" library="DB_intaraction">
 <kw name="Log" library="BuiltIn">
@@ -419,40 +419,40 @@ port=22</msg>
 <arguments>
 <arg>${DBName}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:44.038" level="INFO">phs_edb</msg>
-<status status="PASS" endtime="20170303 16:05:44.038" starttime="20170303 16:05:44.038"></status>
+<msg timestamp="20170306 14:03:28.180" level="INFO">phs_edb</msg>
+<status status="PASS" endtime="20170306 14:03:28.180" starttime="20170306 14:03:28.180"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DBUser}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:44.038" level="INFO">root</msg>
-<status status="PASS" endtime="20170303 16:05:44.038" starttime="20170303 16:05:44.038"></status>
+<msg timestamp="20170306 14:03:28.181" level="INFO">root</msg>
+<status status="PASS" endtime="20170306 14:03:28.181" starttime="20170306 14:03:28.180"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DBPass}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:44.038" level="INFO">password</msg>
-<status status="PASS" endtime="20170303 16:05:44.038" starttime="20170303 16:05:44.038"></status>
+<msg timestamp="20170306 14:03:28.181" level="INFO">password</msg>
+<status status="PASS" endtime="20170306 14:03:28.181" starttime="20170306 14:03:28.181"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DBHost}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:44.038" level="INFO">1.224.0.62</msg>
-<status status="PASS" endtime="20170303 16:05:44.038" starttime="20170303 16:05:44.038"></status>
+<msg timestamp="20170306 14:03:28.182" level="INFO">1.224.0.62</msg>
+<status status="PASS" endtime="20170306 14:03:28.182" starttime="20170306 14:03:28.182"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DBPort}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:44.038" level="INFO">3306</msg>
-<status status="PASS" endtime="20170303 16:05:44.038" starttime="20170303 16:05:44.038"></status>
+<msg timestamp="20170306 14:03:28.183" level="INFO">3306</msg>
+<status status="PASS" endtime="20170306 14:03:28.183" starttime="20170306 14:03:28.182"></status>
 </kw>
 <kw name="Connect To Database" library="DatabaseLibrary">
 <doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to</doc>
@@ -464,45 +464,61 @@ port=22</msg>
 <arg>${DBHost}</arg>
 <arg>${DBPort}</arg>
 </arguments>
-<status status="PASS" endtime="20170303 16:05:44.131" starttime="20170303 16:05:44.038"></status>
+<status status="PASS" endtime="20170306 14:03:28.317" starttime="20170306 14:03:28.183"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:05:44.131" starttime="20170303 16:05:44.038"></status>
+<status status="PASS" endtime="20170306 14:03:28.317" starttime="20170306 14:03:28.180"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:05:44.131" starttime="20170303 16:05:44.038"></status>
+<status status="PASS" endtime="20170306 14:03:28.317" starttime="20170306 14:03:28.176"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:05:44.131" starttime="20170303 16:05:40.149"></status>
+<status status="PASS" endtime="20170306 14:03:28.318" starttime="20170306 14:03:24.247"></status>
 </kw>
 <test id="s1-t1" name="InValid Login">
 <kw type="setup" name="AngularJS Test Setup" library="testSetup">
+<kw name="Set Library Search Order" library="BuiltIn">
+<doc>Sets the resolution order to use when a name matches multiple keywords.</doc>
+<arguments>
+<arg>ExtendedSelenium2Library</arg>
+<arg>Selenium2Library</arg>
+</arguments>
+<status status="PASS" endtime="20170306 14:03:28.320" starttime="20170306 14:03:28.320"></status>
+</kw>
 <kw name="Open Application in Browser" library="AngularJS">
+<kw name="Set Library Search Order" library="BuiltIn">
+<doc>Sets the resolution order to use when a name matches multiple keywords.</doc>
+<arguments>
+<arg>ExtendedSelenium2Library</arg>
+<arg>Selenium2Library</arg>
+</arguments>
+<status status="PASS" endtime="20170306 14:03:28.322" starttime="20170306 14:03:28.321"></status>
+</kw>
 <kw name="Open Browser" library="ExtendedSelenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${AngularJSURL}</arg>
 <arg>${AngularJS_BROWSER}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:44.131" level="INFO">Opening browser 'chrome' to base url 'https://dev.wfosaas.com/login/#/'</msg>
-<status status="PASS" endtime="20170303 16:05:54.868" starttime="20170303 16:05:44.131"></status>
+<msg timestamp="20170306 14:03:28.322" level="INFO">Opening browser 'chrome' to base url 'https://dev.wfosaas.com/login/#/'</msg>
+<status status="PASS" endtime="20170306 14:03:41.091" starttime="20170306 14:03:28.322"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${logo_NICELogo}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:54.869" level="INFO">Verifying element 'css=.nice-logo.pull-left' is visible.</msg>
-<status status="PASS" endtime="20170303 16:05:54.929" starttime="20170303 16:05:54.869"></status>
+<msg timestamp="20170306 14:03:41.092" level="INFO">Verifying element 'css=.nice-logo.pull-left' is visible.</msg>
+<status status="PASS" endtime="20170306 14:03:41.129" starttime="20170306 14:03:41.092"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${btn_LogIn_Button}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:54.930" level="INFO">Verifying element 'id=loginBtn' is visible.</msg>
-<status status="PASS" endtime="20170303 16:05:55.005" starttime="20170303 16:05:54.929"></status>
+<msg timestamp="20170306 14:03:41.130" level="INFO">Verifying element 'id=loginBtn' is visible.</msg>
+<status status="PASS" endtime="20170306 14:03:41.176" starttime="20170306 14:03:41.130"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:05:55.005" starttime="20170303 16:05:44.131"></status>
+<status status="PASS" endtime="20170306 14:03:41.176" starttime="20170306 14:03:28.320"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:05:55.005" starttime="20170303 16:05:44.131"></status>
+<status status="PASS" endtime="20170306 14:03:41.177" starttime="20170306 14:03:28.319"></status>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
@@ -523,8 +539,8 @@ port=22</msg>
 <arg>${txt_Login_emailID}</arg>
 <arg>${AngularJS_VALID_USER}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:55.020" level="INFO">Typing text 'sandip.bhole@mailinator.com' into text field 'model=user.email'</msg>
-<status status="PASS" endtime="20170303 16:05:55.194" starttime="20170303 16:05:55.020"></status>
+<msg timestamp="20170306 14:03:41.182" level="INFO">Typing text 'sandip.bhole@mailinator.com' into text field 'model=user.email'</msg>
+<status status="PASS" endtime="20170306 14:03:41.380" starttime="20170306 14:03:41.182"></status>
 </kw>
 <kw name="Input Text" library="ExtendedSelenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -532,24 +548,24 @@ port=22</msg>
 <arg>${txt_Password}</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:55.194" level="INFO">Typing text 'pASS' into text field 'model=user.password'</msg>
-<status status="PASS" endtime="20170303 16:05:55.390" starttime="20170303 16:05:55.194"></status>
+<msg timestamp="20170306 14:03:41.381" level="INFO">Typing text 'pASS' into text field 'model=user.password'</msg>
+<status status="PASS" endtime="20170306 14:03:41.579" starttime="20170306 14:03:41.381"></status>
 </kw>
 <kw name="Click Element" library="ExtendedSelenium2Library">
 <doc>Clicks an element identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_LogIn_Button}</arg>
 </arguments>
-<msg timestamp="20170303 16:05:55.391" level="INFO">Clicking element 'id=loginBtn'.</msg>
-<status status="PASS" endtime="20170303 16:05:56.592" starttime="20170303 16:05:55.390"></status>
+<msg timestamp="20170306 14:03:41.580" level="INFO">Clicking element 'id=loginBtn'.</msg>
+<status status="PASS" endtime="20170306 14:03:42.862" starttime="20170306 14:03:41.579"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20170303 16:05:59.606" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20170303 16:05:59.606" starttime="20170303 16:05:56.592"></status>
+<msg timestamp="20170306 14:03:45.863" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170306 14:03:45.863" starttime="20170306 14:03:42.863"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="ExtendedSelenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -558,15 +574,15 @@ port=22</msg>
 </arguments>
 <kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170303 16:06:15.906" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170303 16:06:15.906" starttime="20170303 16:06:14.621"></status>
+<msg timestamp="20170306 14:04:02.190" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170306 14:04:02.190" starttime="20170306 14:04:00.918"></status>
 </kw>
-<msg timestamp="20170303 16:06:15.906" level="FAIL">ValueError: Element locator 'css=.nice-app' did not match any elements.</msg>
-<status status="FAIL" endtime="20170303 16:06:15.906" starttime="20170303 16:05:59.606"></status>
+<msg timestamp="20170306 14:04:02.197" level="FAIL">ValueError: Element locator 'css=.nice-app' did not match any elements.</msg>
+<status status="FAIL" endtime="20170306 14:04:02.197" starttime="20170306 14:03:45.863"></status>
 </kw>
-<status status="FAIL" endtime="20170303 16:06:15.906" starttime="20170303 16:05:55.020"></status>
+<status status="FAIL" endtime="20170306 14:04:02.197" starttime="20170306 14:03:41.181"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:06:15.906" starttime="20170303 16:05:55.005"></status>
+<status status="PASS" endtime="20170306 14:04:02.198" starttime="20170306 14:03:41.177"></status>
 </kw>
 <kw name="Get Text" library="ExtendedSelenium2Library">
 <doc>Returns the text value of element identified by `locator`.</doc>
@@ -576,16 +592,16 @@ port=22</msg>
 <assign>
 <var>${ActualError}</var>
 </assign>
-<msg timestamp="20170303 16:06:15.967" level="INFO">${ActualError} = You have entered a wrong email address or password</msg>
-<status status="PASS" endtime="20170303 16:06:15.967" starttime="20170303 16:06:15.906"></status>
+<msg timestamp="20170306 14:04:02.241" level="INFO">${ActualError} = You have entered a wrong email address or password</msg>
+<status status="PASS" endtime="20170306 14:04:02.241" starttime="20170306 14:04:02.198"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ActualError}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:15.967" level="INFO">You have entered a wrong email address or password</msg>
-<status status="PASS" endtime="20170303 16:06:15.967" starttime="20170303 16:06:15.967"></status>
+<msg timestamp="20170306 14:04:02.242" level="INFO">You have entered a wrong email address or password</msg>
+<status status="PASS" endtime="20170306 14:04:02.242" starttime="20170306 14:04:02.242"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -593,7 +609,7 @@ port=22</msg>
 <arg>${ActualError}</arg>
 <arg>You have entered a wrong email address or password</arg>
 </arguments>
-<status status="PASS" endtime="20170303 16:06:15.967" starttime="20170303 16:06:15.967"></status>
+<status status="PASS" endtime="20170306 14:04:02.243" starttime="20170306 14:04:02.242"></status>
 </kw>
 <kw type="teardown" name="AngularJS Test Teardown" library="testTearDown">
 <kw name="AngularJS Failed Step" library="AngularJS">
@@ -603,52 +619,68 @@ port=22</msg>
 <arg>ExtendedSelenium2Library.Capture Page Screenshot</arg>
 <arg>${ScreenshotName}</arg>
 </arguments>
-<status status="PASS" endtime="20170303 16:06:15.967" starttime="20170303 16:06:15.967"></status>
+<status status="PASS" endtime="20170306 14:04:02.246" starttime="20170306 14:04:02.245"></status>
 </kw>
 <kw name="Close Browser" library="ExtendedSelenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170303 16:06:19.228" starttime="20170303 16:06:15.967"></status>
+<status status="PASS" endtime="20170306 14:04:05.710" starttime="20170306 14:04:02.246"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:06:19.228" starttime="20170303 16:06:15.967"></status>
+<status status="PASS" endtime="20170306 14:04:05.710" starttime="20170306 14:04:02.245"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:06:19.228" starttime="20170303 16:06:15.967"></status>
+<status status="PASS" endtime="20170306 14:04:05.710" starttime="20170306 14:04:02.243"></status>
 </kw>
 <tags>
 <tag>AngularJS</tag>
 </tags>
-<status status="PASS" endtime="20170303 16:06:19.228" critical="yes" starttime="20170303 16:05:44.131"></status>
+<status status="PASS" endtime="20170306 14:04:05.711" critical="yes" starttime="20170306 14:03:28.318"></status>
 </test>
 <test id="s1-t2" name="Valid Login">
 <kw type="setup" name="AngularJS Test Setup" library="testSetup">
+<kw name="Set Library Search Order" library="BuiltIn">
+<doc>Sets the resolution order to use when a name matches multiple keywords.</doc>
+<arguments>
+<arg>ExtendedSelenium2Library</arg>
+<arg>Selenium2Library</arg>
+</arguments>
+<status status="PASS" endtime="20170306 14:04:05.713" starttime="20170306 14:04:05.712"></status>
+</kw>
 <kw name="Open Application in Browser" library="AngularJS">
+<kw name="Set Library Search Order" library="BuiltIn">
+<doc>Sets the resolution order to use when a name matches multiple keywords.</doc>
+<arguments>
+<arg>ExtendedSelenium2Library</arg>
+<arg>Selenium2Library</arg>
+</arguments>
+<status status="PASS" endtime="20170306 14:04:05.714" starttime="20170306 14:04:05.714"></status>
+</kw>
 <kw name="Open Browser" library="ExtendedSelenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${AngularJSURL}</arg>
 <arg>${AngularJS_BROWSER}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:19.228" level="INFO">Opening browser 'chrome' to base url 'https://dev.wfosaas.com/login/#/'</msg>
-<status status="PASS" endtime="20170303 16:06:30.877" starttime="20170303 16:06:19.228"></status>
+<msg timestamp="20170306 14:04:05.715" level="INFO">Opening browser 'chrome' to base url 'https://dev.wfosaas.com/login/#/'</msg>
+<status status="PASS" endtime="20170306 14:04:15.001" starttime="20170306 14:04:05.714"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${logo_NICELogo}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:30.877" level="INFO">Verifying element 'css=.nice-logo.pull-left' is visible.</msg>
-<status status="PASS" endtime="20170303 16:06:30.909" starttime="20170303 16:06:30.877"></status>
+<msg timestamp="20170306 14:04:15.001" level="INFO">Verifying element 'css=.nice-logo.pull-left' is visible.</msg>
+<status status="PASS" endtime="20170306 14:04:15.046" starttime="20170306 14:04:15.001"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${btn_LogIn_Button}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:30.909" level="INFO">Verifying element 'id=loginBtn' is visible.</msg>
-<status status="PASS" endtime="20170303 16:06:30.946" starttime="20170303 16:06:30.909"></status>
+<msg timestamp="20170306 14:04:15.047" level="INFO">Verifying element 'id=loginBtn' is visible.</msg>
+<status status="PASS" endtime="20170306 14:04:15.091" starttime="20170306 14:04:15.046"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:06:30.946" starttime="20170303 16:06:19.228"></status>
+<status status="PASS" endtime="20170306 14:04:15.091" starttime="20170306 14:04:05.713"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:06:30.946" starttime="20170303 16:06:19.228"></status>
+<status status="PASS" endtime="20170306 14:04:15.092" starttime="20170306 14:04:05.712"></status>
 </kw>
 <kw name="Login to WFO with UserName and Password from PropertyFile" library="AngularJS">
 <doc>This Keyword will login to WFO by System username and Password</doc>
@@ -658,8 +690,8 @@ port=22</msg>
 <arg>${txt_Login_emailID}</arg>
 <arg>${AngularJS_VALID_USER}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:30.948" level="INFO">Typing text 'sandip.bhole@mailinator.com' into text field 'model=user.email'</msg>
-<status status="PASS" endtime="20170303 16:06:31.138" starttime="20170303 16:06:30.947"></status>
+<msg timestamp="20170306 14:04:15.093" level="INFO">Typing text 'sandip.bhole@mailinator.com' into text field 'model=user.email'</msg>
+<status status="PASS" endtime="20170306 14:04:15.350" starttime="20170306 14:04:15.093"></status>
 </kw>
 <kw name="Input Text" library="ExtendedSelenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -667,81 +699,81 @@ port=22</msg>
 <arg>${txt_Password}</arg>
 <arg>${AngularJS_VALID_PASSWORD}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:31.138" level="INFO">Typing text 'Password1' into text field 'model=user.password'</msg>
-<status status="PASS" endtime="20170303 16:06:31.326" starttime="20170303 16:06:31.138"></status>
+<msg timestamp="20170306 14:04:15.351" level="INFO">Typing text 'Password1' into text field 'model=user.password'</msg>
+<status status="PASS" endtime="20170306 14:04:15.541" starttime="20170306 14:04:15.350"></status>
 </kw>
 <kw name="Click Element" library="ExtendedSelenium2Library">
 <doc>Clicks an element identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_LogIn_Button}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:31.326" level="INFO">Clicking element 'id=loginBtn'.</msg>
-<status status="PASS" endtime="20170303 16:06:38.151" starttime="20170303 16:06:31.326"></status>
+<msg timestamp="20170306 14:04:15.542" level="INFO">Clicking element 'id=loginBtn'.</msg>
+<status status="PASS" endtime="20170306 14:04:20.997" starttime="20170306 14:04:15.541"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="ExtendedSelenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>${Logo_NICE_App_IMG}</arg>
 </arguments>
-<status status="PASS" endtime="20170303 16:06:38.798" starttime="20170303 16:06:38.152"></status>
+<status status="PASS" endtime="20170306 14:04:21.965" starttime="20170306 14:04:20.997"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20170303 16:06:41.808" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20170303 16:06:41.808" starttime="20170303 16:06:38.798"></status>
+<msg timestamp="20170306 14:04:24.966" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170306 14:04:24.966" starttime="20170306 14:04:21.965"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${Logo_NICE_App_IMG}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:41.808" level="INFO">Verifying element 'css=.nice-app' is visible.</msg>
-<status status="PASS" endtime="20170303 16:06:41.867" starttime="20170303 16:06:41.808"></status>
+<msg timestamp="20170306 14:04:24.967" level="INFO">Verifying element 'css=.nice-app' is visible.</msg>
+<status status="PASS" endtime="20170306 14:04:24.988" starttime="20170306 14:04:24.966"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${Lbl_NICE_EvolveWFO}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:41.867" level="INFO">Verifying element 'css=.nice-txt.ng-scope' is visible.</msg>
-<status status="PASS" endtime="20170303 16:06:41.930" starttime="20170303 16:06:41.867"></status>
+<msg timestamp="20170306 14:04:24.988" level="INFO">Verifying element 'css=.nice-txt.ng-scope' is visible.</msg>
+<status status="PASS" endtime="20170306 14:04:25.028" starttime="20170306 14:04:24.988"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${ttl_UserName}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:41.930" level="INFO">Verifying element 'css=.titleText.ng-binding' is visible.</msg>
-<status status="PASS" endtime="20170303 16:06:41.980" starttime="20170303 16:06:41.930"></status>
+<msg timestamp="20170306 14:04:25.029" level="INFO">Verifying element 'css=.titleText.ng-binding' is visible.</msg>
+<status status="PASS" endtime="20170306 14:04:25.064" starttime="20170306 14:04:25.028"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:06:41.980" starttime="20170303 16:06:30.947"></status>
+<status status="PASS" endtime="20170306 14:04:25.064" starttime="20170306 14:04:15.092"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${Logo_NICE_App_IMG}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:41.980" level="INFO">Verifying element 'css=.nice-app' is visible.</msg>
-<status status="PASS" endtime="20170303 16:06:42.011" starttime="20170303 16:06:41.980"></status>
+<msg timestamp="20170306 14:04:25.065" level="INFO">Verifying element 'css=.nice-app' is visible.</msg>
+<status status="PASS" endtime="20170306 14:04:25.083" starttime="20170306 14:04:25.064"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${Lbl_NICE_EvolveWFO}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:42.011" level="INFO">Verifying element 'css=.nice-txt.ng-scope' is visible.</msg>
-<status status="PASS" endtime="20170303 16:06:42.027" starttime="20170303 16:06:42.011"></status>
+<msg timestamp="20170306 14:04:25.084" level="INFO">Verifying element 'css=.nice-txt.ng-scope' is visible.</msg>
+<status status="PASS" endtime="20170306 14:04:25.104" starttime="20170306 14:04:25.084"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${ttl_UserName}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:42.027" level="INFO">Verifying element 'css=.titleText.ng-binding' is visible.</msg>
-<status status="PASS" endtime="20170303 16:06:42.042" starttime="20170303 16:06:42.027"></status>
+<msg timestamp="20170306 14:04:25.105" level="INFO">Verifying element 'css=.titleText.ng-binding' is visible.</msg>
+<status status="PASS" endtime="20170306 14:04:25.123" starttime="20170306 14:04:25.104"></status>
 </kw>
 <kw type="teardown" name="AngularJS Test Teardown" library="testTearDown">
 <kw name="AngularJS Failed Step" library="AngularJS">
@@ -751,52 +783,68 @@ port=22</msg>
 <arg>ExtendedSelenium2Library.Capture Page Screenshot</arg>
 <arg>${ScreenshotName}</arg>
 </arguments>
-<status status="PASS" endtime="20170303 16:06:42.042" starttime="20170303 16:06:42.042"></status>
+<status status="PASS" endtime="20170306 14:04:25.125" starttime="20170306 14:04:25.125"></status>
 </kw>
 <kw name="Close Browser" library="ExtendedSelenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170303 16:06:45.389" starttime="20170303 16:06:42.042"></status>
+<status status="PASS" endtime="20170306 14:04:28.475" starttime="20170306 14:04:25.125"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:06:45.389" starttime="20170303 16:06:42.042"></status>
+<status status="PASS" endtime="20170306 14:04:28.475" starttime="20170306 14:04:25.124"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:06:45.389" starttime="20170303 16:06:42.042"></status>
+<status status="PASS" endtime="20170306 14:04:28.475" starttime="20170306 14:04:25.123"></status>
 </kw>
 <tags>
 <tag>AngularJS</tag>
 </tags>
-<status status="PASS" endtime="20170303 16:06:45.389" critical="yes" starttime="20170303 16:06:19.228"></status>
+<status status="PASS" endtime="20170306 14:04:28.476" critical="yes" starttime="20170306 14:04:05.711"></status>
 </test>
 <test id="s1-t3" name="Follow InValid Login and Expecting Vlaid Login">
 <kw type="setup" name="AngularJS Test Setup" library="testSetup">
+<kw name="Set Library Search Order" library="BuiltIn">
+<doc>Sets the resolution order to use when a name matches multiple keywords.</doc>
+<arguments>
+<arg>ExtendedSelenium2Library</arg>
+<arg>Selenium2Library</arg>
+</arguments>
+<status status="PASS" endtime="20170306 14:04:28.478" starttime="20170306 14:04:28.477"></status>
+</kw>
 <kw name="Open Application in Browser" library="AngularJS">
+<kw name="Set Library Search Order" library="BuiltIn">
+<doc>Sets the resolution order to use when a name matches multiple keywords.</doc>
+<arguments>
+<arg>ExtendedSelenium2Library</arg>
+<arg>Selenium2Library</arg>
+</arguments>
+<status status="PASS" endtime="20170306 14:04:28.478" starttime="20170306 14:04:28.478"></status>
+</kw>
 <kw name="Open Browser" library="ExtendedSelenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${AngularJSURL}</arg>
 <arg>${AngularJS_BROWSER}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:45.389" level="INFO">Opening browser 'chrome' to base url 'https://dev.wfosaas.com/login/#/'</msg>
-<status status="PASS" endtime="20170303 16:06:57.679" starttime="20170303 16:06:45.389"></status>
+<msg timestamp="20170306 14:04:28.479" level="INFO">Opening browser 'chrome' to base url 'https://dev.wfosaas.com/login/#/'</msg>
+<status status="PASS" endtime="20170306 14:04:40.652" starttime="20170306 14:04:28.479"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${logo_NICELogo}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:57.680" level="INFO">Verifying element 'css=.nice-logo.pull-left' is visible.</msg>
-<status status="PASS" endtime="20170303 16:06:57.764" starttime="20170303 16:06:57.680"></status>
+<msg timestamp="20170306 14:04:40.653" level="INFO">Verifying element 'css=.nice-logo.pull-left' is visible.</msg>
+<status status="PASS" endtime="20170306 14:04:40.724" starttime="20170306 14:04:40.652"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${btn_LogIn_Button}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:57.764" level="INFO">Verifying element 'id=loginBtn' is visible.</msg>
-<status status="PASS" endtime="20170303 16:06:57.795" starttime="20170303 16:06:57.764"></status>
+<msg timestamp="20170306 14:04:40.725" level="INFO">Verifying element 'id=loginBtn' is visible.</msg>
+<status status="PASS" endtime="20170306 14:04:40.765" starttime="20170306 14:04:40.725"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:06:57.795" starttime="20170303 16:06:45.389"></status>
+<status status="PASS" endtime="20170306 14:04:40.765" starttime="20170306 14:04:28.478"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:06:57.795" starttime="20170303 16:06:45.389"></status>
+<status status="PASS" endtime="20170306 14:04:40.765" starttime="20170306 14:04:28.477"></status>
 </kw>
 <kw name="Login to WFO with Given UserName and Password" library="AngularJS">
 <doc>This Keyword will login to WFO by System username and Password</doc>
@@ -810,8 +858,8 @@ port=22</msg>
 <arg>${txt_Login_emailID}</arg>
 <arg>${AngularJS_VALID_USER}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:57.795" level="INFO">Typing text 'sandip.bhole@mailinator.com' into text field 'model=user.email'</msg>
-<status status="PASS" endtime="20170303 16:06:57.949" starttime="20170303 16:06:57.795"></status>
+<msg timestamp="20170306 14:04:40.772" level="INFO">Typing text 'sandip.bhole@mailinator.com' into text field 'model=user.email'</msg>
+<status status="PASS" endtime="20170306 14:04:41.187" starttime="20170306 14:04:40.771"></status>
 </kw>
 <kw name="Input Text" library="ExtendedSelenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -819,24 +867,24 @@ port=22</msg>
 <arg>${txt_Password}</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:57.950" level="INFO">Typing text 'pASS123' into text field 'model=user.password'</msg>
-<status status="PASS" endtime="20170303 16:06:58.106" starttime="20170303 16:06:57.949"></status>
+<msg timestamp="20170306 14:04:41.187" level="INFO">Typing text 'pASS123' into text field 'model=user.password'</msg>
+<status status="PASS" endtime="20170306 14:04:41.407" starttime="20170306 14:04:41.187"></status>
 </kw>
 <kw name="Click Element" library="ExtendedSelenium2Library">
 <doc>Clicks an element identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_LogIn_Button}</arg>
 </arguments>
-<msg timestamp="20170303 16:06:58.107" level="INFO">Clicking element 'id=loginBtn'.</msg>
-<status status="PASS" endtime="20170303 16:06:59.284" starttime="20170303 16:06:58.106"></status>
+<msg timestamp="20170306 14:04:41.408" level="INFO">Clicking element 'id=loginBtn'.</msg>
+<status status="PASS" endtime="20170306 14:04:42.630" starttime="20170306 14:04:41.407"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20170303 16:07:02.290" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20170303 16:07:02.290" starttime="20170303 16:06:59.284"></status>
+<msg timestamp="20170306 14:04:45.631" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170306 14:04:45.631" starttime="20170306 14:04:42.630"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="ExtendedSelenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -845,13 +893,13 @@ port=22</msg>
 </arguments>
 <kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170303 16:07:18.613" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170303 16:07:18.613" starttime="20170303 16:07:17.346"></status>
+<msg timestamp="20170306 14:05:01.892" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170306 14:05:01.893" starttime="20170306 14:05:00.648"></status>
 </kw>
-<msg timestamp="20170303 16:07:18.613" level="FAIL">ValueError: Element locator 'css=.nice-app' did not match any elements.</msg>
-<status status="FAIL" endtime="20170303 16:07:18.613" starttime="20170303 16:07:02.290"></status>
+<msg timestamp="20170306 14:05:01.894" level="FAIL">ValueError: Element locator 'css=.nice-app' did not match any elements.</msg>
+<status status="FAIL" endtime="20170306 14:05:01.894" starttime="20170306 14:04:45.631"></status>
 </kw>
-<status status="FAIL" endtime="20170303 16:07:18.613" starttime="20170303 16:06:57.795"></status>
+<status status="FAIL" endtime="20170306 14:05:01.894" starttime="20170306 14:04:40.771"></status>
 </kw>
 <kw type="teardown" name="AngularJS Test Teardown" library="testTearDown">
 <kw name="AngularJS Failed Step" library="AngularJS">
@@ -866,55 +914,71 @@ port=22</msg>
 <arguments>
 <arg>${ScreenshotName}</arg>
 </arguments>
-<msg timestamp="20170303 16:07:18.749" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../NPMGit/WFO-Codeless/output/Screenshot/selenium-manual-screenshot-1.png"&gt;&lt;img src="../NPMGit/WFO-Codeless/output/Screenshot/selenium-manual-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170303 16:07:18.749" starttime="20170303 16:07:18.613"></status>
+<msg timestamp="20170306 14:05:02.036" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../NPMGit/WFO-Codeless/output/Screenshot/selenium-manual-screenshot-1.png"&gt;&lt;img src="../NPMGit/WFO-Codeless/output/Screenshot/selenium-manual-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170306 14:05:02.036" starttime="20170306 14:05:01.897"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:07:18.749" starttime="20170303 16:07:18.613"></status>
+<status status="PASS" endtime="20170306 14:05:02.037" starttime="20170306 14:05:01.897"></status>
 </kw>
 <kw name="Close Browser" library="ExtendedSelenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170303 16:07:21.978" starttime="20170303 16:07:18.749"></status>
+<status status="PASS" endtime="20170306 14:05:05.351" starttime="20170306 14:05:02.037"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:07:21.978" starttime="20170303 16:07:18.613"></status>
+<status status="PASS" endtime="20170306 14:05:05.352" starttime="20170306 14:05:01.896"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:07:21.978" starttime="20170303 16:07:18.613"></status>
+<status status="PASS" endtime="20170306 14:05:05.352" starttime="20170306 14:05:01.895"></status>
 </kw>
 <tags>
 <tag>AngularJS</tag>
 </tags>
-<status status="FAIL" endtime="20170303 16:07:21.978" critical="yes" starttime="20170303 16:06:45.389">ValueError: Element locator 'css=.nice-app' did not match any elements.</status>
+<status status="FAIL" endtime="20170306 14:05:05.352" critical="yes" starttime="20170306 14:04:28.476">ValueError: Element locator 'css=.nice-app' did not match any elements.</status>
 </test>
 <test id="s1-t4" name="New Employee Registration">
 <kw type="setup" name="AngularJS Test Setup" library="testSetup">
+<kw name="Set Library Search Order" library="BuiltIn">
+<doc>Sets the resolution order to use when a name matches multiple keywords.</doc>
+<arguments>
+<arg>ExtendedSelenium2Library</arg>
+<arg>Selenium2Library</arg>
+</arguments>
+<status status="PASS" endtime="20170306 14:05:05.355" starttime="20170306 14:05:05.354"></status>
+</kw>
 <kw name="Open Application in Browser" library="AngularJS">
+<kw name="Set Library Search Order" library="BuiltIn">
+<doc>Sets the resolution order to use when a name matches multiple keywords.</doc>
+<arguments>
+<arg>ExtendedSelenium2Library</arg>
+<arg>Selenium2Library</arg>
+</arguments>
+<status status="PASS" endtime="20170306 14:05:05.356" starttime="20170306 14:05:05.356"></status>
+</kw>
 <kw name="Open Browser" library="ExtendedSelenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${AngularJSURL}</arg>
 <arg>${AngularJS_BROWSER}</arg>
 </arguments>
-<msg timestamp="20170303 16:07:21.981" level="INFO">Opening browser 'chrome' to base url 'https://dev.wfosaas.com/login/#/'</msg>
-<status status="PASS" endtime="20170303 16:07:33.246" starttime="20170303 16:07:21.981"></status>
+<msg timestamp="20170306 14:05:05.357" level="INFO">Opening browser 'chrome' to base url 'https://dev.wfosaas.com/login/#/'</msg>
+<status status="PASS" endtime="20170306 14:05:15.811" starttime="20170306 14:05:05.357"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${logo_NICELogo}</arg>
 </arguments>
-<msg timestamp="20170303 16:07:33.247" level="INFO">Verifying element 'css=.nice-logo.pull-left' is visible.</msg>
-<status status="PASS" endtime="20170303 16:07:33.298" starttime="20170303 16:07:33.247"></status>
+<msg timestamp="20170306 14:05:15.812" level="INFO">Verifying element 'css=.nice-logo.pull-left' is visible.</msg>
+<status status="PASS" endtime="20170306 14:05:15.852" starttime="20170306 14:05:15.811"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${btn_LogIn_Button}</arg>
 </arguments>
-<msg timestamp="20170303 16:07:33.298" level="INFO">Verifying element 'id=loginBtn' is visible.</msg>
-<status status="PASS" endtime="20170303 16:07:33.329" starttime="20170303 16:07:33.298"></status>
+<msg timestamp="20170306 14:05:15.852" level="INFO">Verifying element 'id=loginBtn' is visible.</msg>
+<status status="PASS" endtime="20170306 14:05:15.908" starttime="20170306 14:05:15.852"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:07:33.329" starttime="20170303 16:07:21.980"></status>
+<status status="PASS" endtime="20170306 14:05:15.908" starttime="20170306 14:05:05.355"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:07:33.329" starttime="20170303 16:07:21.980"></status>
+<status status="PASS" endtime="20170306 14:05:15.909" starttime="20170306 14:05:05.354"></status>
 </kw>
 <kw name="Login to WFO with UserName and Password from PropertyFile" library="AngularJS">
 <doc>This Keyword will login to WFO by System username and Password</doc>
@@ -924,8 +988,8 @@ port=22</msg>
 <arg>${txt_Login_emailID}</arg>
 <arg>${AngularJS_VALID_USER}</arg>
 </arguments>
-<msg timestamp="20170303 16:07:33.330" level="INFO">Typing text 'sandip.bhole@mailinator.com' into text field 'model=user.email'</msg>
-<status status="PASS" endtime="20170303 16:07:33.480" starttime="20170303 16:07:33.330"></status>
+<msg timestamp="20170306 14:05:15.912" level="INFO">Typing text 'sandip.bhole@mailinator.com' into text field 'model=user.email'</msg>
+<status status="PASS" endtime="20170306 14:05:16.144" starttime="20170306 14:05:15.911"></status>
 </kw>
 <kw name="Input Text" library="ExtendedSelenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -933,73 +997,73 @@ port=22</msg>
 <arg>${txt_Password}</arg>
 <arg>${AngularJS_VALID_PASSWORD}</arg>
 </arguments>
-<msg timestamp="20170303 16:07:33.481" level="INFO">Typing text 'Password1' into text field 'model=user.password'</msg>
-<status status="PASS" endtime="20170303 16:07:33.630" starttime="20170303 16:07:33.480"></status>
+<msg timestamp="20170306 14:05:16.145" level="INFO">Typing text 'Password1' into text field 'model=user.password'</msg>
+<status status="PASS" endtime="20170306 14:05:16.367" starttime="20170306 14:05:16.144"></status>
 </kw>
 <kw name="Click Element" library="ExtendedSelenium2Library">
 <doc>Clicks an element identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_LogIn_Button}</arg>
 </arguments>
-<msg timestamp="20170303 16:07:33.631" level="INFO">Clicking element 'id=loginBtn'.</msg>
-<status status="PASS" endtime="20170303 16:07:38.163" starttime="20170303 16:07:33.631"></status>
+<msg timestamp="20170306 14:05:16.368" level="INFO">Clicking element 'id=loginBtn'.</msg>
+<status status="PASS" endtime="20170306 14:05:21.272" starttime="20170306 14:05:16.367"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="ExtendedSelenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>${Logo_NICE_App_IMG}</arg>
 </arguments>
-<status status="PASS" endtime="20170303 16:07:38.775" starttime="20170303 16:07:38.163"></status>
+<status status="PASS" endtime="20170306 14:05:22.051" starttime="20170306 14:05:21.272"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20170303 16:07:41.780" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20170303 16:07:41.780" starttime="20170303 16:07:38.775"></status>
+<msg timestamp="20170306 14:05:25.053" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170306 14:05:25.053" starttime="20170306 14:05:22.052"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${Logo_NICE_App_IMG}</arg>
 </arguments>
-<msg timestamp="20170303 16:07:41.780" level="INFO">Verifying element 'css=.nice-app' is visible.</msg>
-<status status="PASS" endtime="20170303 16:07:41.781" starttime="20170303 16:07:41.780"></status>
+<msg timestamp="20170306 14:05:25.054" level="INFO">Verifying element 'css=.nice-app' is visible.</msg>
+<status status="PASS" endtime="20170306 14:05:25.076" starttime="20170306 14:05:25.053"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${Lbl_NICE_EvolveWFO}</arg>
 </arguments>
-<msg timestamp="20170303 16:07:41.781" level="INFO">Verifying element 'css=.nice-txt.ng-scope' is visible.</msg>
-<status status="PASS" endtime="20170303 16:07:41.828" starttime="20170303 16:07:41.781"></status>
+<msg timestamp="20170306 14:05:25.077" level="INFO">Verifying element 'css=.nice-txt.ng-scope' is visible.</msg>
+<status status="PASS" endtime="20170306 14:05:25.115" starttime="20170306 14:05:25.076"></status>
 </kw>
 <kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${ttl_UserName}</arg>
 </arguments>
-<msg timestamp="20170303 16:07:41.828" level="INFO">Verifying element 'css=.titleText.ng-binding' is visible.</msg>
-<status status="PASS" endtime="20170303 16:07:41.884" starttime="20170303 16:07:41.828"></status>
+<msg timestamp="20170306 14:05:25.116" level="INFO">Verifying element 'css=.titleText.ng-binding' is visible.</msg>
+<status status="PASS" endtime="20170306 14:05:25.155" starttime="20170306 14:05:25.116"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:07:41.884" starttime="20170303 16:07:33.330"></status>
+<status status="PASS" endtime="20170306 14:05:25.155" starttime="20170306 14:05:15.909"></status>
 </kw>
 <kw name="Click Element" library="ExtendedSelenium2Library">
 <doc>Clicks an element identified by ``locator``.</doc>
 <arguments>
 <arg>id=newUser</arg>
 </arguments>
-<msg timestamp="20170303 16:07:41.884" level="INFO">Clicking element 'id=newUser'.</msg>
-<status status="PASS" endtime="20170303 16:07:44.108" starttime="20170303 16:07:41.884"></status>
+<msg timestamp="20170306 14:05:25.156" level="INFO">Clicking element 'id=newUser'.</msg>
+<status status="PASS" endtime="20170306 14:05:27.998" starttime="20170306 14:05:25.156"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20170303 16:07:49.110" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20170303 16:07:49.110" starttime="20170303 16:07:44.108"></status>
+<msg timestamp="20170306 14:05:32.999" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170306 14:05:32.999" starttime="20170306 14:05:27.999"></status>
 </kw>
 <kw name="Input Text" library="ExtendedSelenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1007,8 +1071,8 @@ port=22</msg>
 <arg>id=firstName</arg>
 <arg>1stSpark</arg>
 </arguments>
-<msg timestamp="20170303 16:07:49.110" level="INFO">Typing text '1stSpark' into text field 'id=firstName'</msg>
-<status status="PASS" endtime="20170303 16:07:49.263" starttime="20170303 16:07:49.110"></status>
+<msg timestamp="20170306 14:05:33.000" level="INFO">Typing text '1stSpark' into text field 'id=firstName'</msg>
+<status status="PASS" endtime="20170306 14:05:33.224" starttime="20170306 14:05:32.999"></status>
 </kw>
 <kw name="Input Text" library="ExtendedSelenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1016,8 +1080,8 @@ port=22</msg>
 <arg>id=lastName</arg>
 <arg>Athon</arg>
 </arguments>
-<msg timestamp="20170303 16:07:49.264" level="INFO">Typing text 'Athon' into text field 'id=lastName'</msg>
-<status status="PASS" endtime="20170303 16:07:49.417" starttime="20170303 16:07:49.264"></status>
+<msg timestamp="20170306 14:05:33.225" level="INFO">Typing text 'Athon' into text field 'id=lastName'</msg>
+<status status="PASS" endtime="20170306 14:05:33.427" starttime="20170306 14:05:33.224"></status>
 </kw>
 <kw name="Input Text" library="ExtendedSelenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1025,33 +1089,33 @@ port=22</msg>
 <arg>id=emailAddress</arg>
 <arg>sample@gmail5234.com</arg>
 </arguments>
-<msg timestamp="20170303 16:07:49.417" level="INFO">Typing text 'sample@gmail5234.com' into text field 'id=emailAddress'</msg>
-<status status="PASS" endtime="20170303 16:07:49.617" starttime="20170303 16:07:49.417"></status>
+<msg timestamp="20170306 14:05:33.428" level="INFO">Typing text 'sample@gmail5234.com' into text field 'id=emailAddress'</msg>
+<status status="PASS" endtime="20170306 14:05:33.684" starttime="20170306 14:05:33.428"></status>
 </kw>
 <kw name="Click Element" library="ExtendedSelenium2Library">
 <doc>Clicks an element identified by ``locator``.</doc>
 <arguments>
 <arg>id=saveWithPopoverBtn</arg>
 </arguments>
-<msg timestamp="20170303 16:07:49.618" level="INFO">Clicking element 'id=saveWithPopoverBtn'.</msg>
-<status status="PASS" endtime="20170303 16:07:53.977" starttime="20170303 16:07:49.618"></status>
+<msg timestamp="20170306 14:05:33.685" level="INFO">Clicking element 'id=saveWithPopoverBtn'.</msg>
+<status status="PASS" endtime="20170306 14:05:35.154" starttime="20170306 14:05:33.685"></status>
 </kw>
 <kw name="Click Element" library="ExtendedSelenium2Library">
 <doc>Clicks an element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=.//*[@class='btn-link delete-button pull-right']</arg>
 </arguments>
-<msg timestamp="20170303 16:07:53.978" level="INFO">Clicking element 'xpath=.//*[@class='btn-link delete-button pull-right']'.</msg>
+<msg timestamp="20170306 14:05:35.155" level="INFO">Clicking element 'xpath=.//*[@class='btn-link delete-button pull-right']'.</msg>
 <kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170303 16:07:55.349" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170303 16:07:55.349" starttime="20170303 16:07:54.018"></status>
+<msg timestamp="20170306 14:05:36.451" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170306 14:05:36.452" starttime="20170306 14:05:35.214"></status>
 </kw>
-<msg timestamp="20170303 16:07:55.365" level="FAIL">ElementNotVisibleException: Message: element not visible
+<msg timestamp="20170306 14:05:36.462" level="FAIL">ElementNotVisibleException: Message: element not visible
   (Session info: chrome=56.0.2924.87)
   (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 6.1.7601 SP1 x86_64)
 </msg>
-<status status="FAIL" endtime="20170303 16:07:55.365" starttime="20170303 16:07:53.977"></status>
+<status status="FAIL" endtime="20170306 14:05:36.462" starttime="20170306 14:05:35.154"></status>
 </kw>
 <kw type="teardown" name="AngularJS Test Teardown" library="testTearDown">
 <kw name="AngularJS Failed Step" library="AngularJS">
@@ -1066,23 +1130,23 @@ port=22</msg>
 <arguments>
 <arg>${ScreenshotName}</arg>
 </arguments>
-<msg timestamp="20170303 16:07:55.505" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../NPMGit/WFO-Codeless/output/Screenshot/selenium-manual-screenshot-2.png"&gt;&lt;img src="../NPMGit/WFO-Codeless/output/Screenshot/selenium-manual-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170303 16:07:55.505" starttime="20170303 16:07:55.365"></status>
+<msg timestamp="20170306 14:05:36.596" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../NPMGit/WFO-Codeless/output/Screenshot/selenium-manual-screenshot-2.png"&gt;&lt;img src="../NPMGit/WFO-Codeless/output/Screenshot/selenium-manual-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170306 14:05:36.597" starttime="20170306 14:05:36.465"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:07:55.505" starttime="20170303 16:07:55.365"></status>
+<status status="PASS" endtime="20170306 14:05:36.597" starttime="20170306 14:05:36.464"></status>
 </kw>
 <kw name="Close Browser" library="ExtendedSelenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170303 16:07:58.792" starttime="20170303 16:07:55.521"></status>
+<status status="PASS" endtime="20170306 14:05:39.940" starttime="20170306 14:05:36.597"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:07:58.792" starttime="20170303 16:07:55.365"></status>
+<status status="PASS" endtime="20170306 14:05:39.940" starttime="20170306 14:05:36.464"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:07:58.792" starttime="20170303 16:07:55.365"></status>
+<status status="PASS" endtime="20170306 14:05:39.940" starttime="20170306 14:05:36.463"></status>
 </kw>
 <tags>
 <tag>AngularJS</tag>
 </tags>
-<status status="FAIL" endtime="20170303 16:07:58.792" critical="yes" starttime="20170303 16:07:21.979">ElementNotVisibleException: Message: element not visible
+<status status="FAIL" endtime="20170306 14:05:39.941" critical="yes" starttime="20170306 14:05:05.353">ElementNotVisibleException: Message: element not visible
   (Session info: chrome=56.0.2924.87)
   (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 6.1.7601 SP1 x86_64)
 </status>
@@ -1090,15 +1154,15 @@ port=22</msg>
 <kw type="teardown" name="Suite Teardown" library="suiteTeardown">
 <kw name="Close All Connections" library="SSHLibrary">
 <doc>Closes all open connections.</doc>
-<status status="PASS" endtime="20170303 16:07:58.817" starttime="20170303 16:07:58.792"></status>
+<status status="PASS" endtime="20170306 14:05:39.988" starttime="20170306 14:05:39.942"></status>
 </kw>
 <kw name="Disconnect From Database" library="DatabaseLibrary">
 <doc>Disconnects from the database.</doc>
-<status status="PASS" endtime="20170303 16:07:58.833" starttime="20170303 16:07:58.817"></status>
+<status status="PASS" endtime="20170306 14:05:39.989" starttime="20170306 14:05:39.988"></status>
 </kw>
-<status status="PASS" endtime="20170303 16:07:58.833" starttime="20170303 16:07:58.792"></status>
+<status status="PASS" endtime="20170306 14:05:39.989" starttime="20170306 14:05:39.942"></status>
 </kw>
-<status status="FAIL" endtime="20170303 16:07:58.833" starttime="20170303 16:05:37.598"></status>
+<status status="FAIL" endtime="20170306 14:05:39.989" starttime="20170306 14:03:21.033"></status>
 </suite>
 <statistics>
 <total>

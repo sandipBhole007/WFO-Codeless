@@ -18,6 +18,7 @@ Feed Test Setup
 	Log 	nothing is implemented yet
 
 UI Test Setup 
+	Set Library Search Order	Selenium2Library	ExtendedSelenium2Library		
 	NCATHome_Resource.UI Set Properties
 	Log 	UI Test Setup nothing is implemented yet
 	
@@ -31,7 +32,9 @@ ReST Test Setup
 	Log 	UI Test Setup nothing is implemented yet
 	
 Mobile Test Setup
+	Set Library Search Order	AppiumLibrary	Selenium2Library	ExtendedSelenium2Library
 	LinkedinFlow_Resource.Open Mobile Application
 
 AngularJS Test Setup
+	Set Library Search Order	ExtendedSelenium2Library	Selenium2Library	
 	AngularJS.Open Application in Browser
