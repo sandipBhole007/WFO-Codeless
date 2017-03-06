@@ -2,6 +2,7 @@
 Resource            resources/automationProperties.robot
 Resource            AngularJS/AngularJS.robot
 Resource            UI/NCATHome_Resource.robot
+Resource            MobileApp/LinkedinFlow_Resource.robot
 **** Variables***
 
 
@@ -17,7 +18,7 @@ DB Test Teardown
 	Log 	SSH Test Teardown nothing is implemented yet
 	
 Mobile Test Teardown
-	Log 	Mobile Test Teardown nothing is implemented yet
+	LinkedinFlow_Resource.Close Application
 
 ReST Test Teardown
 	Log 	SSH Test Teardown nothing is implemented yet

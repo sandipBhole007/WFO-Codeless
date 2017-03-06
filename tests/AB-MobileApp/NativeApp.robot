@@ -18,8 +18,9 @@ Invalid Login in Linkedin App
 	[Setup] 	Mobile Test Setup
 	Open Linkedin Login Page
 	Login TO App 	${muserName} 	${mInvalidPassword}
-	Verfiy Page Contains Text Bad username/password
-
+	Verfiy Page Contains Text 	Bad username/password
+	[Teardown]  testTearDown.Mobile Test Teardown
+	
 Search NICE Ltd in Linkedin App 
 	[Tags] 		Mobile
 	[Setup] 	Mobile Test Setup
@@ -27,3 +28,5 @@ Search NICE Ltd in Linkedin App
 	Login TO App	${muserName}		${mpassword}
 	Select NICE From Recent Search History
 	Verfiy Page Contains Text		NICE Ltd
+	[Teardown] 	testTearDown.Mobile Test Teardown
+	

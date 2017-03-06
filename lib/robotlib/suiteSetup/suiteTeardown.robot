@@ -9,5 +9,5 @@ ${Docker_feedPath}
 *** Keywords ***
 
 Suite Teardown
-	Close All Connections
-	Disconnect From Database
+	Run Keyword And Ignore Error 	Close All Connections
+	Run Keyword And Ignore Error 	Disconnect From Database

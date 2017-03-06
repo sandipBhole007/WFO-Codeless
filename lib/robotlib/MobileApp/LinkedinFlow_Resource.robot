@@ -30,3 +30,7 @@ Select NICE From Recent Search History
 Verfiy Page Contains Text
 	[Arguments]		${text}
 	AppiumLibrary.Page Should Contain Text	${text}
+	
+Close Application
+	AppiumLibrary.Close Application
+	
