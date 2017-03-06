@@ -17,7 +17,7 @@ Invalid Login in Linkedin App
 	[Tags] 	Mobile
 	[Setup] 	Mobile Test Setup
 	Open Linkedin Login Page
-	Login TO App ${muserName} ${mInvalidPassword}
+	Login TO App 	${muserName} 	${mInvalidPassword}
 	Verfiy Page Contains Text Bad username/password
 
 Search NICE Ltd in Linkedin App 

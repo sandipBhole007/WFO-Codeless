@@ -1,7 +1,7 @@
 *** Variables ***
 
 #### Output dirs
-${LocalLogFolderPath}  		C:\\NPMGit\\WFO-Codeless\\output\\logs
+${LocalLogFolderPath}  		C:\\WFO-Codeless\\output\\logs
 
 ############logs DIR
 
@@ -25,7 +25,7 @@ ${VALID PASSWORD}    mode
 ${LOGIN URL}      http://${SERVER}/ncat-ui/
 ${WELCOME URL}    http://${SERVER}/ncat-ui/
 ${ERROR URL}      http://${SERVER}/error.html
-${ScreenshotOutputDirectory}		C:/NPMGit/WFO-Codeless/output/Screenshot
+${ScreenshotOutputDirectory}		C:/WFO-Codeless/output/Screenshot
 ${ScreenshotName}		${ScreenshotOutputDirectory}${/}selenium-manual-screenshot-{index}.png
 ${DELAY}		.1
 
